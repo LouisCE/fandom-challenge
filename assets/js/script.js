@@ -12,6 +12,13 @@ const answerButtons = document.querySelectorAll('.answer-btn');
 // Track which question the user is on
 let currentQuestionIndex = 0;
 
+function showQuestion(questionObj) {
+    questionText.textContent = questionObj.question;
+    answerButtons.forEach((button, index) => {
+        button.textContent = questionObj.answers[index];
+    });
+}
+
 // When Start Quiz is clicked
 startBtn.addEventListener('click', function() {
     rulesSection.style.display = 'none';
