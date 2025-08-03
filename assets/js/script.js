@@ -24,3 +24,6 @@ startBtn.addEventListener('click', function() {
     rulesSection.style.display = 'none';
     quizSection.style.display = 'block';
 });
+
+// Loads question (only Avatar for now)
+showQuestion(avatarQuestions[currentQuestionIndex]);
