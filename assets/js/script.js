@@ -23,7 +23,5 @@ function showQuestion(questionObj) {
 startBtn.addEventListener('click', function() {
     rulesSection.style.display = 'none';
     quizSection.style.display = 'block';
+    showQuestion(avatarQuestions[currentQuestionIndex]);
 });
-
-// Loads question (only Avatar for now)
-showQuestion(avatarQuestions[currentQuestionIndex]);
