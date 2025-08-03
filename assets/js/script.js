@@ -29,6 +29,10 @@ answerButtons.forEach((button, index) => {
         } else {
             console.log("Wrong! Score: " + score);
         }
+
+        currentQuestionIndex++;
+        console.log("Current question index is now: " + currentQuestionIndex);
+
     });
 });
 
