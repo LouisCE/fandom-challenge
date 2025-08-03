@@ -11,6 +11,7 @@ const answerButtons = document.querySelectorAll('.answer-btn');
 
 // Track which question the user is on
 let currentQuestionIndex = 0;
+let score = 0;
 
 function showQuestion(questionObj) {
     questionText.textContent = questionObj.question;
@@ -18,6 +19,18 @@ function showQuestion(questionObj) {
         button.textContent = questionObj.answers[index];
     });
 }
+
+answerButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+        const currentQuestion = avatarQuestions[currentQuestionIndex];
+        if (index === currentQuestion.correct) {
+            score++;
+            console.log("Correct! Score: " + score);
+        } else {
+            console.log("Wrong! Score: " + score);
+        }
+    });
+});
 
 // When Start Quiz is clicked
 startBtn.addEventListener('click', function() {
