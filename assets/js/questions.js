@@ -26,11 +26,6 @@ const avatarQuestions = [
         correct: 2
     },
     {
-        question: "What is the name of Sokka's boomerang?",
-        answers: ["It doesn't have a name", "Boomy", "Whirly", "Boomer"],
-        correct: 0
-    },
-    {
         question: "Which spirit helps Aang in the Spirit World as a guide?",
         answers: ["Koh", "Hei Bai", "Roku's Dragon", "Wan Shi Tong"],
         correct: 2
@@ -51,19 +46,9 @@ const avatarQuestions = [
         correct: 1
     },
     {
-        question: "Who is the leader of the Kyoshi Warriors?",
-        answers: ["Suki", "Katara", "Toph", "Mai"],
-        correct: 0
-    },
-    {
         question: "Which city is the capital of the Earth Kingdom?",
         answers: ["Ba Sing Se", "Omashu", "Gaoling", "Kyoshi Island"],
         correct: 0
-    },
-    {
-        question: "What is the name of the Fire Nation princess who becomes Aang’s ally?",
-        answers: ["Azula", "Ursa", "Mai", "Zuko"],
-        correct: 2
     },
     {
         question: "Who is the Fire Nation’s banished prince?",
@@ -86,19 +71,9 @@ const avatarQuestions = [
         correct: 0
     },
     {
-        question: "Which spirit is the 'Face Stealer'?",
-        answers: ["Koh", "Hei Bai", "Wan Shi Tong", "La"],
-        correct: 0
-    },
-    {
         question: "What is the name of the Fire Nation’s solar eclipse?",
         answers: ["Day of Black Sun", "Blue Spirit Night", "Fire Festival", "Spirit Day"],
         correct: 0
-    },
-    {
-        question: "Who was the first person Aang taught airbending to?",
-        answers: ["Toph", "Sokka", "Katara", "Zuko"],
-        correct: 2
     },
     {
         question: "What is the name of Zuko’s ship’s lieutenant?",
@@ -150,6 +125,131 @@ const avatarQuestions = [
         answers: ["Iroh", "Sokka", "Zuko", "Toph"],
         correct: 2
     },
+    {
+        question: "Who becomes Aang’s wife after the series ends?",
+        answers: ["Katara", "Toph", "Suki", "Mai"],
+        correct: 0
+    },
+    {
+        question: "What is the name of Zuko’s mother?",
+        answers: ["Ursa", "Azula", "Kya", "Ilah"],
+        correct: 0
+    },
+    {
+        question: "Which technique allows waterbenders to control people?",
+        answers: ["Icebending", "Healing", "Bloodbending", "Energybending"],
+        correct: 2
+    },
+    {
+        question: "Which character runs the cabbage cart?",
+        answers: ["June", "The Boulder", "Cabbage Merchant", "Foaming Mouth Guy"],
+        correct: 2
+    },
+    {
+        question: "What is the nickname of Iroh’s tea shop?",
+        answers: ["White Lotus Tea House", "Jasmine Dragon", "Ba Sing Se Brews", "Dragon's Cup"],
+        correct: 1
+    },
+    {
+        question: "What’s the name of the sword Sokka learns to forge?",
+        answers: ["Spirit Blade", "Space Sword", "Moon Fang", "Meteor Sword"],
+        correct: 1
+    },
+    {
+        question: "Which two spirits represent the Ocean and the Moon?",
+        answers: ["Raava and Vaatu", "La and Tui", "Hei Bai and Koh", "Wan Shi Tong and Fang"],
+        correct: 1
+    },
+    {
+        question: "Who helps Aang unlock his chakras?",
+        answers: ["Bumi", "Guru Pathik", "Iroh", "Avatar Roku"],
+        correct: 1
+    },
+    {
+        question: "What is the name of the spirit library in the desert?",
+        answers: ["Gaoling Archive", "White Lotus Library", "Wan Shi Tong’s Library", "The Great Archive"],
+        correct: 2
+    },
+    {
+        question: "Which character is also known as 'The Blue Spirit'?",
+        answers: ["Sokka", "Zuko", "Jet", "Iroh"],
+        correct: 1
+    },
+    {
+        question: "Who was the first Avatar?",
+        answers: ["Roku", "Wan", "Kyoshi", "Kuruk"],
+        correct: 1
+    },
+    {
+        question: "What is the name of Katara and Sokka’s father?",
+        answers: ["Hakoda", "Bato", "Pakku", "Hama"],
+        correct: 0
+    },
+    {
+        question: "Which type of bending can create lightning?",
+        answers: ["Firebending", "Earthbending", "Airbending", "Waterbending"],
+        correct: 0
+    },
+    {
+        question: "Who teaches Aang waterbending?",
+        answers: ["Pakku", "Katara", "Hama", "Yue"],
+        correct: 1
+    },
+    {
+        question: "Which Fire Nation general wanted to use a giant drill on Ba Sing Se?",
+        answers: ["Zhao", "Iroh", "Azula", "Sun"],
+        correct: 2
+    },
+    {
+        question: "What is Sokka’s weapon besides his boomerang?",
+        answers: ["Sword", "Hammer", "Crossbow", "Spear"],
+        correct: 0
+    },
+    {
+        question: "Who becomes the Fire Lord at the end of the series?",
+        answers: ["Iroh", "Azula", "Zuko", "Aang"],
+        correct: 2
+    },
+    {
+        question: "What tribe is Hama from?",
+        answers: ["Southern Water Tribe", "Northern Water Tribe", "Foggy Swamp Tribe", "Earth Kingdom"],
+        correct: 0
+    }
+    {
+        question: "What was Aang’s false name when entering Omashu?",
+        answers: ["Mushi", "Kuzon", "Bonzu Pippinpaddleopsicopolis III", "Lee"],
+        correct: 2
+    },
+    {
+        question: "Which Fire Lord had a comet named after them?",
+        answers: ["Azulon", "Zuko", "Ozai", "Sozin"],
+        correct: 3
+    },
+    {
+        question: "What colour fire was exclusive to Princess Azula?",
+        answers: ["Green", "Purple", "Blue", "Black"],
+        correct: 2
+    },
+    {
+        question: "Who do we never see GENERATE lightning?",
+        answers: ["Azula", "Iroh", "Zuko", "Ozai"],
+        correct: 2
+    },
+    {
+        question: "Which spirit is known as the 'Face Stealer'?",
+        answers: ["Hei Bai", "Wan Shi Tong", "Koh", "Vaatu"],
+        correct: 2
+    },
+    {
+        question: "Who was Zuko angry with on Ember Island?",
+        answers: ["Ozai", "Azula", "Himself", "Iroh"],
+        correct: 2
+    },
+    {
+        question: "What title did Ozai give to himself as supreme leader of the new world?",
+        answers: ["Immortal Dragon", "Dragon King", "Phoenix King", "God Emperor"],
+        correct: 2
+    }
 ];
 
 // Game of Thrones questions
@@ -255,56 +355,6 @@ const gotQuestions = [
         correct: 1
     },
     {
-        question: "What is the name of the spirit library in the desert?",
-        answers: ["Gaoling Archive", "White Lotus Library", "Wan Shi Tong’s Library", "The Great Archive"],
-        correct: 2
-    },
-    {
-        question: "Which character is also known as 'The Blue Spirit'?",
-        answers: ["Sokka", "Zuko", "Jet", "Iroh"],
-        correct: 1
-    },
-    {
-        question: "Who was the first Avatar?",
-        answers: ["Roku", "Wan", "Kyoshi", "Kuruk"],
-        correct: 1
-    },
-    {
-        question: "What is the name of Katara and Sokka’s father?",
-        answers: ["Hakoda", "Bato", "Pakku", "Hama"],
-        correct: 0
-    },
-    {
-        question: "Which type of bending can create lightning?",
-        answers: ["Firebending", "Earthbending", "Airbending", "Waterbending"],
-        correct: 0
-    },
-    {
-        question: "Who teaches Aang waterbending?",
-        answers: ["Pakku", "Katara", "Hama", "Yue"],
-        correct: 1
-    },
-    {
-        question: "Which Fire Nation general wanted to use a giant drill on Ba Sing Se?",
-        answers: ["Zhao", "Iroh", "Azula", "Sun"],
-        correct: 2
-    },
-    {
-        question: "What is Sokka’s weapon besides his boomerang?",
-        answers: ["Sword", "Hammer", "Crossbow", "Spear"],
-        correct: 0
-    },
-    {
-        question: "Who becomes the Fire Lord at the end of the series?",
-        answers: ["Iroh", "Azula", "Zuko", "Aang"],
-        correct: 2
-    },
-    {
-        question: "What tribe is Hama from?",
-        answers: ["Southern Water Tribe", "Northern Water Tribe", "Foggy Swamp Tribe", "Earth Kingdom"],
-        correct: 0
-    },
-    {
         question: "What is the name of the continent where most of the story takes place?",
         answers: ["Essos", "Westeros", "Sothoryos", "Ulthos"],
         correct: 1
@@ -404,4 +454,54 @@ const gotQuestions = [
         answers: ["Catelyn Stark", "Lyanna Stark", "Ashara Dayne", "Daenerys Targaryen"],
         correct: 1
     },
+    {
+        question: "Who becomes Lord Commander of the Night's Watch after Jon?",
+        answers: ["Eddison Tollett", "Samwell Tarly", "Alliser Thorne", "Dolorous Edd"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the Valyrian steel dagger used in Bran’s assassination attempt?",
+        answers: ["Catspaw Dagger", "Dark Sister", "Heartsbane", "Needle"],
+        correct: 0
+    },
+    {
+        question: "Which Stark child was believed dead but lived with the wildlings?",
+        answers: ["Rickon", "Arya", "Bran", "Benjen"],
+        correct: 2
+    },
+    {
+        question: "Who kills Ramsay Bolton?",
+        answers: ["Jon Snow", "Sansa Stark", "Arya Stark", "Brienne of Tarth"],
+        correct: 1
+    },
+    {
+        question: "What is the ancestral Valyrian steel sword of House Mormont?",
+        answers: ["Ice", "Heartsbane", "Longclaw", "Oathkeeper"],
+        correct: 2
+    },
+    {
+        question: "Which city is known as the 'Queen of Cities' in Essos?",
+        answers: ["Meereen", "Volantis", "Braavos", "Pentos"],
+        correct: 1
+    },
+    {
+        question: "What do the Faceless Men worship?",
+        answers: ["The Drowned God", "The Lord of Light", "The Many-Faced God", "The Old Gods"],
+        correct: 2
+    },
+    {
+        question: "Who sits on the Iron Throne after Robert Baratheon’s death (immediately)?",
+        answers: ["Stannis Baratheon", "Joffrey Baratheon", "Renly Baratheon", "Tommen Baratheon"],
+        correct: 1
+    },
+    {
+        question: "What are Daenerys’s titles besides Queen?",
+        answers: ["Breaker of Chains", "Mother of Dragons", "Khaleesi", "All of the above"],
+        correct: 3
+    },
+    {
+        question: "Who is known as 'The Great Other'?",
+        answers: ["The Lord of Light", "The Night King", "The Drowned God", "The Stranger"],
+        correct: 1
+    }
 ];
