@@ -204,4 +204,104 @@ const gotQuestions = [
         answers: ["Arya Stark", "Jaqen H’ghar", "The Waif", "The Kindly Man"],
         correct: 1
     },
+    {
+        question: "What is the name of the spirit library in the desert?",
+        answers: ["Gaoling Archive", "White Lotus Library", "Wan Shi Tong’s Library", "The Great Archive"],
+        correct: 2
+    },
+    {
+        question: "Which character is also known as 'The Blue Spirit'?",
+        answers: ["Sokka", "Zuko", "Jet", "Iroh"],
+        correct: 1
+    },
+    {
+        question: "Who was the first Avatar?",
+        answers: ["Roku", "Wan", "Kyoshi", "Kuruk"],
+        correct: 1
+    },
+    {
+        question: "What is the name of Katara and Sokka’s father?",
+        answers: ["Hakoda", "Bato", "Pakku", "Hama"],
+        correct: 0
+    },
+    {
+        question: "Which type of bending can create lightning?",
+        answers: ["Firebending", "Earthbending", "Airbending", "Waterbending"],
+        correct: 0
+    },
+    {
+        question: "Who teaches Aang waterbending?",
+        answers: ["Pakku", "Katara", "Hama", "Yue"],
+        correct: 1
+    },
+    {
+        question: "Which Fire Nation general wanted to use a giant drill on Ba Sing Se?",
+        answers: ["Zhao", "Iroh", "Azula", "Sun"],
+        correct: 2
+    },
+    {
+        question: "What is Sokka’s weapon besides his boomerang?",
+        answers: ["Sword", "Hammer", "Crossbow", "Spear"],
+        correct: 0
+    },
+    {
+        question: "Who becomes the Fire Lord at the end of the series?",
+        answers: ["Iroh", "Azula", "Zuko", "Aang"],
+        correct: 2
+    },
+    {
+        question: "What tribe is Hama from?",
+        answers: ["Southern Water Tribe", "Northern Water Tribe", "Foggy Swamp Tribe", "Earth Kingdom"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the continent where most of the story takes place?",
+        answers: ["Essos", "Westeros", "Sothoryos", "Ulthos"],
+        correct: 1
+    },
+    {
+        question: "Who resurrects Jon Snow?",
+        answers: ["Melisandre", "Thoros of Myr", "Beric Dondarrion", "The Lord of Light"],
+        correct: 0
+    },
+    {
+        question: "What are the words of House Targaryen?",
+        answers: ["Winter is Coming", "Fire and Blood", "Ours is the Fury", "We Do Not Sow"],
+        correct: 1
+    },
+    {
+        question: "What is the nickname of Robert Baratheon?",
+        answers: ["The Usurper", "The Young Wolf", "The Mad King", "The Kingslayer"],
+        correct: 0
+    },
+    {
+        question: "Who pushes Bran Stark from the tower?",
+        answers: ["Cersei Lannister", "Jaime Lannister", "Petyr Baelish", "Sandor Clegane"],
+        correct: 1
+    },
+    {
+        question: "Which character kills Stannis Baratheon?",
+        answers: ["Brienne of Tarth", "Jon Snow", "Renly Baratheon", "Theon Greyjoy"],
+        correct: 0
+    },
+    {
+        question: "What is the name of Arya’s dance instructor?",
+        answers: ["Syrio Forel", "Jaqen H’ghar", "Daario Naharis", "Podrick Payne"],
+        correct: 0
+    },
+    {
+        question: "Which character is known as the 'Onion Knight'?",
+        answers: ["Davos Seaworth", "Bronn", "Euron Greyjoy", "Varys"],
+        correct: 0
+    },
+    {
+        question: "What is the ancestral home of House Tyrell?",
+        answers: ["Riverrun", "Highgarden", "Storm’s End", "Sunspear"],
+        correct: 1
+    },
+    {
+        question: "Who becomes King of the Seven Kingdoms after Bran?",
+        answers: ["Tyrion Lannister", "Sansa Stark", "No one, the kingdoms separate", "Jon Snow"],
+        correct: 2
+    },
 ];
