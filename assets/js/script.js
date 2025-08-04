@@ -33,6 +33,10 @@ answerButtons.forEach((button, index) => {
         currentQuestionIndex++;
         console.log("Current question index is now: " + currentQuestionIndex);
 
+        if (currentQuestionIndex < avatarQuestions.length) {
+            showQuestion(avatarQuestions[currentQuestionIndex]);
+        }
+
     });
 });
 
