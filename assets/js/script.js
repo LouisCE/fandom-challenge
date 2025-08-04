@@ -51,6 +51,7 @@ function showQuestion(questionObj) {
 
 answerButtons.forEach((button, index) => {
     button.addEventListener('click', function() {
+        clearInterval(timerInterval);
         const currentQuestion = avatarQuestions[currentQuestionIndex];
         if (index === currentQuestion.correct) {
             score++;
