@@ -214,7 +214,7 @@ const avatarQuestions = [
         question: "What tribe is Hama from?",
         answers: ["Southern Water Tribe", "Northern Water Tribe", "Foggy Swamp Tribe", "Earth Kingdom"],
         correct: 0
-    }
+    },
     {
         question: "What was Aang’s false name when entering Omashu?",
         answers: ["Mushi", "Kuzon", "Bonzu Pippinpaddleopsicopolis III", "Lee"],
