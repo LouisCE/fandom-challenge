@@ -68,7 +68,6 @@ answerButtons.forEach((button, index) => {
 
         if (currentQuestionIndex < avatarQuestions.length) {
             showQuestion(avatarQuestions[currentQuestionIndex]);
-            startTimer();
         } else {
     quizSection.style.display = 'none';
     document.getElementById('results').style.display = 'block';
