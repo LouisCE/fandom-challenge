@@ -100,6 +100,56 @@ const avatarQuestions = [
         answers: ["Toph", "Sokka", "Katara", "Zuko"],
         correct: 2
     },
+    {
+        question: "What is the name of Zuko’s ship’s lieutenant?",
+        answers: ["Jee", "Han", "Pakku", "Bumi"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the Fire Nation comet?",
+        answers: ["Roku's Comet", "Agni's Comet", "Ozai's Comet", "Sozin's Comet"],
+        correct: 3
+    },
+    {
+        question: "Which animal is a mix between a bear and another species in the Earth Kingdom?",
+        answers: ["Badgermole", "Ostrich Horse", "Platypus Bear", "Polar Bear Dog"],
+        correct: 2
+    },
+    {
+        question: "Who teaches Toph to use seismic sense?",
+        answers: ["Bumi", "Badgermoles", "Her parents", "Aang"],
+        correct: 1
+    },
+    {
+        question: "What is the name of the play that reenacts Team Avatar’s adventures?",
+        answers: ["The Great Divide", "Fire Nation Tales", "Boiling Rock", "The Ember Island Players"],
+        correct: 3
+    },
+    {
+        question: "Which member of Team Avatar is a non-bender?",
+        answers: ["Katara", "Sokka", "Aang", "Toph"],
+        correct: 1
+    },
+    {
+        question: "Who was the waterbending master at the Northern Water Tribe?",
+        answers: ["Arnook", "Hakoda", "Pakku", "Hama"],
+        correct: 2
+    },
+    {
+        question: "Which creature grants the ability to energybend?",
+        answers: ["Dragon", "Koizilla", "Badgermole", "Lion Turtle"],
+        correct: 3
+    },
+    {
+        question: "What is the name of Azula’s two closest friends?",
+        answers: ["Mai and Ty Lee", "Suki and June", "Ty Lee and Katara", "Mai and Suki"],
+        correct: 0
+    },
+    {
+        question: "Which character says, 'That's rough, buddy'?",
+        answers: ["Iroh", "Sokka", "Zuko", "Toph"],
+        correct: 2
+    },
 ];
 
 // Game of Thrones questions
@@ -303,5 +353,55 @@ const gotQuestions = [
         question: "Who becomes King of the Seven Kingdoms after Bran?",
         answers: ["Tyrion Lannister", "Sansa Stark", "No one, the kingdoms separate", "Jon Snow"],
         correct: 2
+    },
+    {
+        question: "What is the Iron Bank located in?",
+        answers: ["Pentos", "Oldtown", "Qarth", "Braavos"],
+        correct: 3
+    },
+    {
+        question: "Which character is nicknamed 'Littlefinger'?",
+        answers: ["Varys", "Bronn", "Tyrion Lannister", "Petyr Baelish"],
+        correct: 3
+    },
+    {
+        question: "What does Valar Morghulis mean?",
+        answers: ["All men must serve", "All men must die", "What is dead may never die", "Fire and Blood"],
+        correct: 1
+    },
+    {
+        question: "Who kills Tywin Lannister?",
+        answers: ["Arya Stark", "Tyrion Lannister", "Cersei Lannister", "Jaime Lannister"],
+        correct: 1
+    },
+    {
+        question: "Which house has a golden rose as its sigil?",
+        answers: ["House Martell", "House Arryn", "House Tyrell", "House Tully"],
+        correct: 2
+    },
+    {
+        question: "What is the name of the giant in the Battle of the Bastards?",
+        answers: ["Mag the Mighty", "Dongo", "Wun Wun", "Hodor"],
+        correct: 2
+    },
+    {
+        question: "Who commands the Night’s Watch when Jon Snow joins?",
+        answers: ["Eddison Tollett", "Benjen Stark", "Jeor Mormont", "Alliser Thorne"],
+        correct: 2
+    },
+    {
+        question: "Which Lannister song becomes the unofficial anthem of the Red Wedding?",
+        answers: ["Hands of Gold", "Jenny’s Song", "The Bear and the Maiden Fair", "Rains of Castamere"],
+        correct: 3
+    },
+    {
+        question: "What metal is fatal to White Walkers?",
+        answers: ["Steel", "Silver", "Valyrian Steel", "Dragonglass"],
+        correct: 3
+    },
+    {
+        question: "Who is revealed to be Jon Snow’s true mother?",
+        answers: ["Catelyn Stark", "Lyanna Stark", "Ashara Dayne", "Daenerys Targaryen"],
+        correct: 1
     },
 ];
