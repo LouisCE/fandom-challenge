@@ -49,7 +49,57 @@ const avatarQuestions = [
         question: "What is the technique Aang uses to defeat Ozai?",
         answers: ["Avatar State", "Energybending", "Chi Blocking", "Bloodbending"],
         correct: 1
-    }
+    },
+    {
+        question: "Who is the leader of the Kyoshi Warriors?",
+        answers: ["Suki", "Katara", "Toph", "Mai"],
+        correct: 0
+    },
+    {
+        question: "Which city is the capital of the Earth Kingdom?",
+        answers: ["Ba Sing Se", "Omashu", "Gaoling", "Kyoshi Island"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the Fire Nation princess who becomes Aang’s ally?",
+        answers: ["Azula", "Ursa", "Mai", "Zuko"],
+        correct: 2
+    },
+    {
+        question: "Who is the Fire Nation’s banished prince?",
+        answers: ["Zuko", "Iroh", "Ozai", "Sozin"],
+        correct: 0
+    },
+    {
+        question: "What special ability does Toph have besides earthbending?",
+        answers: ["Metalbending", "Lightning generation", "Waterbending", "Airbending"],
+        correct: 0
+    },
+    {
+        question: "What animal is the symbol of the Air Nomads?",
+        answers: ["Flying bison", "Dragon", "Turtle dove", "Phoenix"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the secret police in Ba Sing Se?",
+        answers: ["Dai Li", "White Lotus", "Red Lotus", "Foggy Swamp Tribe"],
+        correct: 0
+    },
+    {
+        question: "Which spirit is the 'Face Stealer'?",
+        answers: ["Koh", "Hei Bai", "Wan Shi Tong", "La"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the Fire Nation’s solar eclipse?",
+        answers: ["Day of Black Sun", "Blue Spirit Night", "Fire Festival", "Spirit Day"],
+        correct: 0
+    },
+    {
+        question: "Who was the first person Aang taught airbending to?",
+        answers: ["Toph", "Sokka", "Katara", "Zuko"],
+        correct: 2
+    },
 ];
 
 // Game of Thrones questions
@@ -103,5 +153,55 @@ const gotQuestions = [
     question: "Who sits on the Iron Throne at the end of Game of Thrones?",
     answers: ["Jon Snow", "Sansa Stark", "Bran Stark", "Daenerys Targaryen"],
     correct: 2
+    },
+    {
+        question: "What is the name of Jon Snow’s sword before Longclaw?",
+        answers: ["Ice", "Needle", "Oathkeeper", "Widow's Wail"],
+        correct: 0
+    },
+    {
+        question: "Who was the youngest Stark child?",
+        answers: ["Bran", "Rickon", "Arya", "Robb"],
+        correct: 1
+    },
+    {
+        question: "What family does Brienne of Tarth swear loyalty to?",
+        answers: ["Stark", "Baratheon", "Lannister", "Targaryen"],
+        correct: 0
+    },
+    {
+        question: "Which character is known as the Hound?",
+        answers: ["Sandor Clegane", "Gregor Clegane", "Podrick Payne", "Beric Dondarrion"],
+        correct: 0
+    },
+    {
+        question: "Who is the leader of the Unsullied?",
+        answers: ["Grey Worm", "Drogon", "Jorah Mormont", "Daario Naharis"],
+        correct: 0
+    },
+    {
+        question: "What poison was used to kill King Joffrey?",
+        answers: ["The Strangler", "Myrish Needle", "The Tears of Lys", "The Long Farewell"],
+        correct: 3
+    },
+    {
+        question: "What is the name of the ancestral sword of House Stark?",
+        answers: ["Ice", "Longclaw", "Oathkeeper", "Widow's Wail"],
+        correct: 0
+    },
+    {
+        question: "What is the name of the castle where House Lannister resides?",
+        answers: ["Casterly Rock", "Winterfell", "Dragonstone", "Highgarden"],
+        correct: 0
+    },
+    {
+        question: "Who is the 'Mother of Dragons'?",
+        answers: ["Cersei Lannister", "Daenerys Targaryen", "Sansa Stark", "Melisandre"],
+        correct: 1
+    },
+    {
+        question: "Which character has a face sewn onto their back?",
+        answers: ["Arya Stark", "Jaqen H’ghar", "The Waif", "The Kindly Man"],
+        correct: 1
     },
 ];
