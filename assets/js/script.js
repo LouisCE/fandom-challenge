@@ -15,6 +15,32 @@ let score = 0;
 let timeLeft = 60;
 let timerInterval;
 
+function startTimer() {
+    clearInterval(timerInterval);
+    timeLeft = 60;
+    document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            console.log("Time's up!");
+            currentQuestionIndex++;
+            if (currentQuestionIndex < avatarQuestions.length) {
+                showQuestion(avatarQuestions[currentQuestionIndex]);
+                startTimer();
+            } else {
+                quizSection.style.display = 'none';
+                document.getElementById('results').style.display = 'block';
+                document.getElementById('score-text').textContent = 
+                    `You scored ${score} out of ${avatarQuestions.length}!`;
+            }
+        }
+    }, 1000);
+}
+
 function showQuestion(questionObj) {
     questionText.textContent = questionObj.question;
     answerButtons.forEach((button, index) => {
