@@ -47,6 +47,9 @@ function showQuestion(questionObj) {
     answerButtons.forEach((button, index) => {
         button.textContent = questionObj.answers[index];
     });
+        
+    startTimer();
+
 }
 
 answerButtons.forEach((button, index) => {
