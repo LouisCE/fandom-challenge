@@ -35,8 +35,20 @@ function startTimer() {
             } else {
                 quizSection.style.display = 'none';
                 document.getElementById('results').style.display = 'block';
+
+const percent = (score / avatarQuestions.length) * 100;
+        let message = '';
+
+        if (percent >= 90) {
+            message = "Excellent!";
+        } else if (percent >= 70) {
+            message = "Good job!";
+        } else {
+            message = "Keep practicing!";
+        }
+
                 document.getElementById('score-text').textContent = 
-                    `You scored ${score} out of ${avatarQuestions.length}!`;
+                    `You scored ${score} out of ${avatarQuestions.length}! ${message}`;
             }
         }
     }, 1000);
@@ -71,8 +83,20 @@ answerButtons.forEach((button, index) => {
         } else {
     quizSection.style.display = 'none';
     document.getElementById('results').style.display = 'block';
+
+const percent = (score / avatarQuestions.length) * 100;
+    let message = '';
+
+    if (percent >= 90) {
+        message = "Excellent!";
+    } else if (percent >= 70) {
+        message = "Good job!";
+    } else {
+        message = "Keep practicing!";
+    }
+
     document.getElementById('score-text').textContent = 
-        `You scored ${score} out of ${avatarQuestions.length}!`;
+        `You scored ${score} out of ${avatarQuestions.length}! ${message}`;
 }
 
     });
