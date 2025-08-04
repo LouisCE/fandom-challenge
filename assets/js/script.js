@@ -27,6 +27,7 @@ function startTimer() {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             console.log("Time's up!");
+            console.log("Unanswered question counted as wrong.");
             currentQuestionIndex++;
             if (currentQuestionIndex < avatarQuestions.length) {
                 showQuestion(avatarQuestions[currentQuestionIndex]);
