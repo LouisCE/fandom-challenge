@@ -9,6 +9,12 @@ const quizSection = document.getElementById('quiz');
 const questionText = document.getElementById('question-text');
 const answerButtons = document.querySelectorAll('.answer-btn');
 
+const avatarBtn = document.getElementById('avatar-btn');
+const gotBtn = document.getElementById('got-btn');
+
+let selectedCategory = '';
+let currentQuestionSet = [];
+
 // Track which question the user is on
 let currentQuestionIndex = 0;
 let score = 0;
