@@ -35,7 +35,12 @@ answerButtons.forEach((button, index) => {
 
         if (currentQuestionIndex < avatarQuestions.length) {
             showQuestion(avatarQuestions[currentQuestionIndex]);
-        }
+        } else {
+    quizSection.style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('score-text').textContent = 
+        `You scored ${score} out of ${avatarQuestions.length}!`;
+}
 
     });
 });
