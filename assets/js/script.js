@@ -12,6 +12,8 @@ const answerButtons = document.querySelectorAll('.answer-btn');
 // Track which question the user is on
 let currentQuestionIndex = 0;
 let score = 0;
+let timeLeft = 60;
+let timerInterval;
 
 function showQuestion(questionObj) {
     questionText.textContent = questionObj.question;
