@@ -15,6 +15,24 @@ const gotBtn = document.getElementById('got-btn');
 let selectedCategory = '';
 let currentQuestionSet = [];
 
+avatarBtn.addEventListener('click', function() {
+    selectedCategory = 'avatar';
+    currentQuestionSet = avatarQuestions;
+    rulesSection.style.display = 'none';
+    quizSection.style.display = 'block';
+    showQuestion(currentQuestionSet[currentQuestionIndex]);
+    startTimer();
+});
+
+gotBtn.addEventListener('click', function() {
+    selectedCategory = 'got';
+    currentQuestionSet = gotQuestions;
+    rulesSection.style.display = 'none';
+    quizSection.style.display = 'block';
+    showQuestion(currentQuestionSet[currentQuestionIndex]);
+    startTimer();
+});
+
 // Track which question the user is on
 let currentQuestionIndex = 0;
 let score = 0;
