@@ -31,7 +31,7 @@ avatarBtn.addEventListener('click', function() {
 
 gotBtn.addEventListener('click', function() {
     selectedCategory = 'got';
-    currentQuestionSet = gotQuestions;
+    currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     rulesSection.style.display = 'none';
     quizSection.style.display = 'block';
     showQuestion(currentQuestionSet[currentQuestionIndex]);
