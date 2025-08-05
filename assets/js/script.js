@@ -53,14 +53,14 @@ function startTimer() {
             console.log("Time's up!");
             console.log("Unanswered question counted as wrong.");
             currentQuestionIndex++;
-            if (currentQuestionIndex < avatarQuestions.length) {
-                showQuestion(avatarQuestions[currentQuestionIndex]);
+            if (currentQuestionIndex < currentQuestionSet.length) {
+                showQuestion(currentQuestionSet[currentQuestionIndex]);
                 startTimer();
             } else {
                 quizSection.style.display = 'none';
                 document.getElementById('results').style.display = 'block';
 
-const percent = (score / avatarQuestions.length) * 100;
+const percent = (score / currentQuestionSet.length) * 100;
         let message = '';
 
         if (percent >= 90) {
@@ -72,7 +72,7 @@ const percent = (score / avatarQuestions.length) * 100;
         }
 
                 document.getElementById('score-text').textContent = 
-                    `You scored ${score} out of ${avatarQuestions.length}! ${message}`;
+                    `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
             }
         }
     }, 1000);
@@ -91,7 +91,7 @@ function showQuestion(questionObj) {
 answerButtons.forEach((button, index) => {
     button.addEventListener('click', function() {
         clearInterval(timerInterval);
-        const currentQuestion = avatarQuestions[currentQuestionIndex];
+        const currentQuestion = currentQuestionSet[currentQuestionIndex];
         if (index === currentQuestion.correct) {
             score++;
             console.log("Correct! Score: " + score);
@@ -102,13 +102,13 @@ answerButtons.forEach((button, index) => {
         currentQuestionIndex++;
         console.log("Current question index is now: " + currentQuestionIndex);
 
-        if (currentQuestionIndex < avatarQuestions.length) {
-            showQuestion(avatarQuestions[currentQuestionIndex]);
+        if (currentQuestionIndex < currentQuestionSet.length) {
+            showQuestion(currentQuestionSet[currentQuestionIndex]);
         } else {
     quizSection.style.display = 'none';
     document.getElementById('results').style.display = 'block';
 
-const percent = (score / avatarQuestions.length) * 100;
+const percent = (score / currentQuestionSet.length) * 100;
     let message = '';
 
     if (percent >= 90) {
@@ -120,7 +120,7 @@ const percent = (score / avatarQuestions.length) * 100;
     }
 
     document.getElementById('score-text').textContent = 
-        `You scored ${score} out of ${avatarQuestions.length}! ${message}`;
+        `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
 }
 
     });
