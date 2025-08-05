@@ -25,6 +25,8 @@ avatarBtn.addEventListener('click', function() {
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     rulesSection.style.display = 'none';
     quizSection.style.display = 'block';
+    currentQuestionIndex = 0;
+    score = 0;
     showQuestion(currentQuestionSet[currentQuestionIndex]);
     startTimer();
 });
@@ -34,6 +36,8 @@ gotBtn.addEventListener('click', function() {
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     rulesSection.style.display = 'none';
     quizSection.style.display = 'block';
+    currentQuestionIndex = 0;
+    score = 0;
     showQuestion(currentQuestionSet[currentQuestionIndex]);
     startTimer();
 });
