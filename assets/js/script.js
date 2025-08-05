@@ -125,11 +125,3 @@ const percent = (score / currentQuestionSet.length) * 100;
 
     });
 });
-
-// When Start Quiz is clicked
-startBtn.addEventListener('click', function() {
-    rulesSection.style.display = 'none';
-    quizSection.style.display = 'block';
-    showQuestion(avatarQuestions[currentQuestionIndex]);
-    startTimer();
-});
