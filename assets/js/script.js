@@ -22,7 +22,7 @@ function getRandomQuestions(questionsArray, count = 10) {
 
 avatarBtn.addEventListener('click', function() {
     selectedCategory = 'avatar';
-    currentQuestionSet = avatarQuestions;
+    currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     rulesSection.style.display = 'none';
     quizSection.style.display = 'block';
     showQuestion(currentQuestionSet[currentQuestionIndex]);
