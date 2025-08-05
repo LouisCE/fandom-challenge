@@ -15,6 +15,11 @@ const gotBtn = document.getElementById('got-btn');
 let selectedCategory = '';
 let currentQuestionSet = [];
 
+function getRandomQuestions(questionsArray, count = 10) {
+    const shuffled = [...questionsArray].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
 avatarBtn.addEventListener('click', function() {
     selectedCategory = 'avatar';
     currentQuestionSet = avatarQuestions;
