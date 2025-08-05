@@ -15,6 +15,33 @@ const gotBtn = document.getElementById('got-btn');
 let selectedCategory = '';
 let currentQuestionSet = [];
 
+const ruleVariants = [
+    [
+        "Questions are randomised each time you play.",
+        "Each question has four options: A, B, C and D.",
+        "You have one minute to answer each question.",
+        "Unanswered questions count as incorrect."
+    ],
+    [
+        "You get 10 random questions from the fandom you choose.",
+        "Each has 4 answers. Only 1 is correct.",
+        "You have 60 seconds per question.",
+        "No answer = no point!"
+    ],
+    [
+        "Ten questions, one minute each. Think fast!",
+        "Each question has 4 possible answers.",
+        "Random every time, no repeats.",
+        "Missed questions count against you!"
+    ],
+    [
+        "Play your favourite fandom with 10 random questions.",
+        "Each has four options to choose from.",
+        "You’ve got 60 seconds per question.",
+        "Try not to skip — unanswered ones are wrong!"
+    ]
+];
+
 function getRandomQuestions(questionsArray, count = 10) {
     const shuffled = [...questionsArray].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
