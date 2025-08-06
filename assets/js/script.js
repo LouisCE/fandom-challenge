@@ -171,3 +171,8 @@ const percent = (score / currentQuestionSet.length) * 100;
 
     });
 });
+
+document.getElementById('restart-btn').addEventListener('click', function () {
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('category-selection').style.display = 'block';
+});
