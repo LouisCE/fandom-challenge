@@ -60,7 +60,7 @@ function getRandomQuestions(questionsArray, count = 10) {
 avatarBtn.addEventListener('click', function() {
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
-    rulesSection.style.display = 'none';
+    document.getElementById("category-selection").style.display = "none";
     quizSection.style.display = 'block';
     currentQuestionIndex = 0;
     score = 0;
@@ -71,7 +71,7 @@ avatarBtn.addEventListener('click', function() {
 gotBtn.addEventListener('click', function() {
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
-    rulesSection.style.display = 'none';
+    document.getElementById("category-selection").style.display = "none";
     quizSection.style.display = 'block';
     currentQuestionIndex = 0;
     score = 0;
