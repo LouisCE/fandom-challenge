@@ -17,6 +17,11 @@ document.getElementById("category-selection").style.display = "none";
 document.getElementById("rules").style.display = "block";
 });
 
+document.getElementById("back-to-categories-btn").addEventListener("click", function () {
+  document.getElementById("rules").style.display = "none";
+  document.getElementById("category-selection").style.display = "block";
+});
+
 let selectedCategory = '';
 let currentQuestionSet = [];
 
