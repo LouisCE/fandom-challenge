@@ -2,25 +2,6 @@ console.log("JavaScript is connected!");
 
 alert("Welcome to Fandom Challenge!");
 
-let avatarQuestions = [];
-let gotQuestions = [];
-
-async function loadQuestions() {
-  try {
-    const avatarResponse = await fetch('assets/data/avatarQuestions.json');
-    avatarQuestions = await avatarResponse.json();
-
-    const gotResponse = await fetch('assets/data/gotQuestions.json');
-    gotQuestions = await gotResponse.json();
-
-    console.log('Questions loaded successfully!');
-  } catch (error) {
-    console.error('Failed to load questions:', error);
-  }
-}
-
-loadQuestions();
-
 // Get elements
 const rulesSection = document.getElementById('rules');
 const quizSection = document.getElementById('quiz');
@@ -75,10 +56,7 @@ function getRandomQuestions(questionsArray, count = 10) {
     return shuffled.slice(0, count);
 }
 
-avatarBtn.addEventListener('click', async function() {
-    if (avatarQuestions.length === 0) {
-        await loadQuestions();
-    }
+avatarBtn.addEventListener('click', function() {
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
@@ -89,10 +67,7 @@ avatarBtn.addEventListener('click', async function() {
     startTimer();
 });
 
-gotBtn.addEventListener('click', async function() {
-    if (gotQuestions.length === 0) {
-        await loadQuestions();
-    }
+gotBtn.addEventListener('click', function() {
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
