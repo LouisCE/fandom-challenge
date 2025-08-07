@@ -11,6 +11,8 @@ const answerButtons = document.querySelectorAll('.answer-btn');
 const avatarBtn = document.getElementById('avatar-btn');
 const gotBtn = document.getElementById('got-btn');
 
+const restartMidwayBtn = document.getElementById('restart-midway-btn');
+
 document.getElementById("view-rules-btn").addEventListener("click", function () {
 document.getElementById("category-selection").style.display = "none";
 document.getElementById("rules").style.display = "block";
