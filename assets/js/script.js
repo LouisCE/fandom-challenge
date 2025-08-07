@@ -75,7 +75,10 @@ function getRandomQuestions(questionsArray, count = 10) {
     return shuffled.slice(0, count);
 }
 
-avatarBtn.addEventListener('click', function() {
+avatarBtn.addEventListener('click', async function() {
+    if (avatarQuestions.length === 0) {
+        await loadQuestions();
+    }
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
@@ -86,7 +89,10 @@ avatarBtn.addEventListener('click', function() {
     startTimer();
 });
 
-gotBtn.addEventListener('click', function() {
+gotBtn.addEventListener('click', async function() {
+    if (gotQuestions.length === 0) {
+        await loadQuestions();
+    }
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
