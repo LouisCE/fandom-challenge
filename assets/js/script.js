@@ -2,6 +2,9 @@ console.log("JavaScript is connected!");
 
 alert("Welcome to Fandom Challenge!");
 
+let avatarQuestions = [];
+let gotQuestions = [];
+
 // Get elements
 const rulesSection = document.getElementById('rules');
 const quizSection = document.getElementById('quiz');
