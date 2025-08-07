@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is the name of Aang’s flying bison?",
+    "answers": [
+      "Appa",
+      "Momo",
+      "Naga",
+      "Pabu"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which nation was the first to fall to the Fire Nation?",
+    "answers": [
+      "Air Nomads",
+      "Earth Kingdom",
+      "Water Tribe",
+      "Fire Nation"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Who is the Avatar before Aang?",
+    "answers": [
+      "Roku",
+      "Kyoshi",
+      "Kuruk",
+      "Yangchen"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What element did Aang struggle to learn the most?",
+    "answers": [
+      "Fire",
+      "Earth",
+      "Water",
+      "Air"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Who teaches Aang firebending after Zuko joins Team Avatar?",
+    "answers": [
+      "Iroh",
+      "Jeong Jeong",
+      "Zuko",
+      "Azula"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which spirit helps Aang in the Spirit World as a guide?",
+    "answers": [
+      "Koh",
+      "Hei Bai",
+      "Roku's Dragon",
+      "Wan Shi Tong"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is the name of Toph’s wrestling persona?",
+    "answers": [
+      "The Blind Bandit",
+      "The Boulder",
+      "Toph Smash",
+      "Metal Queen"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Who captures Appa in Ba Sing Se?",
+    "answers": [
+      "Dai Li",
+      "Sandbenders",
+      "Azula",
+      "Long Feng"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "What is the technique Aang uses to defeat Ozai?",
+    "answers": [
+      "Avatar State",
+      "Energybending",
+      "Chi Blocking",
+      "Bloodbending"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which city is the capital of the Earth Kingdom?",
+    "answers": [
+      "Ba Sing Se",
+      "Omashu",
+      "Gaoling",
+      "Kyoshi Island"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Who is the Fire Nation’s banished prince?",
+    "answers": [
+      "Zuko",
+      "Iroh",
+      "Ozai",
+      "Sozin"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What special ability does Toph have besides earthbending?",
+    "answers": [
+      "Metalbending",
+      "Lightning generation",
+      "Waterbending",
+      "Airbending"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What animal is the symbol of the Air Nomads?",
+    "answers": [
+      "Flying bison",
+      "Dragon",
+      "Turtle dove",
+      "Phoenix"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the name of the secret police in Ba Sing Se?",
+    "answers": [
+      "Dai Li",
+      "White Lotus",
+      "Red Lotus",
+      "Foggy Swamp Tribe"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the name of the Fire Nation’s solar eclipse?",
+    "answers": [
+      "Day of Black Sun",
+      "Blue Spirit Night",
+      "Fire Festival",
+      "Spirit Day"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the name of Zuko’s ship’s lieutenant?",
+    "answers": [
+      "Jee",
+      "Han",
+      "Pakku",
+      "Bumi"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the name of the Fire Nation comet?",
+    "answers": [
+      "Roku's Comet",
+      "Agni's Comet",
+      "Ozai's Comet",
+      "Sozin's Comet"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Which animal is a mix between a bear and another species in the Earth Kingdom?",
+    "answers": [
+      "Badgermole",
+      "Ostrich Horse",
+      "Platypus Bear",
+      "Polar Bear Dog"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Who teaches Toph to use seismic sense?",
+    "answers": [
+      "Bumi",
+      "Badgermoles",
+      "Her parents",
+      "Aang"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the name of the play that reenacts Team Avatar’s adventures?",
+    "answers": [
+      "The Great Divide",
+      "Fire Nation Tales",
+      "Boiling Rock",
+      "The Ember Island Players"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Which member of Team Avatar is a non-bender?",
+    "answers": [
+      "Katara",
+      "Sokka",
+      "Aang",
+      "Toph"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Who was the waterbending master at the Northern Water Tribe?",
+    "answers": [
+      "Arnook",
+      "Hakoda",
+      "Pakku",
+      "Hama"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which creature grants the ability to energybend?",
+    "answers": [
+      "Dragon",
+      "Koizilla",
+      "Badgermole",
+      "Lion Turtle"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "What is the name of Azula’s two closest friends?",
+    "answers": [
+      "Mai and Ty Lee",
+      "Suki and June",
+      "Ty Lee and Katara",
+      "Mai and Suki"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which character says, 'That's rough, buddy'?",
+    "answers": [
+      "Iroh",
+      "Sokka",
+      "Zuko",
+      "Toph"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Who becomes Aang’s wife after the series ends?",
+    "answers": [
+      "Katara",
+      "Toph",
+      "Suki",
+      "Mai"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the name of Zuko’s mother?",
+    "answers": [
+      "Ursa",
+      "Azula",
+      "Kya",
+      "Ilah"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which technique allows waterbenders to control people?",
+    "answers": [
+      "Icebending",
+      "Healing",
+      "Bloodbending",
+      "Energybending"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which character runs the cabbage cart?",
+    "answers": [
+      "June",
+      "The Boulder",
+      "Cabbage Merchant",
+      "Foaming Mouth Guy"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is the nickname of Iroh’s tea shop?",
+    "answers": [
+      "White Lotus Tea House",
+      "Jasmine Dragon",
+      "Ba Sing Se Brews",
+      "Dragon's Cup"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What’s the name of the sword Sokka learns to forge?",
+    "answers": [
+      "Spirit Blade",
+      "Space Sword",
+      "Moon Fang",
+      "Meteor Sword"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which two spirits represent the Ocean and the Moon?",
+    "answers": [
+      "Raava and Vaatu",
+      "La and Tui",
+      "Hei Bai and Koh",
+      "Wan Shi Tong and Fang"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Who helps Aang unlock his chakras?",
+    "answers": [
+      "Bumi",
+      "Guru Pathik",
+      "Iroh",
+      "Avatar Roku"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the name of the spirit library in the desert?",
+    "answers": [
+      "Gaoling Archive",
+      "White Lotus Library",
+      "Wan Shi Tong’s Library",
+      "The Great Archive"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which character is also known as 'The Blue Spirit'?",
+    "answers": [
+      "Sokka",
+      "Zuko",
+      "Jet",
+      "Iroh"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Who was the first Avatar?",
+    "answers": [
+      "Roku",
+      "Wan",
+      "Kyoshi",
+      "Kuruk"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the name of Katara and Sokka’s father?",
+    "answers": [
+      "Hakoda",
+      "Bato",
+      "Pakku",
+      "Hama"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which type of bending can create lightning?",
+    "answers": [
+      "Firebending",
+      "Earthbending",
+      "Airbending",
+      "Waterbending"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Who teaches Aang waterbending?",
+    "answers": [
+      "Pakku",
+      "Katara",
+      "Hama",
+      "Yue"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which Fire Nation general wanted to use a giant drill on Ba Sing Se?",
+    "answers": [
+      "Zhao",
+      "Iroh",
+      "Azula",
+      "Sun"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is Sokka’s weapon besides his boomerang?",
+    "answers": [
+      "Sword",
+      "Hammer",
+      "Crossbow",
+      "Spear"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Who becomes the Fire Lord at the end of the series?",
+    "answers": [
+      "Iroh",
+      "Azula",
+      "Zuko",
+      "Aang"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What tribe is Hama from?",
+    "answers": [
+      "Southern Water Tribe",
+      "Northern Water Tribe",
+      "Foggy Swamp Tribe",
+      "Earth Kingdom"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What was Aang’s false name when entering Omashu?",
+    "answers": [
+      "Mushi",
+      "Kuzon",
+      "Bonzu Pippinpaddleopsicopolis III",
+      "Lee"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which Fire Lord had a comet named after them?",
+    "answers": [
+      "Azulon",
+      "Zuko",
+      "Ozai",
+      "Sozin"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "What colour fire was exclusive to Princess Azula?",
+    "answers": [
+      "Green",
+      "Purple",
+      "Blue",
+      "Black"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Who do we never see GENERATE lightning?",
+    "answers": [
+      "Azula",
+      "Iroh",
+      "Zuko",
+      "Ozai"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which spirit is known as the 'Face Stealer'?",
+    "answers": [
+      "Hei Bai",
+      "Wan Shi Tong",
+      "Koh",
+      "Vaatu"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Who was Zuko angry with on Ember Island?",
+    "answers": [
+      "Ozai",
+      "Azula",
+      "Himself",
+      "Iroh"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What title did Ozai give to himself as supreme leader of the new world?",
+    "answers": [
+      "Immortal Dragon",
+      "Dragon King",
+      "Phoenix King",
+      "God Emperor"
+    ],
+    "correct": 2
+  }
+]
