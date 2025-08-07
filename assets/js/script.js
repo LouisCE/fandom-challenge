@@ -5,6 +5,22 @@ alert("Welcome to Fandom Challenge!");
 let avatarQuestions = [];
 let gotQuestions = [];
 
+async function loadQuestions() {
+  try {
+    const avatarResponse = await fetch('assets/data/avatarQuestions.json');
+    avatarQuestions = await avatarResponse.json();
+
+    const gotResponse = await fetch('assets/data/gotQuestions.json');
+    gotQuestions = await gotResponse.json();
+
+    console.log('Questions loaded successfully!');
+  } catch (error) {
+    console.error('Failed to load questions:', error);
+  }
+}
+
+loadQuestions();
+
 // Get elements
 const rulesSection = document.getElementById('rules');
 const quizSection = document.getElementById('quiz');
