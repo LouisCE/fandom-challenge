@@ -16,6 +16,16 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## User Stories
 
+1. As a new user, I want to easily navigate the website so I can find the quiz quickly.
+2. As a player, I want to select from different categories so I can focus on my favourite fandoms.
+3. As a player, I want to view the rules before starting so I know how the game works.
+4. As a player, I want the quiz to display one question at a time so I can focus on answering it.
+5. As a player, I want the answer options to be clickable so I can easily submit my choice.
+6. As a player, I want instant feedback after each question so I know if I was correct.
+7. As a player, I want a timer so I feel challenged and can’t spend too long on one question.
+8. As a player, I want to see my final score at the end so I can track my performance.
+9. As a returning player, I want the option to replay the quiz so I can improve my score.
+
 ## Website Goals and Objectives
 
 ## Wireframes
