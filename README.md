@@ -28,6 +28,14 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Website Goals and Objectives
 
+- Create an engaging and user-friendly quiz application that appeals to fans of popular franchises.
+- Provide a clear and intuitive interface for selecting quiz categories and understanding game rules.
+- Ensure the application is fully responsive and accessible on a range of devices and screen sizes.
+- Implement interactive features that give immediate feedback to users, enhancing the quiz experience.
+- Maintain clean, well-structured code to support future updates and scalability.
+- Adhere to web content accessibility standards (WCAG) to make the quiz usable by all users.
+- Deploy the application on a reliable cloud platform with version control for easy collaboration and maintenance.
+
 ## Wireframes
 
 ## Design Choices
