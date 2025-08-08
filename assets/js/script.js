@@ -40,7 +40,7 @@ const ruleVariants = [
     [
         "You get 10 random questions from the fandom you choose.",
         "Each has 4 answers. Only 1 is correct.",
-        "You have 60 seconds per question.",
+        "You have 15 seconds per question.",
         "No answer = no point!"
     ],
     [
@@ -52,7 +52,7 @@ const ruleVariants = [
     [
         "Play your favourite fandom with 10 random questions.",
         "Each has four options to choose from.",
-        "You’ve got 60 seconds per question.",
+        "You’ve got 15 seconds per question.",
         "Try not to skip — unanswered ones are wrong!"
     ]
 ];
@@ -89,12 +89,12 @@ gotBtn.addEventListener('click', function() {
 // Track which question the user is on
 let currentQuestionIndex = 0;
 let score = 0;
-let timeLeft = 60;
+let timeLeft = 15;
 let timerInterval;
 
 function startTimer() {
     clearInterval(timerInterval);
-    timeLeft = 60;
+    timeLeft = 15;
     document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
 
     timerInterval = setInterval(() => {
