@@ -6,6 +6,14 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## User Goals
 
+- Enjoy a fun and engaging quiz experience.
+- Test knowledge across different fandoms.
+- Choose from multiple quiz categories.
+- Understand the quiz rules before playing.
+- Play on any device with a responsive layout.
+- Receive instant feedback on answers.
+- Track performance at the end of the quiz.
+
 ## User Stories
 
 ## Website Goals and Objectives
