@@ -42,6 +42,15 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Features
 
+- Category selection with buttons to choose between different fandom quizzes.  
+- Viewable rules section that explains how the quiz works.  
+- Timed quiz with a 15-second countdown for each question.  
+- Multiple-choice questions with four answer options per question.  
+- Results are revealed at the end of the quiz, showing the total score.
+- Score tracking displayed at the end of the quiz with custom messages based on performance.  
+- Ability to restart the quiz and select categories again without refreshing the page.  
+- Responsive design ensuring usability on various screen sizes.
+
 ## Technologies Used
 
 ## Testing
