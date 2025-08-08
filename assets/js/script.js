@@ -13,6 +13,10 @@ const gotBtn = document.getElementById('got-btn');
 
 const restartMidwayBtn = document.getElementById('restart-midway-btn');
 
+restartMidwayBtn.addEventListener('click', function () {
+  location.reload();
+});
+
 document.getElementById("view-rules-btn").addEventListener("click", function () {
 document.getElementById("category-selection").style.display = "none";
 document.getElementById("rules").style.display = "block";
@@ -63,6 +67,7 @@ avatarBtn.addEventListener('click', function() {
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
     quizSection.style.display = 'block';
+    restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
     score = 0;
     showQuestion(currentQuestionSet[currentQuestionIndex]);
@@ -74,6 +79,7 @@ gotBtn.addEventListener('click', function() {
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
     quizSection.style.display = 'block';
+    restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
     score = 0;
     showQuestion(currentQuestionSet[currentQuestionIndex]);
