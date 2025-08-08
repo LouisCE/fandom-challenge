@@ -53,6 +53,22 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Technologies Used
 
+### Languages
+
+- **HTML:** For structuring the web page and content semantically.  
+- **CSS:** For styling the application and ensuring responsive design.  
+- **JavaScript:** For implementing quiz logic, interactivity, and timing functions.
+
+### Frameworks & Libraries
+
+- **Bootstrap 5:** For responsive layout, styling, and UI components like buttons.  
+
+### Tools & Platforms
+
+- **Git & GitHub:** For version control and project collaboration.  
+- **GitHub Pages:** For hosting the deployed application online.
+- **Visual Studio Code:** For editing code.
+
 ## Testing
 
 ## Deployment
