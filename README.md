@@ -73,4 +73,27 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Deployment
 
+The website is deployed using GitHub Pages and is accessible at:  
+[Fandom Challenge](https://louisce.github.io/fandom-challenge/)
+
+To deploy the project:  
+1. Log in (or sign up) to GitHub.  
+2. Go to the repository for this project: [LouisCE/fandom-challenge](https://github.com/LouisCE/fandom-challenge)
+3. Click the **Settings** tab.  
+4. In the left-hand sidebar, click on **Pages**.  
+5. Under **Source**, select the **main** branch and click **Save**.  
+6. GitHub Pages will build and deploy the site. You may need to wait a minute for the changes to go live.
+
+To fork the project:  
+1. Log in (or sign up) to GitHub.  
+2. Go to the project repo: [LouisCE/fandom-challenge](https://github.com/LouisCE/fandom-challenge)
+3. Click the **Fork** button in the top right.
+
+To clone the project:  
+1. Log in (or sign up) to GitHub.  
+2. Open the project repository.  
+3. Click the **Code** button and copy the link (HTTPS recommended).  
+4. Open your terminal and navigate to where you'd like the repo to live.  
+5. Type: `git clone <paste-url-here>` and hit Enter.
+
 ## Credits
