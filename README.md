@@ -97,3 +97,18 @@ To clone the project:
 5. Type: `git clone <paste-url-here>` and hit Enter.
 
 ## Credits
+
+I would like to thank the following people and resources for their support and guidance throughout this project:
+
+- **Tim** — My mentor who provided valuable feedback and shared helpful learning resources, including this JavaScript tutorial series that greatly improved my understanding:  
+  [JavaScript Tutorial Playlist](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
+
+- **Simen** — For reviewing my progress, providing useful tools like Coolors and Balsamiq and helping me develop my approach to coding.
+
+- **Code Institute LMS** — For teaching me HTML, CSS, JavaScript, and web design principles through detailed walkthroughs and exercises.
+
+- **Markdown learning resources:**  
+  - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
+  - [Markdown Live Preview](https://markdownlivepreview.com/)
+
+Thank you all for your help and guidance.
