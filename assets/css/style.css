@@ -32,3 +32,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px;
   font-weight: bold;
 }
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #b52a36;
+}
+
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: black;
+}
