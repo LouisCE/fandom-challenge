@@ -26,12 +26,15 @@
   <section id="category-selection">
         <h2 class="mb-4">Select a Category</h2>
         <div class="d-grid gap-2">
-          <button id="avatar-btn" class="btn btn-danger category-btn" data-category="avatar">Avatar: The Last Airbender</button>
-          <button id="got-btn" class="btn btn-danger category-btn" data-category="got">Game of Thrones</button>
-          <button id="opm-btn" class="btn btn-danger category-btn">One Punch Man</button>
+          <button id="avatar-btn" class="btn btn-danger category-btn" data-category="avatar" 
+          aria-label="Select category Avatar The Last Airbender">Avatar: The Last Airbender</button>
+          <button id="got-btn" class="btn btn-danger category-btn" data-category="got" 
+          aria-label="Select category Game of Thrones">Game of Thrones</button>
+          <button id="opm-btn" class="btn btn-danger category-btn" 
+          aria-label="Select category One Punch Man">One Punch Man</button>
         </div>
         <div class="mt-3 text-center">
-          <button id="view-rules-btn" class="btn btn-outline-light">View Rules</button>
+          <button id="view-rules-btn" class="btn btn-outline-light" aria-label="View quiz rules">View Rules</button>
         </div>
       </section>
 
@@ -43,11 +46,12 @@
           <li>You have one minute to answer each question.</li>
           <li>Unanswered questions count as incorrect.</li>
         </ul>
-        <button id="back-to-categories-btn" class="btn btn-outline-light mt-3">Back to Categories</button>
+        <button id="back-to-categories-btn" class="btn btn-outline-light mt-3" 
+        aria-label="Return to category selection from rules">Back to Categories</button>
       </section>
 
   <section id="quiz" style="display: none;">
-        <p id="question-text" class="question"></p>
+        <p id="question-text" class="question" aria-live="polite"></p>
         <div id="answers" class="options">
   <button class="answer-btn btn btn-danger mb-2">A</button>
   <button class="answer-btn btn btn-danger mb-2">B</button>
@@ -56,14 +60,16 @@
 </div>
         <div class="quiz-footer">
           <div id="timer" class="timer">Time left: 15s</div>
-          <button id="restart-midway-btn" class="btn btn-warning d-none">Restart Quiz</button>
+          <button id="restart-midway-btn" class="btn btn-warning d-none" 
+          aria-label="Restart current quiz">Restart Quiz</button>
         </div>
       </section>
 
   <section id="results" style="display: none;" class="results">
         <h2 class="mb-3">Quiz Complete!</h2>
         <p id="score-text" class="score"></p>
-        <button id="restart-btn" class="btn btn-outline-light">Back to Categories</button>
+        <button id="restart-btn" class="btn btn-outline-light" 
+        aria-label="Restart quiz and return to category selection">Back to Categories</button>
       </section>
     </div>
   </div>
