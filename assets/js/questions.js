@@ -505,3 +505,307 @@ const gotQuestions = [
         correct: 1
     }
 ];
+
+// One Punch Man questions
+const onePunchManQuestions = [
+    {
+        question: "Who is the main hero known for defeating enemies with a single punch?",
+        answers: ["Saitama", "Genos", "Mumen Rider", "Garou"],
+        correct: 0
+    },
+    {
+        question: "What is Genos's role in the series?",
+        answers: ["S-Class Hero", "Saitama’s disciple", "Monster", "Villain"],
+        correct: 1
+    },
+    {
+        question: "Which hero is known as 'The Tank Top Master'?",
+        answers: ["Bang", "Tornado of Terror", "Tank Top Blackhole", "King"],
+        correct: 2
+    },
+    {
+        question: "What is the name of the organization that ranks heroes?",
+        answers: ["Hero Association", "Monster Association", "Hero League", "Superhero Guild"],
+        correct: 3
+    },
+    {
+        question: "Which character is a cyborg seeking revenge?",
+        answers: ["Genos", "Saitama", "Speed-o'-Sound Sonic", "Fubuki"],
+        correct: 0
+    },
+    {
+        question: "Who is the strongest martial artist and Bang’s brother?",
+        answers: ["Bomb", "Garou", "Watchdog Man", "Zombieman"],
+        correct: 1
+    },
+    {
+        question: "What is Saitama’s favorite food?",
+        answers: ["Bald pancakes", "Rice balls", "Curry", "Tonkatsu"],
+        correct: 2
+    },
+    {
+        question: "Who is the leader of the Blizzard Group?",
+        answers: ["Fubuki", "Tatsumaki", "Sweet Mask", "Hellfire Flame"],
+        correct: 3
+    },
+    {
+        question: "Which villain is known as the 'Hero Hunter'?",
+        answers: ["Garou", "Boros", "Deep Sea King", "Carnage Kabuto"],
+        correct: 0
+    },
+    {
+        question: "What power does Tornado of Terror have?",
+        answers: ["Psychic abilities", "Super strength", "Fire manipulation", "Speed"],
+        correct: 1
+    },
+    {
+        question: "Which hero wears a helmet shaped like a dog’s head?",
+        answers: ["Watchdog Man", "King", "Metal Bat", "Drive Knight"],
+        correct: 2
+    },
+    {
+        question: "Who is the alien leader that invades Earth?",
+        answers: ["Boros", "Vaccine Man", "Garou", "Speed-o'-Sound Sonic"],
+        correct: 3
+    },
+    {
+        question: "What is Saitama’s favorite hobby?",
+        answers: ["Shopping", "Playing video games", "Cooking", "Fishing"],
+        correct: 0
+    },
+    {
+        question: "Which city does Saitama live in?",
+        answers: ["City A", "City Z", "City C", "City B"],
+        correct: 1
+    },
+    {
+        question: "Who is the top hero of Class S?",
+        answers: ["Bang", "Blast", "Tornado", "Metal Knight"],
+        correct: 1
+    },
+    {
+        question: "Which hero is known as the 'Metal Bat'?",
+        answers: ["Genos", "Metal Bat", "Mumen Rider", "Tanktop Master"],
+        correct: 1
+    },
+    {
+        question: "Who taught Saitama his workout routine?",
+        answers: ["Genos", "Nobody", "Bang", "King"],
+        correct: 2
+    },
+    {
+        question: "Who is known for wearing a bicycle helmet while fighting crime?",
+        answers: ["Tanktop Master", "Puri-Puri Prisoner", "Mumen Rider", "Metal Bat"],
+        correct: 2
+    },
+    {
+        question: "Which monster is also called 'Deep Sea King'?",
+        answers: ["Mosquito Girl", "Crablante", "Deep Sea King", "Carnage Kabuto"],
+        correct: 2
+    },
+    {
+        question: "Which hero has psychic powers?",
+        answers: ["Tanktop Tiger", "Fubuki", "Bang", "Tatsumaki"],
+        correct: 3
+    },
+    {
+        question: "What is Saitama’s hero name given by the Hero Association?",
+        answers: ["Bald Hero", "Caped Baldy", "One Punch Man", "Strongest Hero"],
+        correct: 3
+    },
+    {
+        question: "Who is the king of the underworld in One Punch Man?",
+        answers: ["Orochi", "Gouketsu", "Lord Boros", "Garou"],
+        correct: 3
+    },
+    {
+        question: "What rank does Saitama start at in the Hero Association?",
+        answers: ["C-Class", "B-Class", "A-Class", "S-Class"],
+        correct: 0
+    },
+    {
+        question: "What food does Saitama often buy on sale?",
+        answers: ["Bananas", "Meat", "Ramen", "Eggs"],
+        correct: 0
+    }
+    {
+        question: "Who is known as the 'Hero of Justice' despite lacking strength?",
+        answers: ["Mumen Rider", "King", "Genos", "Saitama"],
+        correct: 0
+    },
+    {
+        question: "Which hero is nicknamed the 'Strongest Man on Earth' by reputation?",
+        answers: ["Bang", "King", "Blast", "Metal Bat"],
+        correct: 1
+    },
+    {
+        question: "What is Bang’s hero name?",
+        answers: ["Silver Fang", "Old Fist", "White Claw", "Iron Wolf"],
+        correct: 0
+    },
+    {
+        question: "Which villain attacks City A with a meteor?",
+        answers: ["Boros", "Carnage Kabuto", "Speed-o'-Sound Sonic", "Meteor-level threat"],
+        correct: 3
+    },
+    {
+        question: "What is Speed-o'-Sound Sonic’s weapon of choice?",
+        answers: ["Kunai", "Sword", "Nunchaku", "Shuriken"],
+        correct: 1
+    },
+    {
+        question: "Which S-Class hero uses mechanical armor for combat?",
+        answers: ["Drive Knight", "Tanktop Master", "Watchdog Man", "Metal Bat"],
+        correct: 2
+    },
+    {
+        question: "Which monster leads the Monster Association?",
+        answers: ["Orochi", "Deep Sea King", "Lord Boros", "Gouketsu"],
+        correct: 0
+    },
+    {
+        question: "What is Garou’s fighting style called?",
+        answers: ["Iron Fist", "Water Stream Rock Smashing Fist", "Martial Tornado", "Beast Claw"],
+        correct: 1
+    },
+    {
+        question: "Which hero specializes in covert operations?",
+        answers: ["Drive Knight", "Zombieman", "Metal Bat", "Tanktop Tiger"],
+        correct: 2
+    },
+    {
+        question: "Which alien is known for surviving multiple punches from Saitama?",
+        answers: ["Gouketsu", "Deep Sea King", "Boros", "Carnage Kabuto"],
+        correct: 3
+    },
+    {
+        question: "Which hero looks intimidating but is actually cowardly?",
+        answers: ["King", "Genos", "Saitama", "Bang"],
+        correct: 0
+    },
+    {
+        question: "Who is Fubuki’s sister?",
+        answers: ["Blizzard", "Tatsumaki", "Puri-Puri Prisoner", "Mosquito Girl"],
+        correct: 1
+    },
+    {
+        question: "What is the color of Saitama’s hero costume?",
+        answers: ["Yellow", "Red", "Blue", "Black"],
+        correct: 0
+    },
+    {
+        question: "Who is known as 'The Handsome Masked Hero'?",
+        answers: ["Genos", "Sweet Mask", "Bang", "Metal Knight"],
+        correct: 1
+    },
+    {
+        question: "Which hero is a prisoner who fights for justice?",
+        answers: ["Puri-Puri Prisoner", "Mumen Rider", "Tanktop Master", "Zombieman"],
+        correct: 0
+    },
+    {
+        question: "Which hero wears glasses and acts as an assistant to S-Class heroes?",
+        answers: ["Snek", "Eyelashes", "Glasses", "Narinki"],
+        correct: 2
+    },
+    {
+        question: "Which villain calls himself the 'Deep Sea King'?",
+        answers: ["Crablante", "Vaccine Man", "Deep Sea King", "Carnage Kabuto"],
+        correct: 2
+    },
+    {
+        question: "Who is the Hero Association’s highest-ranking member seen rarely?",
+        answers: ["Blast", "King", "Bang", "Zombieman"],
+        correct: 1
+    },
+    {
+        question: "Which hero uses gadgets and traps in battle?",
+        answers: ["Drive Knight", "Child Emperor", "Metal Knight", "Watchdog Man"],
+        correct: 2
+    },
+    {
+        question: "Which monster was defeated by Saitama in the House of Evolution arc?",
+        answers: ["Carnage Kabuto", "Mosquito Girl", "Beefcake", "Armored Gorilla"],
+        correct: 3
+    },
+    {
+        question: "Which alien spacecraft invades during the Boros arc?",
+        answers: ["Dark Matter Thieves", "Monster Association", "Galactic Empire", "Cosmic Raiders"],
+        correct: 0
+    },
+    {
+        question: "Who is the bald cyborg hero?",
+        answers: ["Genos", "Metal Bat", "Zombieman", "Drive Knight"],
+        correct: 1
+    },
+    {
+        question: "Which hero has regenerative powers?",
+        answers: ["Zombieman", "Tatsumaki", "Fubuki", "Puri-Puri Prisoner"],
+        correct: 0
+    },
+    {
+        question: "Who is the older sister between Fubuki and Tatsumaki?",
+        answers: ["Fubuki", "Neither", "They are twins", "Tatsumaki"],
+        correct: 3
+    }
+    {
+        question: "Who is the cyborg disciple of Saitama?",
+        answers: ["Genos", "Bang", "King", "Metal Bat"],
+        correct: 0
+    },
+    {
+        question: "What is the Hero Association HQ shaped like?",
+        answers: ["Sphere", "Tower", "Cube", "Dome"],
+        correct: 1
+    },
+    {
+        question: "Which hero always wears a dog costume?",
+        answers: ["Watchdog Man", "Tanktop Master", "Metal Bat", "Drive Knight"],
+        correct: 0
+    },
+    {
+        question: "Which hero has the rank of S-Class Rank 2?",
+        answers: ["Tatsumaki", "Bang", "Blast", "King"],
+        correct: 1
+    },
+    {
+        question: "Who was the leader of the Dark Matter Thieves?",
+        answers: ["Lord Boros", "Gouketsu", "Orochi", "Garou"],
+        correct: 0
+    },
+    {
+        question: "Which monster was created in the House of Evolution?",
+        answers: ["Carnage Kabuto", "Deep Sea King", "Mosquito Girl", "Vaccine Man"],
+        correct: 2
+    },
+    {
+        question: "Which hero uses psychic powers to control objects?",
+        answers: ["Fubuki", "Bang", "Tatsumaki", "Child Emperor"],
+        correct: 2
+    },
+    {
+        question: "Which villain wears ninja attire?",
+        answers: ["Speed-o'-Sound Sonic", "Garou", "Gouketsu", "Orochi"],
+        correct: 0
+    },
+    {
+        question: "What is Saitama’s usual facial expression?",
+        answers: ["Serious", "Blank", "Smiling", "Angry"],
+        correct: 1
+    },
+    {
+        question: "Which hero has the title 'Tornado of Terror'?",
+        answers: ["Fubuki", "Metal Knight", "Tanktop Master", "Tatsumaki"],
+        correct: 3
+    },
+    {
+        question: "Which villain was the final opponent in Season 1?",
+        answers: ["Boros", "Garou", "Orochi", "Gouketsu"],
+        correct: 0
+    },
+    {
+        question: "Which S-Class hero is also a master of disguise?",
+        answers: ["Drive Knight", "Zombieman", "Watchdog Man", "Child Emperor"],
+        correct: 3
+    }
+];
