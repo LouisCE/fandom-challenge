@@ -49,7 +49,7 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 The **Fandom Challenge** quiz uses a passionate, bold colour palette based on Netflix’s iconic red (#E50914) and deep blacks to create an energetic and immersive atmosphere:
 
-- **Primary Red (#E50914):** The core brand colour, representing excitement, intensity, and passion—perfect for a competitive quiz environment.  
+- **Primary Red (#E50914):** The core brand colour, representing excitement, intensity, and passion, perfect for a competitive quiz environment.  
 - **Dark Reds (#660000, #8B0000):** Deeper shades used for shadows, hover states, and backgrounds to add depth and drama while maintaining visual consistency.  
 - **Bright Reds (#FF3B3F, #FF6F61):** Accent colours for highlights, button hovers, and feedback, adding vibrancy and a lively feel.  
 - **Black (#000000):** The main background colour to create strong contrast, making reds pop and providing a sleek, cinematic vibe.  
@@ -79,6 +79,16 @@ I added a fun and onbrand custom 404 error page to handle broken or mistyped URL
 - Styled consistently with the main site for a seamless feel.
 
 ![404 Page](assets/images/404.png)
+
+### Future Enhancements
+
+During the inception phase, I debated between creating a generic quiz covering topics like Literature, Mathematics, Sciences, History, and Geography, or a fandom quiz which is something that I have a greater personal interest in. With guidance from my mentor, I decided to stick with my hobbies and the things that I enjoy by building a fandom-themed quiz.
+
+For this project submission, I chose to concentrate on three fandom quizzes: *Avatar: The Last Airbender*, *Game of Thrones*, and *One Punch Man*. This is to ensure quality over quantity within the limited timeframe.
+
+Looking ahead, I plan to expand the quiz categories to include additional fandoms such as *Death Note*, *Code Geass*, *Attack on Titan*, *My Hero Academia*, and *RWBY*. I’m also interested in developing quizzes based on popular game franchises like *Pokémon*, *Jak and Daxter*, *Ratchet and Clank*, *God of War*, and *The Legend of Zelda*.
+
+I plan on continuing this as a passion project, even after I graduate and it will continue to improve over time.
 
 ## Technologies Used
 
