@@ -42,6 +42,23 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Design Choices
 
+### Colour Scheme
+
+![Coolors Palette](assets/images/coolors.png)  
+![Contrast Grid](assets/images/contrast-grid.png)
+
+The **Fandom Challenge** quiz uses a passionate, bold colour palette based on Netflix’s iconic red (#E50914) and deep blacks to create an energetic and immersive atmosphere:
+
+- **Primary Red (#E50914):** The core brand colour, representing excitement, intensity, and passion—perfect for a competitive quiz environment.  
+- **Dark Reds (#660000, #8B0000):** Deeper shades used for shadows, hover states, and backgrounds to add depth and drama while maintaining visual consistency.  
+- **Bright Reds (#FF3B3F, #FF6F61):** Accent colours for highlights, button hovers, and feedback, adding vibrancy and a lively feel.  
+- **Black (#000000):** The main background colour to create strong contrast, making reds pop and providing a sleek, cinematic vibe.  
+- **White (#FFFFFF):** Used for text and UI elements for maximum readability and clarity against the dark background.
+
+These colours were chosen with accessibility in mind, ensuring sufficient contrast across all text and UI components. The palette reflects the intensity of fandom culture while providing a clean, modern look inspired by Netflix’s visual identity.
+
+The contrast grid (above) helped in selecting harmonious shades and verifying accessibility standards for colour contrast ratios, ensuring that all users have a comfortable and visually engaging experience.
+
 ## Features
 
 - Category selection with buttons to choose between different fandom quizzes.  
@@ -112,12 +129,12 @@ To clone the project:
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
 
-- **Tim** — My mentor who provided valuable feedback and shared helpful learning resources, including this JavaScript tutorial series that greatly improved my understanding:  
+- **Tim:** My mentor who provided valuable feedback and shared helpful learning resources, including this JavaScript tutorial series that greatly improved my understanding:  
   [JavaScript Tutorial Playlist](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
 
-- **Simen** — For reviewing my progress, providing useful tools like Coolors and Balsamiq and helping me develop my approach to coding.
+- **Simen:** For reviewing my progress, providing useful tools like Coolors and Balsamiq and helping me develop my approach to coding.
 
-- **Code Institute LMS** — For teaching me HTML, CSS, JavaScript, and web design principles through detailed walkthroughs and exercises.
+- **Code Institute LMS:** For teaching me HTML, CSS, JavaScript, and web design principles through detailed walkthroughs and exercises.
 
 - **Markdown learning resources:**  
   - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
