@@ -7,7 +7,7 @@ const rulesSection = document.getElementById('rules');
 const quizSection = document.getElementById('quiz');
 const questionText = document.getElementById('question-text');
 const answerButtons = document.querySelectorAll('.answer-btn');
-
+const progressBar = document.querySelector('.progress-bar.bg-danger');
 const avatarBtn = document.getElementById('avatar-btn');
 const gotBtn = document.getElementById('got-btn');
 
@@ -16,6 +16,12 @@ const restartMidwayBtn = document.getElementById('restart-midway-btn');
 restartMidwayBtn.addEventListener('click', function () {
   location.reload();
 });
+
+function updateProgressBar() {
+  const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
+  progressBar.style.width = percent + '%';
+  progressBar.setAttribute('aria-valuenow', percent);
+}
 
 document.getElementById("view-rules-btn").addEventListener("click", function () {
 document.getElementById("category-selection").style.display = "none";
@@ -106,6 +112,7 @@ function startTimer() {
             console.log("Time's up!");
             console.log("Unanswered question counted as wrong.");
             currentQuestionIndex++;
+            updateProgressBar();
             if (currentQuestionIndex < currentQuestionSet.length) {
                 showQuestion(currentQuestionSet[currentQuestionIndex]);
                 startTimer();
@@ -135,7 +142,11 @@ function showQuestion(questionObj) {
     questionText.textContent = questionObj.question;
     answerButtons.forEach((button, index) => {
         button.textContent = questionObj.answers[index];
+        button.disabled = false;
+        button.classList.remove('correct', 'wrong');
     });
+
+    updateProgressBar();
         
     startTimer();
 
@@ -153,6 +164,7 @@ answerButtons.forEach((button, index) => {
         }
 
         currentQuestionIndex++;
+        updateProgressBar();
         console.log("Current question index is now: " + currentQuestionIndex);
 
         if (currentQuestionIndex < currentQuestionSet.length) {
