@@ -627,7 +627,7 @@ const onePunchManQuestions = [
         question: "What food does Saitama often buy on sale?",
         answers: ["Bananas", "Meat", "Ramen", "Eggs"],
         correct: 0
-    }
+    },
     {
         question: "Who is known as the 'Hero of Justice' despite lacking strength?",
         answers: ["Mumen Rider", "King", "Genos", "Saitama"],
@@ -747,7 +747,7 @@ const onePunchManQuestions = [
         question: "Who is the older sister between Fubuki and Tatsumaki?",
         answers: ["Fubuki", "Neither", "They are twins", "Tatsumaki"],
         correct: 3
-    }
+    },
     {
         question: "Who is the cyborg disciple of Saitama?",
         answers: ["Genos", "Bang", "King", "Metal Bat"],
