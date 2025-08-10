@@ -1,7 +1,5 @@
 console.log("JavaScript is connected!");
 
-alert("Welcome to Fandom Challenge!");
-
 // Get elements
 const rulesSection = document.getElementById('rules');
 const quizSection = document.getElementById('quiz');
