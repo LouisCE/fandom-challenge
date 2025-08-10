@@ -10,7 +10,7 @@ const answerButtons = document.querySelectorAll('.answer-btn');
 const progressBar = document.querySelector('.progress-bar.bg-danger');
 const avatarBtn = document.getElementById('avatar-btn');
 const gotBtn = document.getElementById('got-btn');
-
+const opmBtn = document.getElementById('opm-btn');
 const restartMidwayBtn = document.getElementById('restart-midway-btn');
 
 restartMidwayBtn.addEventListener('click', function () {
@@ -83,6 +83,18 @@ avatarBtn.addEventListener('click', function() {
 gotBtn.addEventListener('click', function() {
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
+    document.getElementById("category-selection").style.display = "none";
+    quizSection.style.display = 'block';
+    restartMidwayBtn.classList.remove('d-none');
+    currentQuestionIndex = 0;
+    score = 0;
+    showQuestion(currentQuestionSet[currentQuestionIndex]);
+    startTimer();
+});
+
+opmBtn.addEventListener('click', function() {
+    selectedCategory = 'opm';
+    currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
     document.getElementById("category-selection").style.display = "none";
     quizSection.style.display = 'block';
     restartMidwayBtn.classList.remove('d-none');
