@@ -51,3 +51,25 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   color: black;
 }
+
+.timer {
+  color: white;
+  font-weight: bold;
+}
+
+.progress {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+#category-selection, #rules {
+  color: white;
+}
+
+#rules ul {
+  color: white;
+}
