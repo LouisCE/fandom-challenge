@@ -53,6 +53,16 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 - Ability to restart the quiz and select categories again without refreshing the page.  
 - Responsive design ensuring usability on various screen sizes.
 
+### 404 Page
+
+I added a fun and onbrand custom 404 error page to handle broken or mistyped URLs so that the user has a positive experience, even when visiting a nonexistent page.
+
+- Displays a clear, themed error message.
+- Provides a prominent “Back to Quiz” button for easy navigation.
+- Styled consistently with the main site for a seamless feel.
+
+![404 Page](assets/images/404.png)
+
 ## Technologies Used
 
 ### Languages
