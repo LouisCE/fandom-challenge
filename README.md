@@ -166,9 +166,10 @@ Mobile performance remains extremely high, with zero blocking time and stable la
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 2.5 s         |
 
+#### PageSpeed Insights (Desktop)
+
 Desktop results confirm excellent optimisation, with lightning-fast load times and no layout shifts.
 
-#### PageSpeed Insights (Desktop)
 | Metric                     | Score / Value |
 |----------------------------|---------------|
 | **Performance**            | 100           |
@@ -180,6 +181,19 @@ Desktop results confirm excellent optimisation, with lightning-fast load times a
 | Total Blocking Time         | 0 ms          |
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 0.5 s         |
+
+#### WAVE Accessibility Tool
+
+The WAVE evaluation reports no accessibility or contrast errors. One alert was raised for missing page regions/ARIA landmarks (e.g., <main>, <nav>, <header>, <footer>). While the site remains usable, adding these elements would improve navigation for screen reader users and better align with WCAG Level A guidelines.
+
+| Metric            | Result |
+|-------------------|--------|
+| Errors            | 0      |
+| Contrast Errors   | 0      |
+| Alerts            | 1      |
+| Features          | 1      |
+| Structural Elements | 5    |
+| ARIA              | 9      |
 
 ## Deployment
 
