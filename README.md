@@ -134,6 +134,9 @@ The mobile Lighthouse audit shows excellent results across all metrics, with par
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 1.8 s         |
 
+![Google Lighthouse mobile audit summary report](assets/images/lighthouse-mobile.png)
+![Google Lighthouse mobile performance metrics](assets/images/lighthouse-mobile-2.png)
+
 #### Lighthouse (Desktop)
 
 The desktop results are exceptional as well, with perfect scores for performance and best practices. Accessibility remains high, and SEO meets strong industry standards.
@@ -149,6 +152,9 @@ The desktop results are exceptional as well, with perfect scores for performance
 | Total Blocking Time         | 0 ms          |
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 0.5 s         |
+
+![Google Lighthouse desktop audit summary report](assets/images/lighthouse-desktop.png)
+![Google Lighthouse desktop performance metrics](assets/images/lighthouse-desktop-2.png)
 
 #### PageSpeed Insights (Mobile)
 
@@ -166,6 +172,9 @@ Mobile performance remains extremely high, with zero blocking time and stable la
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 2.5 s         |
 
+![Google PageSpeed Insights mobile performance report](assets/images/pagespeed-mobile.png)
+![Google PageSpeed Insights mobile speed index graph](assets/images/pagespeed-mobile-2.png)
+
 #### PageSpeed Insights (Desktop)
 
 Desktop results confirm excellent optimisation, with lightning-fast load times and no layout shifts.
@@ -182,6 +191,9 @@ Desktop results confirm excellent optimisation, with lightning-fast load times a
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 0.5 s         |
 
+![Google PageSpeed Insights desktop performance report](assets/images/pagespeed-desktop.png)
+![Google PageSpeed Insights desktop speed index graph](assets/images/pagespeed-desktop-2.png)
+
 #### WAVE Accessibility Tool
 
 The WAVE evaluation reports no accessibility or contrast errors. One alert was raised for missing page regions/ARIA landmarks (e.g., <main>, <nav>, <header>, <footer>). While the site remains usable, adding these elements would improve navigation for screen reader users and better align with WCAG Level A guidelines.
@@ -194,6 +206,8 @@ The WAVE evaluation reports no accessibility or contrast errors. One alert was r
 | Features          | 1      |
 | Structural Elements | 5    |
 | ARIA              | 9      |
+
+![WAVE accessibility evaluation results summary](assets/images/wave.png)
 
 ## Deployment
 
