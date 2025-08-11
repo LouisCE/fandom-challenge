@@ -150,6 +150,36 @@ The desktop results are exceptional as well, with perfect scores for performance
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 0.5 s         |
 
+#### PageSpeed Insights (Mobile)
+
+Mobile performance remains extremely high, with zero blocking time and stable layout shifts. The slightly longer Speed Index reflects the mobile network simulation.
+
+| Metric                     | Score / Value |
+|----------------------------|---------------|
+| **Performance**            | 98            |
+| **Accessibility**          | 95            |
+| **Best Practices**          | 100           |
+| **SEO**                    | 90            |
+| First Contentful Paint      | 1.8 s         |
+| Largest Contentful Paint    | 1.8 s         |
+| Total Blocking Time         | 0 ms          |
+| Cumulative Layout Shift     | 0             |
+| Speed Index                 | 2.5 s         |
+
+Desktop results confirm excellent optimisation, with lightning-fast load times and no layout shifts.
+
+#### PageSpeed Insights (Desktop)
+| Metric                     | Score / Value |
+|----------------------------|---------------|
+| **Performance**            | 100           |
+| **Accessibility**          | 95            |
+| **Best Practices**          | 100           |
+| **SEO**                    | 90            |
+| First Contentful Paint      | 0.5 s         |
+| Largest Contentful Paint    | 0.5 s         |
+| Total Blocking Time         | 0 ms          |
+| Cumulative Layout Shift     | 0             |
+| Speed Index                 | 0.5 s         |
 
 ## Deployment
 
