@@ -110,6 +110,10 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 
 ## Testing
 
+### Testing Approach
+
+I tested the site using a combination of **automated tools** and **manual testing** to ensure high performance, accessibility, responsiveness, and functionality. I carried out automated testing with **Google Lighthouse**, **Google PageSpeed Insights** and **WAVE (Web Accessibility Evaluation Tool)**. Manual testing included using DevTools to check responsiveness across different sized devices, browser compatibility and verifying that all user stories and features function as intended.
+
 ## Deployment
 
 The website is deployed using GitHub Pages and is accessible at:  
