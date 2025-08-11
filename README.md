@@ -114,6 +114,43 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 
 I tested the site using a combination of **automated tools** and **manual testing** to ensure high performance, accessibility, responsiveness, and functionality. I carried out automated testing with **Google Lighthouse**, **Google PageSpeed Insights** and **WAVE (Web Accessibility Evaluation Tool)**. Manual testing included using DevTools to check responsiveness across different sized devices, browser compatibility and verifying that all user stories and features function as intended.
 
+### Automated Testing Results
+
+#### Lighthouse (Mobile)
+
+I tested the website using Google Lighthouse in Chrome’s Incognito Mode to eliminate extension interference.
+
+The mobile Lighthouse audit shows excellent results across all metrics, with particularly strong performance and best practices scores. All categories recieved a score of 90 or above, which can be seen below. Accessibility scored 95 and SEO scored 90, indicating only minor improvements could be made.
+
+| Metric                     | Score / Value |
+|----------------------------|---------------|
+| **Performance**            | 98            |
+| **Accessibility**          | 95            |
+| **Best Practices**          | 100           |
+| **SEO**                    | 90            |
+| First Contentful Paint      | 1.8 s         |
+| Largest Contentful Paint    | 1.8 s         |
+| Total Blocking Time         | 0 ms          |
+| Cumulative Layout Shift     | 0             |
+| Speed Index                 | 1.8 s         |
+
+#### Lighthouse (Desktop)
+
+The desktop results are exceptional as well, with perfect scores for performance and best practices. Accessibility remains high, and SEO meets strong industry standards.
+
+| Metric                     | Score / Value |
+|----------------------------|---------------|
+| **Performance**            | 100           |
+| **Accessibility**          | 95            |
+| **Best Practices**          | 100           |
+| **SEO**                    | 90            |
+| First Contentful Paint      | 0.5 s         |
+| Largest Contentful Paint    | 0.5 s         |
+| Total Blocking Time         | 0 ms          |
+| Cumulative Layout Shift     | 0             |
+| Speed Index                 | 0.5 s         |
+
+
 ## Deployment
 
 The website is deployed using GitHub Pages and is accessible at:  
