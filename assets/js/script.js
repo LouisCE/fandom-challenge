@@ -24,6 +24,7 @@ function updateProgressBar() {
 document.getElementById("view-rules-btn").addEventListener("click", function () {
 document.getElementById("category-selection").style.display = "none";
 document.getElementById("rules").style.display = "block";
+displayRules();
 });
 
 document.getElementById("back-to-categories-btn").addEventListener("click", function () {
@@ -34,36 +35,30 @@ document.getElementById("back-to-categories-btn").addEventListener("click", func
 let selectedCategory = '';
 let currentQuestionSet = [];
 
-const ruleVariants = [
-    [
-        "Questions are randomised each time you play.",
-        "Each question has four options: A, B, C and D.",
-        "You have one minute to answer each question.",
-        "Unanswered questions count as incorrect."
-    ],
-    [
-        "You get 10 random questions from the fandom you choose.",
-        "Each has 4 answers. Only 1 is correct.",
-        "You have 15 seconds per question.",
-        "No answer = no point!"
-    ],
-    [
-        "Ten questions, one minute each. Think fast!",
-        "Each question has 4 possible answers.",
-        "Random every time, no repeats.",
-        "Missed questions count against you!"
-    ],
-    [
-        "Play your favourite fandom with 10 random questions.",
-        "Each has four options to choose from.",
-        "You’ve got 15 seconds per question.",
-        "Try not to skip — unanswered ones are wrong!"
-    ]
+const rules = [
+  "Questions are randomised each time you play. No repeats.",
+  "You get ten random questions per quiz session from the fandom you choose.",
+  "Each question has four options: A, B, C and D. Only one is correct.",
+  "You have fifteen seconds to answer each question. Think fast!",
+  "Try not to skip. Unanswered questions count as wrong!",
+  "Your score is shown at the end with feedback.",
+  "Try your best and have fun!"
 ];
 
 function getRandomQuestions(questionsArray, count = 10) {
     const shuffled = [...questionsArray].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
+}
+
+function displayRules() {
+  const rulesList = document.getElementById('rules-list');
+  rulesList.innerHTML = '';
+
+  rules.forEach(rule => {
+    const li = document.createElement('li');
+    li.textContent = rule;
+    rulesList.appendChild(li);
+  });
 }
 
 avatarBtn.addEventListener('click', function() {
