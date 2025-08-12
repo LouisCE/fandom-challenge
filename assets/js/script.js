@@ -1,7 +1,6 @@
 console.log("JavaScript is connected!");
 
 // Get elements
-const rulesSection = document.getElementById('rules');
 const quizSection = document.getElementById('quiz');
 const questionText = document.getElementById('question-text');
 const answerButtons = document.querySelectorAll('.answer-btn');
