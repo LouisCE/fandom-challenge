@@ -217,13 +217,14 @@ To ensure code quality, maintainability, and adherence to best practices, I vali
 
 Both `index.html` and `404.html` were tested separately using the [W3C Markup Validator](https://validator.w3.org/). Both passed with no errors, which can be seen below.
 
-
+![index.html Validation Results](assets/images/validation-index.html.png)
+![404.html Validation Results](assets/images/validation-404.html.png)
 
 ### CSS Validation (W3C Jigsaw CSS Validator)
 
 I used the [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate my `style.css`, which also passed validation with no errors or warnings. Once more, it can be seen below.
 
-
+![CSS Validation Results](assets/images/validation-style.css.png)
 
 ### JavaScript Validation (JSHint)
 
@@ -231,7 +232,7 @@ My JavaScript, including `script.js` and `questions.js` was validated using [JSH
 
 Initially, there was an unused variable (`rulesSection`), which was removed. The final check passed with no unused variables or syntax errors, shown below.
 
-
+![JavaScript Validation Results](assets/images/validation-jshint.png)
 
 ## Deployment
 
