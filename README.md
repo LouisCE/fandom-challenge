@@ -209,6 +209,30 @@ The WAVE evaluation reports no accessibility or contrast errors. One alert was r
 
 ![WAVE accessibility evaluation results summary](assets/images/wave.png)
 
+## Code Validation
+
+To ensure code quality, maintainability, and adherence to best practices, I validated the HTML, CSS, and JavaScript files using the official W3C and JSHint/Jigsaw tools.
+
+### HTML Validation (W3C Markup Validator)
+
+Both `index.html` and `404.html` were tested separately using the [W3C Markup Validator](https://validator.w3.org/). Both passed with no errors, which can be seen below.
+
+
+
+### CSS Validation (W3C Jigsaw CSS Validator)
+
+I used the [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate my `style.css`, which also passed validation with no errors or warnings. Once more, it can be seen below.
+
+
+
+### JavaScript Validation (JSHint)
+
+My JavaScript, including `script.js` and `questions.js` was validated using [JSHint](https://jshint.com/).
+
+Initially, there was an unused variable (`rulesSection`), which was removed. The final check passed with no unused variables or syntax errors, shown below.
+
+
+
 ## Deployment
 
 The website is deployed using GitHub Pages and is accessible at:  
