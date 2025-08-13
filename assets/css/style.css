@@ -85,3 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 #rules ul {
   color: white;
 }
+
+.correct {
+  background-color: green !important;
+  color: white !important;
+}
