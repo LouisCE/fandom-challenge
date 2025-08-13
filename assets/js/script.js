@@ -177,6 +177,7 @@ answerButtons.forEach((button, index) => {
             console.log("Wrong! Score: " + score);
         }
 
+    setTimeout(() => {
         currentQuestionIndex++;
         updateProgressBar();
         console.log("Current question index is now: " + currentQuestionIndex);
@@ -186,9 +187,7 @@ answerButtons.forEach((button, index) => {
         } else {
     endGame();
 }
-
-    });
-});
+    }, 2000);
 
 document.getElementById('restart-btn').addEventListener('click', function () {
   document.getElementById('results').style.display = 'none';
