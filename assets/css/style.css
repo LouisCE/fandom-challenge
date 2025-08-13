@@ -117,3 +117,8 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: fixed;
     image-rendering: auto;
 }
+
+#quiz,
+#results {
+    display: none;
+}
