@@ -123,25 +123,29 @@ function startTimer() {
                 showQuestion(currentQuestionSet[currentQuestionIndex]);
                 startTimer();
             } else {
-                quizSection.style.display = 'none';
-                document.getElementById('results').style.display = 'block';
-
-const percent = (score / currentQuestionSet.length) * 100;
-        let message = '';
-
-        if (percent >= 90) {
-            message = "Excellent!";
-        } else if (percent >= 70) {
-            message = "Good job!";
-        } else {
-            message = "Keep practicing!";
-        }
-
-                document.getElementById('score-text').textContent = 
-                    `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
+                endGame();
             }
         }
     }, 1000);
+}
+
+function endGame() {
+    quizSection.style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+
+    const percent = (score / currentQuestionSet.length) * 100;
+    let message = '';
+
+    if (percent >= 90) {
+        message = "Excellent!";
+    } else if (percent >= 70) {
+        message = "Good job!";
+    } else {
+        message = "Keep practicing!";
+    }
+
+    document.getElementById('score-text').textContent =
+        `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
 }
 
 function showQuestion(questionObj) {
@@ -176,22 +180,7 @@ answerButtons.forEach((button, index) => {
         if (currentQuestionIndex < currentQuestionSet.length) {
             showQuestion(currentQuestionSet[currentQuestionIndex]);
         } else {
-    quizSection.style.display = 'none';
-    document.getElementById('results').style.display = 'block';
-
-const percent = (score / currentQuestionSet.length) * 100;
-    let message = '';
-
-    if (percent >= 90) {
-        message = "Excellent!";
-    } else if (percent >= 70) {
-        message = "Good job!";
-    } else {
-        message = "Keep practicing!";
-    }
-
-    document.getElementById('score-text').textContent = 
-        `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
+    endGame();
 }
 
     });
