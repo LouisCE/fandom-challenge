@@ -172,9 +172,10 @@ answerButtons.forEach((button, index) => {
         const currentQuestion = currentQuestionSet[currentQuestionIndex];
         if (index === currentQuestion.correct) {
             score++;
-            console.log("Correct! Score: " + score);
+            button.classList.add('correct');
         } else {
-            console.log("Wrong! Score: " + score);
+            button.classList.add('wrong');
+            answerButtons[currentQuestion.correct].classList.add('correct');
         }
 
     setTimeout(() => {
