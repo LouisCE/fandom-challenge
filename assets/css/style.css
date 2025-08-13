@@ -90,3 +90,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: green !important;
   color: white !important;
 }
+
+.wrong {
+  background-color: yellow !important;
+  color: black !important;
+}
