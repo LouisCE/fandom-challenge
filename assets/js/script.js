@@ -10,6 +10,8 @@ const gotBtn = document.getElementById('got-btn');
 const opmBtn = document.getElementById('opm-btn');
 const restartMidwayBtn = document.getElementById('restart-midway-btn');
 
+let categorySelection = document.getElementById("category-selection");
+
 restartMidwayBtn.addEventListener('click', function () {
   location.reload();
 });
@@ -21,14 +23,14 @@ function updateProgressBar() {
 }
 
 document.getElementById("view-rules-btn").addEventListener("click", function () {
-document.getElementById("category-selection").style.display = "none";
-document.getElementById("rules").style.display = "block";
+categorySelection.classList.add("hide");
+document.getElementById("rules").classList.remove("hide");
 displayRules();
 });
 
 document.getElementById("back-to-categories-btn").addEventListener("click", function () {
-  document.getElementById("rules").style.display = "none";
-  document.getElementById("category-selection").style.display = "block";
+  document.getElementById("rules").classList.add("hide");
+  categorySelection.classList.remove("hide");
 });
 
 let selectedCategory = '';
