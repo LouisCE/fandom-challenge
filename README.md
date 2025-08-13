@@ -111,9 +111,16 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 
 ### Tools & Platforms
 
-- **Git & GitHub:** For version control and project collaboration.  
+- **Git & GitHub:** For version control and project collaboration.
 - **GitHub Pages:** For hosting the deployed application online.
 - **Visual Studio Code:** For editing code.
+- **W3C HTML Validator:** For validating HTML code.
+- **W3C CSS Validator:** For validating CSS code.
+- **JSHint:** For validating JavaScript code.
+- **Coolors:** For generating colour palettes.
+- **Color Contrast Checker:** For testing accessibility of text contrast.
+- **Am I Responsive:** For testing responsive design across devices.
+- **Responsive Design Checker:** For additional responsive testing.
 
 ## Testing
 
