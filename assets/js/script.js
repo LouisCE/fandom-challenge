@@ -63,6 +63,11 @@ function displayRules() {
 }
 
 avatarBtn.addEventListener('click', function() {
+    document.body.style.backgroundImage = "url('assets/images/bg-avatar.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundAttachment = "fixed";
+
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     categorySelection.classList.add("hide");
@@ -75,6 +80,11 @@ avatarBtn.addEventListener('click', function() {
 });
 
 gotBtn.addEventListener('click', function() {
+    document.body.style.backgroundImage = "url('assets/images/bg-got.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundAttachment = "fixed";
+
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     categorySelection.classList.add("hide");
@@ -87,6 +97,11 @@ gotBtn.addEventListener('click', function() {
 });
 
 opmBtn.addEventListener('click', function() {
+    document.body.style.backgroundImage = "url('assets/images/bg-opm.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundAttachment = "fixed";
+
     selectedCategory = 'opm';
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
     categorySelection.classList.add("hide");
