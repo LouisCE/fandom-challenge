@@ -189,6 +189,8 @@ answerButtons.forEach((button, index) => {
     endGame();
 }
     }, 2000);
+    });
+    });
 
 document.getElementById('restart-btn').addEventListener('click', function () {
   document.getElementById('results').style.display = 'none';
