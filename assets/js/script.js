@@ -82,10 +82,7 @@ avatarBtn.addEventListener('click', function() {
 });
 
 gotBtn.addEventListener('click', function() {
-    document.body.style.backgroundImage = "url('assets/images/bg-got.jpg')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundAttachment = "fixed";
+    setBackground('assets/images/bg-got-2.jpg');
 
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
@@ -99,10 +96,7 @@ gotBtn.addEventListener('click', function() {
 });
 
 opmBtn.addEventListener('click', function() {
-    document.body.style.backgroundImage = "url('assets/images/bg-opm.jpg')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundAttachment = "fixed";
+    setBackground('assets/images/bg-opm-3.jpg');
 
     selectedCategory = 'opm';
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
