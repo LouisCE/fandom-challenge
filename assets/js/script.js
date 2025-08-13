@@ -12,6 +12,11 @@ const restartMidwayBtn = document.getElementById('restart-midway-btn');
 
 let categorySelection = document.getElementById("category-selection");
 
+function setBackground(imagePath) {
+    document.body.classList.add('bg-wallpaper');
+    document.body.style.backgroundImage = `url('${imagePath}')`;
+}
+
 restartMidwayBtn.addEventListener('click', function () {
   location.reload();
 });
@@ -63,10 +68,7 @@ function displayRules() {
 }
 
 avatarBtn.addEventListener('click', function() {
-    document.body.style.backgroundImage = "url('assets/images/bg-avatar.jpg')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundAttachment = "fixed";
+    setBackground('assets/images/bg-avatar-2.jpg');
 
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
