@@ -165,6 +165,10 @@ function showQuestion(questionObj) {
 answerButtons.forEach((button, index) => {
     button.addEventListener('click', function() {
         clearInterval(timerInterval);
+
+// Stops impatient users from clicking again during delay
+    answerButtons.forEach(btn => btn.disabled = true);
+
         const currentQuestion = currentQuestionSet[currentQuestionIndex];
         if (index === currentQuestion.correct) {
             score++;
