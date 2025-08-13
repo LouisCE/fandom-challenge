@@ -192,5 +192,5 @@ answerButtons.forEach((button, index) => {
 
 document.getElementById('restart-btn').addEventListener('click', function () {
   document.getElementById('results').style.display = 'none';
-  document.getElementById('category-selection').style.display = 'block';
-});
+  categorySelection.classList.remove("hide");
+    });
