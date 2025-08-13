@@ -95,3 +95,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: yellow !important;
   color: black !important;
 }
+
+.correct:hover {
+  background-color: green !important;
+  color: white !important;
+}
+
+.wrong:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
