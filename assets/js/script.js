@@ -65,7 +65,7 @@ function displayRules() {
 avatarBtn.addEventListener('click', function() {
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
-    document.getElementById("category-selection").style.display = "none";
+    categorySelection.classList.add("hide");
     quizSection.style.display = 'block';
     restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
@@ -77,7 +77,7 @@ avatarBtn.addEventListener('click', function() {
 gotBtn.addEventListener('click', function() {
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
-    document.getElementById("category-selection").style.display = "none";
+    categorySelection.classList.add("hide");
     quizSection.style.display = 'block';
     restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
@@ -89,7 +89,7 @@ gotBtn.addEventListener('click', function() {
 opmBtn.addEventListener('click', function() {
     selectedCategory = 'opm';
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
-    document.getElementById("category-selection").style.display = "none";
+    categorySelection.classList.add("hide");
     quizSection.style.display = 'block';
     restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
