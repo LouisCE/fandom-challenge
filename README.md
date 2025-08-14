@@ -282,6 +282,20 @@ Initially, there was an unused variable (`rulesSection`), which was removed. The
 
 ![JavaScript Validation Results](assets/images/validation-jshint.png)
 
+### User Story Testing
+
+| User Story | How It Was Addressed | Pass |
+|------------|--------------------|------|
+| As a new user, I want to easily navigate the website so I can find the quiz quickly. | Clear homepage with buttons for each category; simple, centered layout; responsive design. | Yes |
+| As a player, I want to select from different categories so I can focus on my favourite fandoms. | Category buttons for Avatar, Game of Thrones, and One Punch Man with clear labels and ARIA attributes. | Yes |
+| As a player, I want to view the rules before starting so I know how the game works. | “View Rules” button shows a detailed rules section; “Back” button returns to categories. | Yes |
+| As a player, I want the quiz to display one question at a time so I can focus on answering it. | Only one question is displayed at a time; previous questions are hidden using `.hide` class. | Yes |
+| As a player, I want the answer options to be clickable so I can easily submit my choice. | Buttons for A, B, C and D options; click listeners detect selection and disable further input until next question. | Yes |
+| As a player, I want instant feedback after each question so I know if I was correct. | Selected answer highlights green for correct, yellow for wrong; feedback shows before next question loads. | Yes |
+| As a player, I want a timer so I feel challenged and can’t spend too long on one question. | Timer displayed at top of quiz section, counting down from 15 seconds; triggers auto-submission on timeout. | Yes |
+| As a player, I want to see my final score at the end so I can track my performance. | Results section shows final score and a “Back to Categories” button to return to the homepage. | Yes |
+| As a returning player, I want the option to replay the quiz so I can improve my score. | “Back to Categories” button resets quiz; questions are randomised each time for replayability. | Yes |
+
 ## Deployment
 
 The website is deployed using GitHub Pages and is accessible at:  
