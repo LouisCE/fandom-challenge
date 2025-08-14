@@ -68,7 +68,7 @@ function displayRules() {
 }
 
 avatarBtn.addEventListener('click', function() {
-    setBackground('assets/images/bg-avatar-2.jpg');
+    setBackground('assets/images/bg-avatar-4.jpg');
 
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
@@ -82,7 +82,7 @@ avatarBtn.addEventListener('click', function() {
 });
 
 gotBtn.addEventListener('click', function() {
-    setBackground('assets/images/bg-got-2.jpg');
+    setBackground('assets/images/bg-got-4.jpg');
 
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
@@ -96,7 +96,7 @@ gotBtn.addEventListener('click', function() {
 });
 
 opmBtn.addEventListener('click', function() {
-    setBackground('assets/images/bg-opm-3.jpg');
+    setBackground('assets/images/bg-opm-4.jpg');
 
     selectedCategory = 'opm';
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);

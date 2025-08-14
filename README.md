@@ -210,12 +210,12 @@ No explicit media queries are currently being used for this project. The layout 
 
 Below are three examples:
 
-- **iPhone SE** (mobile)  
-- **iPad Mini** (tablet)  
-- **Nest Hub Max** (smart display)  
+- **iPhone SE** (mobile)
+- **iPad Mini** (tablet)
+- **Nest Hub Max** (smart display)
 
-![iPhone SE Screenshot](assets/images/screenshot-iphone-se.png)  
-![iPad Mini Screenshot](assets/images/screenshot-ipad-mini.png)  
+![iPhone SE Screenshot](assets/images/screenshot-iphone-se.png)
+![iPad Mini Screenshot](assets/images/screenshot-ipad-mini.png)
 ![Nest Hub Max Screenshot](assets/images/screenshot-nest-hub-max.png)
 
 ### Automated Testing Results
