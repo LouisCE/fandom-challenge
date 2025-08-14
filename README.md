@@ -128,6 +128,40 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 
 I tested the site using a combination of **automated tools** and **manual testing** to ensure high performance, accessibility, responsiveness, and functionality. I carried out automated testing with **Google Lighthouse**, **Google PageSpeed Insights** and **WAVE (Web Accessibility Evaluation Tool)**. Manual testing included using DevTools to check responsiveness across different sized devices, browser compatibility and verifying that all user stories and features function as intended.
 
+### Bug Testing Log
+
+Throughout development, I tested and resolved issues. The log below highlights key fixes and improvements implemented over time:
+
+- **Accessibility Fixes:**  
+  - Added `aria` attributes and a `visually-hidden` class to improve screen reader support.  
+  - WAVE and Lighthouse accessibility results were recorded to ensure compliance.
+
+- **Quiz Functionality Bugs:**  
+  - Fixed answer click and restart button listeners to ensure correct behaviour.  
+  - Highlighted correct and wrong answers after selection.  
+  - Disabled answers after the first click to prevent multiple selections.  
+  - Added delayed transition to the next question for proper feedback display.  
+  - Implemented `endGame` function to trigger after timer completion.  
+
+- **Rules Section Bugs:**
+  - Rules list added for "View Rules" button.
+  - Correctly toggled rules section visibility using `.hide` class.
+  - Removed unused variables and cleaned up code for HTML validation.
+
+- **Styling & Layout Issues:**
+  - Added `.bg-wallpaper` class for category backgrounds.
+  - Fixed inline styles by moving `display: none` to CSS.
+  - Added hover styling for answer buttons and differentiated correct/wrong styles.
+  - Refactored quiz container, timer, progress bar and section text styling.
+
+- **Validation & Testing:**
+  - HTML, CSS, and JS validated using W3C Validators and JSHint.
+  - Screenshots of validation results were included in the README.
+  - PSI and Lighthouse performance tests conducted, with results documented.
+  - Responsive design tested at multiple breakpoints.
+
+This testing approach ensured the application is functional, accessible, and visually consistent across devices. Each bug was documented, fixed, and verified before committing the changes.
+
 ### Automated Testing Results
 
 #### Lighthouse (Mobile)
