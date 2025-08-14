@@ -77,6 +77,8 @@ For this project, I chose a distinct background image for each quiz category to 
 
 I ensured each image was large enough to maintain quality across devices and used CSS background properties like `cover`, `center` and `no-repeat` to maximise visibility while keeping the quiz content readable.
 
+All background images were sourced from [Wallpaper Cave](https://wallpapercave.com/) to enhance the visual appeal of each quiz category.
+
 ## Features
 
 - Category selection with buttons to choose between different fandom quizzes.  
@@ -132,6 +134,7 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 - **Git & GitHub:** For version control and project collaboration.
 - **GitHub Pages:** For hosting the deployed application online.
 - **Visual Studio Code:** For editing code.
+- **Favicon:** Created using [favicon.io](https://favicon.io/).
 - **W3C HTML Validator:** For validating HTML code.
 - **W3C CSS Validator:** For validating CSS code.
 - **JSHint:** For validating JavaScript code.
@@ -387,6 +390,8 @@ I would like to thank the following people and resources for their support and g
 - **Simen:** For reviewing my progress, providing useful tools like Coolors and Balsamiq and helping me develop my approach to coding.
 
 - **Code Institute LMS:** For teaching me HTML, CSS, JavaScript, and web design principles through detailed walkthroughs and exercises.
+
+- **Bootstrap quiz layout inspiration:** The interactive quiz layout was inspired by [Bootstrap Examples - Interactive Quiz Application](https://bootstrapexamples.com/@ross-wille/interactive-quiz-application), which helped guide the design of category buttons, timer, and feedback styling.
 
 - **Markdown learning resources:**  
   - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
