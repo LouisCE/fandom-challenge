@@ -180,6 +180,44 @@ Throughout development, I tested and resolved issues. The log below highlights k
 
 This testing approach ensured the application is functional, accessible, and visually consistent across devices. Each bug was documented, fixed, and verified before committing the changes.
 
+### Responsiveness Testing Log
+
+The **Fandom Challenge** quiz was manually tested across a variety of real devices and emulators using Chrome DevTools. Key areas, including navigation, the quiz container alignment, content flow, and interactive functionality, were checked to ensure a consistent experience.
+
+| Device Example              | Navigation | Element Alignment | Content Placement | Functionality |
+|----------------------------|------------|-----------------|-----------------|---------------|
+| iPhone SE                  | Good       | Good            | Good            | Good          |
+| iPhone XR                  | Good       | Good            | Good            | Good          |
+| iPhone 12 Pro              | Good       | Good            | Good            | Good          |
+| iPhone 14 Pro Max          | Good       | Good            | Good            | Good          |
+| Pixel 7                    | Good       | Good            | Good            | Good          |
+| Samsung Galaxy S8+         | Good       | Good            | Good            | Good          |
+| Samsung Galaxy S20 Ultra   | Good       | Good            | Good            | Good          |
+| iPad Mini                  | Good       | Good            | Good            | Good          |
+| iPad Air                   | Good       | Good            | Good            | Good          |
+| iPad Pro                   | Good       | Good            | Good            | Good          |
+| Surface Pro 7              | Good       | Good            | Good            | Good          |
+| Surface Duo                | Good       | Good            | Good            | Good          |
+| Galaxy Z Fold 5            | Good       | Good            | Good            | Good          |
+| Asus Zenbook Fold          | Good       | Good            | Good            | Good          |
+| Samsung Galaxy A51/71      | Good       | Good            | Good            | Good          |
+| Nest Hub                   | Good       | Good            | Good            | Good          |
+| Nest Hub Max               | Good       | Good            | Good            | Good          |
+
+All responsive breakpoints worked as expected. The quiz container scales and stacks appropriately on smaller devices. Background images are set with `cover` and `center` properties; while there is minor cropping on some tablet devices, this is minor and does not affect the readability or functionality of the quiz content.
+
+No explicit media queries are currently being used for this project. The layout relies on **Bootstrap’s responsive grid and utility classes**, along with percentage-based widths, to adapt naturally across screen sizes. The quiz container remains centred and fully visible on all tested devices, with background images scaling appropriately while maintaining focus on the interactive quiz content.
+
+Below are three examples:
+
+- **iPhone SE** (mobile)  
+- **iPad Mini** (tablet)  
+- **Nest Hub Max** (smart display)  
+
+![iPhone SE Screenshot](assets/images/screenshot-iphone-se.png)  
+![iPad Mini Screenshot](assets/images/screenshot-ipad-mini.png)  
+![Nest Hub Max Screenshot](assets/images/screenshot-nest-hub-max.png)
+
 ### Automated Testing Results
 
 #### Lighthouse (Mobile)
