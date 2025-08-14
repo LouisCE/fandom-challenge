@@ -42,6 +42,14 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Design Choices
 
+### Typography
+
+For this project, I selected the **Poppins** font for all text content. Poppins is a modern, sans-serif typeface that provides excellent readability across devices and screen sizes. Its geometric shapes give a clean and approachable look, which fits the energetic and playful theme of a fandom quiz.
+
+Headings are bold and colored **Netflix red (#e50914)** to fit the fandom theme, create visual hierarchy and draw attention to key sections, while body text remains white against a dark background to ensure high contrast and legibility.  
+
+Button text uses a slightly larger, bold style to improve clickability and usability. Typography choices were guided by accessibility, readability, and aesthetic alignment with the quiz’s theme.
+
 ### Colour Scheme
 
 ![Coolors Palette](assets/images/coolors.png)  
@@ -58,6 +66,16 @@ The **Fandom Challenge** quiz uses a passionate, bold colour palette based on Ne
 These colours were chosen with accessibility in mind, ensuring sufficient contrast across all text and UI components. The palette reflects the intensity of fandom culture while providing a clean, modern look inspired by Netflix’s visual identity.
 
 The contrast grid (above) helped in selecting harmonious shades and verifying accessibility standards for colour contrast ratios, ensuring that all users have a comfortable and visually engaging experience.
+
+### Images
+
+For this project, I chose a distinct background image for each quiz category to create visual interest and help immerse players in the respective fandom:
+
+- **Avatar: The Last Airbender:** The iconic map of the world, featuring the elemental symbols on each quadrant. This provides context for the quiz and visually reinforces the theme.
+- **Game of Thrones:** A knight on a horse wielding a spear while charging at a dragon as it prepares to breathe fire. This scene captures the essence of the series and contributes to UX by making the quiz feel more dramatic and high-stakes.
+- **One Punch Man:** A dynamic image of the S-Class Heroes from the Hero Association and various villains striking a variety of poses. This energetic composition matches the fun, action-packed vibe of the quiz.
+
+I ensured each image was large enough to maintain quality across devices and used CSS background properties like `cover`, `center` and `no-repeat` to maximise visibility while keeping the quiz content readable.
 
 ## Features
 
