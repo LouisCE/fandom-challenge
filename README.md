@@ -40,6 +40,22 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 
 ## Wireframes
 
+Wireframes were created using Balsamiq, following a mobile-first approach in line with best practices. I started by sketching layouts for mobile screens and then expanded them for tablet and desktop to make sure the structure worked at all breakpoints.
+
+- The quiz layout was refined to make answer buttons larger and more tappable on mobile.
+- The progress bar and timer were repositioned for better visibility.
+- The rules page layout was simplified for faster reading.
+- Background images were updated for visual impact and theme immersion.
+- Minor spacing adjustments were made for a more balanced layout on larger screens.
+
+The final live site follows the overall structure of the wireframes. Minor adjustments were made during development to fine-tune the visual flow and improve usability.
+
+**Wireframe links:**
+
+![Mobile Wireframes](assets/images/wireframes-mobile.png)  
+![Tablet Wireframes](assets/images/wireframes-tablet.png)  
+![Desktop Wireframes](assets/images/wireframes-computer.png)
+
 ## Design Choices
 
 ### Typography
