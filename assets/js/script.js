@@ -164,10 +164,14 @@ function showQuestion(questionObj) {
 
     const shuffledAnswers = [...questionObj.answers].sort(() => 0.5 - Math.random());
 
+    const correctAnswerText = questionObj.correct;
+
     answerButtons.forEach((button, index) => {
         button.textContent = shuffledAnswers[index];
         button.disabled = false;
         button.classList.remove('correct', 'wrong');
+
+    button.dataset.correct = (shuffledAnswers[index] === correctAnswerText).toString();
     });
 
     updateProgressBar();
@@ -182,15 +186,13 @@ answerButtons.forEach((button) => {
         // Stops impatient users from clicking again during delay
         answerButtons.forEach(btn => btn.disabled = true);
 
-        const currentQuestion = currentQuestionSet[currentQuestionIndex];
-
-        if (button.textContent === currentQuestion.correct) {
+        if (button.dataset.correct === "true") {
             score++;
             button.classList.add('correct');
         } else {
             button.classList.add('wrong');
 
-            const correctBtn = Array.from(answerButtons).find(btn => btn.textContent === currentQuestion.correct);
+            const correctBtn = Array.from(answerButtons).find(btn => btn.dataset.correct === "true");
             if (correctBtn) correctBtn.classList.add('correct');
         }
 
