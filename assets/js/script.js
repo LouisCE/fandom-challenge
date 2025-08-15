@@ -173,35 +173,37 @@ function showQuestion(questionObj) {
 
 }
 
-answerButtons.forEach((button, index) => {
+answerButtons.forEach((button) => {
     button.addEventListener('click', function() {
         clearInterval(timerInterval);
 
-// Stops impatient users from clicking again during delay
-    answerButtons.forEach(btn => btn.disabled = true);
+        // Stops impatient users from clicking again during delay
+        answerButtons.forEach(btn => btn.disabled = true);
 
         const currentQuestion = currentQuestionSet[currentQuestionIndex];
-        if (index === currentQuestion.correct) {
+
+        if (button.textContent === currentQuestion.correct) {
             score++;
             button.classList.add('correct');
         } else {
             button.classList.add('wrong');
-            answerButtons[currentQuestion.correct].classList.add('correct');
+
+            const correctBtn = Array.from(answerButtons).find(btn => btn.textContent === currentQuestion.correct);
+            if (correctBtn) correctBtn.classList.add('correct');
         }
 
-    setTimeout(() => {
-        currentQuestionIndex++;
-        updateProgressBar();
-        console.log("Current question index is now: " + currentQuestionIndex);
+        setTimeout(() => {
+            currentQuestionIndex++;
+            updateProgressBar();
 
-        if (currentQuestionIndex < currentQuestionSet.length) {
-            showQuestion(currentQuestionSet[currentQuestionIndex]);
-        } else {
-    endGame();
-}
-    }, 2000);
+            if (currentQuestionIndex < currentQuestionSet.length) {
+                showQuestion(currentQuestionSet[currentQuestionIndex]);
+            } else {
+                endGame();
+            }
+        }, 2000);
     });
-    });
+});
 
 document.getElementById('restart-btn').addEventListener('click', function () {
   document.getElementById('results').style.display = 'none';
