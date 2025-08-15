@@ -18,37 +18,37 @@ function setBackground(imagePath) {
 }
 
 restartMidwayBtn.addEventListener('click', function () {
-  location.reload();
+    location.reload();
 });
 
 function updateProgressBar() {
-  const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
-  progressBar.style.width = percent + '%';
-  progressBar.setAttribute('aria-valuenow', percent);
+    const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
+    progressBar.style.width = percent + '%';
+    progressBar.setAttribute('aria-valuenow', percent);
 }
 
 document.getElementById("view-rules-btn").addEventListener("click", function () {
-categorySelection.classList.add("hide");
-document.getElementById("rules").classList.remove("hide");
-displayRules();
+    categorySelection.classList.add("hide");
+    document.getElementById("rules").classList.remove("hide");
+    displayRules();
 });
 
 document.getElementById("back-to-categories-btn").addEventListener("click", function () {
-  document.getElementById("rules").classList.add("hide");
-  categorySelection.classList.remove("hide");
+    document.getElementById("rules").classList.add("hide");
+    categorySelection.classList.remove("hide");
 });
 
 let selectedCategory = '';
 let currentQuestionSet = [];
 
 const rules = [
-  "Questions are randomised each time you play. No repeats.",
-  "You get ten random questions per quiz session from the fandom you choose.",
-  "Each question has four options: A, B, C and D. Only one is correct.",
-  "You have fifteen seconds to answer each question. Think fast!",
-  "Try not to skip. Unanswered questions count as wrong!",
-  "Your score is shown at the end with feedback.",
-  "Try your best and have fun!"
+    "Questions are randomised each time you play. No repeats.",
+    "You get ten random questions per quiz session from the fandom you choose.",
+    "Each question has four options: A, B, C and D. Only one is correct.",
+    "You have fifteen seconds to answer each question. Think fast!",
+    "Try not to skip. Unanswered questions count as wrong!",
+    "Your score is shown at the end with feedback.",
+    "Try your best and have fun!"
 ];
 
 function getRandomQuestions(questionsArray, count = 10) {
@@ -57,17 +57,17 @@ function getRandomQuestions(questionsArray, count = 10) {
 }
 
 function displayRules() {
-  const rulesList = document.getElementById('rules-list');
-  rulesList.innerHTML = '';
+    const rulesList = document.getElementById('rules-list');
+    rulesList.innerHTML = '';
 
-  rules.forEach(rule => {
-    const li = document.createElement('li');
-    li.textContent = rule;
-    rulesList.appendChild(li);
-  });
+    rules.forEach(rule => {
+        const li = document.createElement('li');
+        li.textContent = rule;
+        rulesList.appendChild(li);
+    });
 }
 
-avatarBtn.addEventListener('click', function() {
+avatarBtn.addEventListener('click', function () {
     setBackground('assets/images/bg-avatar-4.jpg');
 
     selectedCategory = 'avatar';
@@ -81,7 +81,7 @@ avatarBtn.addEventListener('click', function() {
     startTimer();
 });
 
-gotBtn.addEventListener('click', function() {
+gotBtn.addEventListener('click', function () {
     setBackground('assets/images/bg-got-4.jpg');
 
     selectedCategory = 'got';
@@ -95,7 +95,7 @@ gotBtn.addEventListener('click', function() {
     startTimer();
 });
 
-opmBtn.addEventListener('click', function() {
+opmBtn.addEventListener('click', function () {
     setBackground('assets/images/bg-opm-4.jpg');
 
     selectedCategory = 'opm';
@@ -161,20 +161,22 @@ function endGame() {
 
 function showQuestion(questionObj) {
     questionText.textContent = questionObj.question;
+
+    const shuffledAnswers = [...questionObj.answers].sort(() => 0.5 - Math.random());
+
     answerButtons.forEach((button, index) => {
-        button.textContent = questionObj.answers[index];
+        button.textContent = shuffledAnswers[index];
         button.disabled = false;
         button.classList.remove('correct', 'wrong');
     });
 
     updateProgressBar();
-        
     startTimer();
 
 }
 
 answerButtons.forEach((button) => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         clearInterval(timerInterval);
 
         // Stops impatient users from clicking again during delay
@@ -206,6 +208,6 @@ answerButtons.forEach((button) => {
 });
 
 document.getElementById('restart-btn').addEventListener('click', function () {
-  document.getElementById('results').style.display = 'none';
-  categorySelection.classList.remove("hide");
-    });
+    document.getElementById('results').style.display = 'none';
+    categorySelection.classList.remove("hide");
+});
