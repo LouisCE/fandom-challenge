@@ -238,3 +238,7 @@ document.getElementById('restart-btn').addEventListener('click', function () {
     document.getElementById('results').style.display = 'none';
     categorySelection.classList.remove("hide");
 });
+
+document.getElementById('submit-score-btn').addEventListener('click', () => {
+    window.location.href = 'leaderboard.html';
+});
