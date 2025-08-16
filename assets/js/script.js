@@ -41,28 +41,6 @@ document.getElementById("back-to-categories-btn").addEventListener("click", func
 let selectedCategory = '';
 let currentQuestionSet = [];
 
-// Leaderboard helpers
-function loadLeaderboard() {
-    const stored = JSON.parse(localStorage.getItem(selectedCategory + '-leaderboard')) || [];
-    return stored;
-}
-
-function saveLeaderboard(board) {
-    localStorage.setItem(selectedCategory + '-leaderboard', JSON.stringify(board));
-}
-
-function updateLeaderboardDisplay() {
-    const board = loadLeaderboard();
-    const list = document.getElementById('leaderboard-list');
-    if (!list) return;
-    list.innerHTML = '';
-    board.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = `${entry.initials.toUpperCase()} - ${entry.score}/${currentQuestionSet.length} (${entry.time}s)`;
-        list.appendChild(li);
-    });
-}
-
 const rules = [
     "Questions are randomised each time you play. No repeats.",
     "You get ten random questions per quiz session from the fandom you choose.",
