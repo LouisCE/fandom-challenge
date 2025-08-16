@@ -68,3 +68,14 @@ submitBtn.addEventListener('click', () => {
     document.getElementById("score-input-container").style.display = "none";
     submitBtn.disabled = true;
 });
+
+// Clear leaderboard button functionality
+const clearBtn = document.getElementById('clear-leaderboard-btn');
+clearBtn.addEventListener('click', () => {
+    if (confirm("Are you sure you want to clear this leaderboard?")) {
+        localStorage.removeItem('leaderboard_' + currentCategory);
+        displayLeaderboard();
+        submitBtn.disabled = false;
+        document.getElementById("score-input-container").style.display = "block";
+    }
+});
