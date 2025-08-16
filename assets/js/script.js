@@ -115,6 +115,21 @@ let score = 0;
 let timeLeft = 15;
 let timerInterval;
 
+// Track total quiz completion time
+let totalTime = 0;
+let totalTimerInterval;
+
+function startTotalTimer() {
+    totalTime = 0;
+    totalTimerInterval = setInterval(() => {
+        totalTime++;
+    }, 1000);
+}
+
+function stopTotalTimer() {
+    clearInterval(totalTimerInterval);
+}
+
 function startTimer() {
     clearInterval(timerInterval);
     timeLeft = 15;
