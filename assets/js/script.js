@@ -41,6 +41,28 @@ document.getElementById("back-to-categories-btn").addEventListener("click", func
 let selectedCategory = '';
 let currentQuestionSet = [];
 
+// Leaderboard helpers
+function loadLeaderboard() {
+    const stored = JSON.parse(localStorage.getItem(selectedCategory + '-leaderboard')) || [];
+    return stored;
+}
+
+function saveLeaderboard(board) {
+    localStorage.setItem(selectedCategory + '-leaderboard', JSON.stringify(board));
+}
+
+function updateLeaderboardDisplay() {
+    const board = loadLeaderboard();
+    const list = document.getElementById('leaderboard-list');
+    if (!list) return;
+    list.innerHTML = '';
+    board.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = `${entry.initials.toUpperCase()} - ${entry.score}/${currentQuestionSet.length} (${entry.time}s)`;
+        list.appendChild(li);
+    });
+}
+
 const rules = [
     "Questions are randomised each time you play. No repeats.",
     "You get ten random questions per quiz session from the fandom you choose.",
@@ -68,7 +90,7 @@ function displayRules() {
 }
 
 avatarBtn.addEventListener('click', function () {
-    setBackground('assets/images/bg-avatar-4.jpg');
+    setBackground('assets/images/bg-avatar-2.jpg');
 
     selectedCategory = 'avatar';
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
@@ -82,7 +104,7 @@ avatarBtn.addEventListener('click', function () {
 });
 
 gotBtn.addEventListener('click', function () {
-    setBackground('assets/images/bg-got-4.jpg');
+    setBackground('assets/images/bg-got-5.jpg');
 
     selectedCategory = 'got';
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
@@ -96,7 +118,7 @@ gotBtn.addEventListener('click', function () {
 });
 
 opmBtn.addEventListener('click', function () {
-    setBackground('assets/images/bg-opm-4.jpg');
+    setBackground('assets/images/bg-opm-6.jpg');
 
     selectedCategory = 'opm';
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
