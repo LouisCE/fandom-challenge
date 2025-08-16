@@ -12,9 +12,14 @@ const restartMidwayBtn = document.getElementById('restart-midway-btn');
 
 let categorySelection = document.getElementById("category-selection");
 
-function setBackground(imagePath) {
+function setBackground(imagePath = null) {
     document.body.classList.add('bg-wallpaper');
-    document.body.style.backgroundImage = `url('${imagePath}')`;
+    if (imagePath) {
+        document.body.style.backgroundImage = `url('${imagePath}')`;
+    } else {
+        document.body.style.backgroundImage = '';
+        document.body.classList.remove('bg-wallpaper');
+    }
 }
 
 restartMidwayBtn.addEventListener('click', function () {
