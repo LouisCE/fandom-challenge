@@ -12,6 +12,8 @@
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -32,22 +34,24 @@
           <h2 class="mb-4">Top Scores</h2>
 
           <!-- Initials input and submit -->
-          <div class="mb-4">
+           <div id="score-input-container" class="mb-4">
             <input type="text" id="player-initials" maxlength="3" placeholder="Your initials"
                    class="form-control mb-2">
             <button id="submit-score-btn" class="btn btn-danger w-100">Submit Score</button>
           </div>
 
           <!-- Scores list -->
-          <ol id="leaderboard-list" class="text-start mb-4"></ol>
+          <ol id="leaderboard-list" class="mb-4"
+              style="font-family: 'Press Start 2P', cursive; text-align: center; list-style-position: inside;">
+          </ol>
 
           <!-- Action buttons -->
-          <div class="d-grid gap-2">
+          <div class="d-flex justify-content-center gap-2">
             <button onclick="window.location.href='index.html'"
-                    class="btn btn-outline-light">
+                    class="btn btn-outline-light btn-sm">
               Back to Categories
             </button>
-            <button id="clear-leaderboard-btn" class="btn btn-danger">
+            <button id="clear-leaderboard-btn" class="btn btn-danger btn-sm">
               Clear Leaderboard
             </button>
           </div>
