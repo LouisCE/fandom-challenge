@@ -3,14 +3,16 @@ const leaderboardList = document.getElementById('leaderboard-list');
 const submitBtn = document.getElementById('submit-score-btn');
 const playerInitialsInput = document.getElementById('player-initials');
 
+const currentCategory = localStorage.getItem('lastCategory') || 'avatar';
+
 // Retrieve scores from localStorage
 function loadLeaderboard() {
-    return JSON.parse(localStorage.getItem('leaderboard')) || [];
+    return JSON.parse(localStorage.getItem('leaderboard_' + currentCategory)) || [];
 }
 
 // Save scores to localStorage
 function saveLeaderboard(board) {
-    localStorage.setItem('leaderboard', JSON.stringify(board));
+    localStorage.setItem('leaderboard_' + currentCategory, JSON.stringify(board));
 }
 
 // Display leaderboard in HTML
