@@ -77,6 +77,8 @@ avatarBtn.addEventListener('click', function () {
     restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
     score = 0;
+
+    startTotalTimer();
     showQuestion(currentQuestionSet[currentQuestionIndex]);
     startTimer();
 });
@@ -91,6 +93,8 @@ gotBtn.addEventListener('click', function () {
     restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
     score = 0;
+
+    startTotalTimer();
     showQuestion(currentQuestionSet[currentQuestionIndex]);
     startTimer();
 });
@@ -105,6 +109,8 @@ opmBtn.addEventListener('click', function () {
     restartMidwayBtn.classList.remove('d-none');
     currentQuestionIndex = 0;
     score = 0;
+
+    startTotalTimer();
     showQuestion(currentQuestionSet[currentQuestionIndex]);
     startTimer();
 });
@@ -156,6 +162,10 @@ function startTimer() {
 }
 
 function endGame() {
+    stopTotalTimer();
+    localStorage.setItem('lastScore', score);
+    localStorage.setItem('lastTime', totalTime);
+
     quizSection.style.display = 'none';
     document.getElementById('results').style.display = 'block';
 
