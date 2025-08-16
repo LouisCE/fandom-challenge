@@ -71,6 +71,7 @@ avatarBtn.addEventListener('click', function () {
     setBackground('assets/images/bg-avatar-2.jpg');
 
     selectedCategory = 'avatar';
+    localStorage.setItem('lastCategory', selectedCategory);
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
     categorySelection.classList.add("hide");
     quizSection.style.display = 'block';
@@ -87,6 +88,7 @@ gotBtn.addEventListener('click', function () {
     setBackground('assets/images/bg-got-5.jpg');
 
     selectedCategory = 'got';
+    localStorage.setItem('lastCategory', selectedCategory);
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     categorySelection.classList.add("hide");
     quizSection.style.display = 'block';
@@ -103,6 +105,7 @@ opmBtn.addEventListener('click', function () {
     setBackground('assets/images/bg-opm-6.jpg');
 
     selectedCategory = 'opm';
+    localStorage.setItem('lastCategory', selectedCategory);
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
     categorySelection.classList.add("hide");
     quizSection.style.display = 'block';
