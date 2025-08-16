@@ -173,11 +173,11 @@ function endGame() {
     let message = '';
 
     if (percent >= 90) {
-        message = "Excellent!";
+        message = "Congratulations! You're a superfan!";
     } else if (percent >= 70) {
-        message = "Good job!";
+        message = "Good job! You know your stuff.";
     } else {
-        message = "Keep practicing!";
+        message = "You can do better. Try again.";
     }
 
     document.getElementById('score-text').textContent =
