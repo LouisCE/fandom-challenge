@@ -245,6 +245,13 @@ answerButtons.forEach((button) => {
 document.getElementById('restart-btn').addEventListener('click', function () {
     document.getElementById('results').style.display = 'none';
     categorySelection.classList.remove("hide");
+    setBackground();
+});
+
+document.getElementById("back-to-categories-btn").addEventListener("click", function () {
+    document.getElementById("rules").classList.add("hide");
+    categorySelection.classList.remove("hide");
+    setBackground();
 });
 
 document.getElementById('submit-score-btn').addEventListener('click', () => {

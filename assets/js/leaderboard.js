@@ -1,3 +1,22 @@
+// Restore background from last selected category
+const lastCategory = localStorage.getItem('lastCategory');
+if (lastCategory) {
+    switch(lastCategory) {
+        case 'avatar':
+            document.body.style.backgroundImage = "url('assets/images/bg-avatar-2.jpg')";
+            document.body.classList.add('bg-wallpaper');
+            break;
+        case 'got':
+            document.body.style.backgroundImage = "url('assets/images/bg-got-5.jpg')";
+            document.body.classList.add('bg-wallpaper');
+            break;
+        case 'opm':
+            document.body.style.backgroundImage = "url('assets/images/bg-opm-6.jpg')";
+            document.body.classList.add('bg-wallpaper');
+            break;
+    }
+}
+
 // Get DOM elements
 const leaderboardList = document.getElementById('leaderboard-list');
 const submitBtn = document.getElementById('submit-score-btn');
