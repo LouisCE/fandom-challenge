@@ -387,6 +387,9 @@ Initially, there was an unused variable (`rulesSection`), which was removed. The
 | As a player, I want a timer so I feel challenged and can’t spend too long on one question. | Timer displayed at top of quiz section, counting down from 15 seconds; triggers auto-submission on timeout. | Yes |
 | As a player, I want to see my final score at the end so I can track my performance. | Results section shows final score and a “Back to Categories” button to return to the homepage. | Yes |
 | As a returning player, I want the option to replay the quiz so I can improve my score. | “Back to Categories” button resets quiz; questions are randomised each time for replayability. | Yes |
+| As a player, I want the answer options to appear in a random order each quiz so I can't memorise positions. | JavaScript shuffles the array of answers each time a question loads to ensure randomness. | Yes |
+| As a competitive player, I want to see my best scores compared with others on the leaderboard so I stay motivated. | Scores are saved in local storage and displayed in a leaderboard section with ranking based on score and completion time. | Yes |
+| As a returning player, I want my saved scores to persist between sessions so I can track long-term progress. | Quiz results and leaderboard are stored in local storage, ensuring data persists after page reloads. | Yes |
 
 ## Deployment
 
