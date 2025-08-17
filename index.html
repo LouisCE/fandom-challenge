@@ -75,9 +75,36 @@
         <p id="score-text" class="score"></p>
         <button id="restart-btn" class="btn btn-outline-light" 
         aria-label="Restart quiz and return to category selection">Back to Categories</button>
-        <button id="submit-score-btn" class="btn btn-danger ms-2" 
+        <button id="go-to-leaderboard-btn" class="btn btn-danger ms-2" 
         aria-label="Submit score and view leaderboard">Go to Leaderboard</button>
       </section>
+
+      <!-- Leaderboard Section (hidden until activated) -->
+<section id="leaderboard" class="text-center" style="display: none;">
+
+  <!-- Initials input and submit -->
+  <div id="score-input-container" class="mb-4">
+    <input type="text" id="player-initials" maxlength="3" 
+           placeholder="Your initials"
+           class="form-control w-25 mx-auto text-uppercase text-center">
+    <button id="submit-score-btn" class="btn btn-danger mt-2">Submit Score</button>
+  </div>
+
+  <!-- Scores list -->
+  <ol id="leaderboard-list" class="mb-4"
+      style="font-family: 'Press Start 2P', cursive; text-align: center; list-style-position: inside;">
+  </ol>
+
+  <!-- Action buttons -->
+  <div class="d-flex justify-content-center gap-2">
+    <button id="back-to-categories" class="btn btn-outline-light btn-sm">
+      Back to Categories
+    </button>
+    <button id="clear-leaderboard-btn" class="btn btn-danger btn-sm">
+      Clear Leaderboard
+    </button>
+  </div>
+</section>
     </div>
   </div>
 
