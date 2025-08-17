@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Fandom Challenge is an interactive quiz game designed to test players’ knowledge across various fandoms, including anime, movies, TV shows, and games (for now, just Avatar: The Last Airbender and Game of Thrones). The project is built with HTML, CSS, and JavaScript, focusing on creating a fun, responsive, and accessible user experience. Players can select a category, answer randomised questions under time pressure, and receive instant feedback on their performance. The project demonstrates key front-end development skills, including DOM manipulation, event handling, responsive design, and dynamic content rendering.
+Fandom Challenge is an interactive quiz game designed to test players’ knowledge across various fandoms, including anime, movies, TV shows, and games (for now, just Avatar: The Last Airbender and Game of Thrones). The project is built with HTML, CSS, and JavaScript, focusing on creating a fun, responsive, and accessible user experience. Players can select a category, answer randomised questions under time pressure, and receive instant feedback on their performance. The project demonstrates key front-end development skills, including DOM manipulation, event handling, responsive design, and dynamic content rendering. This project also demonstrates the use of localStorage for persistent leaderboard data, ensuring scores remain available even after the page is refreshed or the browser is closed. The quiz logic is fully randomised including question order and answer option positions to guarantee variety and replayability.
 
 ![Responsive design preview of Fandom Challenge website](assets/images/am-i-responsive.png)
 
@@ -14,7 +14,8 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 - Understand the quiz rules before playing.
 - Play on any device with a responsive layout.
 - Receive instant feedback on answers.
-- Track performance at the end of the quiz.
+- Compete against themselves and others by tracking and comparing high scores through a persistent leaderboard.
+- Replay quizzes for a better results and enhanced replayability.
 
 ## User Stories
 
@@ -27,6 +28,8 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 7. As a player, I want a timer so I feel challenged and can’t spend too long on one question.
 8. As a player, I want to see my final score at the end so I can track my performance.
 9. As a returning player, I want the option to replay the quiz so I can improve my score.
+10. As a competitive player, I want to see my best scores compared with others on the leaderboard so I stay motivated.
+11. As a returning player, I want my saved scores to persist between sessions so I can track long-term progress.
 
 ## Website Goals and Objectives
 
@@ -37,6 +40,7 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 - Maintain clean, well-structured code to support future updates and scalability.
 - Adhere to web content accessibility standards (WCAG) to make the quiz usable by all users.
 - Deploy the application on a reliable cloud platform with version control for easy collaboration and maintenance.
+- Rigorously test responsiveness, accessibility, and functionality across multiple browsers and devices to ensure consistent quality.
 
 ## Wireframes
 
