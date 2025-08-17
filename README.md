@@ -14,8 +14,9 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 - Understand the quiz rules before playing.
 - Play on any device with a responsive layout.
 - Receive instant feedback on answers.
+- Answer options are randomised each time to ensure true knowledge is tested.
 - Compete against themselves and others by tracking and comparing high scores through a persistent leaderboard.
-- Replay quizzes for a better results and enhanced replayability.
+- Replay quizzes for better results and enhanced replayability.
 
 ## User Stories
 
@@ -28,8 +29,10 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 7. As a player, I want a timer so I feel challenged and can’t spend too long on one question.
 8. As a player, I want to see my final score at the end so I can track my performance.
 9. As a returning player, I want the option to replay the quiz so I can improve my score.
-10. As a competitive player, I want to see my best scores compared with others on the leaderboard so I stay motivated.
-11. As a returning player, I want my saved scores to persist between sessions so I can track long-term progress.
+10. As a player, I want the answer options to appear in a random order each quiz so I can't memorise positions.
+11. As a competitive player, I want to see my best scores compared with others on the leaderboard so I stay motivated.
+12. As a returning player, I want my saved scores to persist between sessions so I can track long-term progress.
+
 
 ## Website Goals and Objectives
 
@@ -37,6 +40,8 @@ Fandom Challenge is an interactive quiz game designed to test players’ knowled
 - Provide a clear and intuitive interface for selecting quiz categories and understanding game rules.
 - Ensure the application is fully responsive and accessible on a range of devices and screen sizes.
 - Implement interactive features that give immediate feedback to users, enhancing the quiz experience.
+- Randomise answer order on each question to improve quiz challenge and fairness.
+- Include a leaderboard system so players can compare scores and compete.
 - Maintain clean, well-structured code to support future updates and scalability.
 - Adhere to web content accessibility standards (WCAG) to make the quiz usable by all users.
 - Deploy the application on a reliable cloud platform with version control for easy collaboration and maintenance.
