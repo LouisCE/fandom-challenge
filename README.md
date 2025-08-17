@@ -104,6 +104,12 @@ I ensured each image was large enough to maintain quality across devices and use
 
 All background images were sourced from [Wallpaper Cave](https://wallpapercave.com/) to enhance the visual appeal of each quiz category.
 
+**Image Optimization:**
+
+- Background images were compressed using [ImageOptim Online](https://imageoptim.com/online) to reduce file size and improve load times.
+- Ideally, I would like to ensure that all background images used are below 1 MB in file size to ensure quick loading times for a positive UX.
+- The Game of Thrones image is 1.158 MB, slightly above the 1 MB target, but its quality, relevance, and visual symmetry made it worth keeping. This size does not noticeably impact the user experience.
+
 ## Features
 
 - Category selection with buttons to choose between different fandom quizzes.
