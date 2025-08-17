@@ -132,8 +132,6 @@ Looking ahead, I plan to expand the quiz categories to include additional fandom
 
 Planned enhancements to improve gameplay and replay value include:
 
-- **Leaderboard System:** I could incorporate a leaderboard at the end of each quiz that ranks users first by score, with completion time as a tiebreaker while saving the data. This would allow players to compete against themselves or friends and strive to beat previous best scores and times.
-- **Randomised Answer Order:** I could use JavaScript that randomises the order of the four answers for each question, preventing memorisation of correct answer positions and requiring true knowledge of the fandom.
 - **Structured Data with JSON:** I could transition to JSON for storing questions, answers and correct responses in a computer-readable format. I considered using JSON for my project and made an attempt at it but my mentor advised me to keep `questions.js` and use that instead of JSON file formatting as `questions.js` is easier to work with. Although `questions.js` is currently used for simplicity, JSON would make the data more scalable for future updates.
 - **Easter Eggs:** I could also add more hidden references. One for each quiz category that would reference some kind of meme related to the fandom or an in-universe joke or running gag. Again, this would increase replay value by giving users a fun experience and the additional challenge of searching for the secret of the quiz categories they like.
 
