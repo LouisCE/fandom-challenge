@@ -101,13 +101,15 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 
 ## Features
 
-- Category selection with buttons to choose between different fandom quizzes.  
-- Viewable rules section that explains how the quiz works.  
-- Timed quiz with a 15-second countdown for each question.  
-- Multiple-choice questions with four answer options per question.  
+- Category selection with buttons to choose between different fandom quizzes.
+- Viewable rules section that explains how the quiz works.
+- Timed quiz with a 15-second countdown for each question.
+- Multiple-choice questions with four answer options per question.
+- Randomised answer order on every question to prevent memorisation of answer positions.
 - Results are revealed at the end of the quiz, showing the total score.
-- Score tracking displayed at the end of the quiz with custom messages based on performance.  
-- Ability to restart the quiz and select categories again without refreshing the page.  
+- Score tracking displayed at the end of the quiz with custom messages based on performance.
+- Leaderboard system that ranks players by score, with completion time as a tiebreaker.
+- Ability to restart the quiz and select categories again without refreshing the page.
 - Responsive design ensuring usability on various screen sizes.
 
 ### 404 Page
