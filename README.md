@@ -123,6 +123,66 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Ability to restart the quiz and select categories again without refreshing the page.
 - Responsive design ensuring usability on various screen sizes.
 
+### Existing Features
+
+#### Home Page (Category Selection & Rules)
+- Users are welcomed with a clean home screen.
+- They can choose a quiz category (Avatar, Game of Thrones, or One Punch Man).
+- A **View Rules** button is also available for clarity before starting.
+
+![Home Page](assets/images/home-page.png)
+
+#### Rules Page
+- Displays the quiz rules clearly before the game begins.
+- Helps users understand the timer, scoring, and objectives.
+- Includes a **Back** button to return to the category selection.
+
+![Rules Page](assets/images/rules-page.png)
+
+#### Avatar: The Last Airbender Quiz
+- Background features an Avatar-themed image.
+- Users answer 10 random questions from the Avatar fandom.
+- Each question has 4 multiple-choice options.
+
+![Avatar Quiz](assets/images/avatar-quiz.png)
+
+#### Game of Thrones Quiz
+- Background features a Game of Thrones-themed image.
+- Users answer 10 multiple-choice Game of Thrones questions.
+- Offers immersive visuals and lore-based challenges.
+
+![Game of Thrones Quiz](assets/images/got-quiz.png)
+
+#### One Punch Man Quiz
+- Background features a One Punch Man-themed image.
+- Users answer 10 multiple-choice One Punch Man questions.
+- Balanced question/answer distribution ensures fairness.
+
+![One Punch Man Quiz](assets/images/opm-quiz.png)
+
+#### Quiz Complete Page
+- At the end of each quiz, users see their **final score out of 10**.
+- Depending on the score, one of three outcome messages is shown:
+  - **Under 7**: "You can do better. Try again."
+  - **7 or 8**: "Good job! You know your stuff."
+  - **9 or above**: "Congratulations! You're a superfan!"
+- Includes:
+  - **Back to Categories** A button that returns users to home.  
+  - **Submit Score** A button that sends the user's score to leaderboard.  
+
+![Quiz Complete Page](assets/images/quiz-complete.png)
+
+#### Leaderboard Page
+- After submitting their score, users can:
+  - Enter **initials** and submit score.
+  - Press **Return to Categories**.
+  - Press **Clear Leaderboard** to reset.
+- Displays the **top 10 high scores**, using **time as a tiebreaker**.
+- Highlights the **most recent entry in gold** for 3 seconds to show placement.
+- Adds **replayability**: even a perfect scorer can try to improve their time.
+
+![Leaderboard Page](assets/images/leaderboard.png)
+
 ### 404 Page
 
 I added a fun and onbrand custom 404 error page to handle broken or mistyped URLs so that the user has a positive experience, even when visiting a nonexistent page.
