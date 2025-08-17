@@ -182,7 +182,15 @@ Throughout development, I tested and resolved issues. The log below highlights k
   - Highlighted correct and wrong answers after selection.  
   - Disabled answers after the first click to prevent multiple selections.  
   - Added delayed transition to the next question for proper feedback display.  
-  - Implemented `endGame` function to trigger after timer completion.  
+  - Implemented `endGame` function to trigger after timer completion.
+
+  - **Leaderboard System:**  
+  - Added leaderboard that records score and time.  
+  - Fixed sorting so that ties are resolved by completion time.  
+
+- **Randomised Answer Order:**  
+  - Implemented shuffle function to randomise answers each round.  
+  - Verified answers remain functional regardless of new order.
 
 - **Rules Section Bugs:**
   - Rules list added for "View Rules" button.
