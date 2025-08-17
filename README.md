@@ -195,8 +195,6 @@ I added a fun and onbrand custom 404 error page to handle broken or mistyped URL
 
 ### Future Enhancements
 
-During the inception phase, I debated between creating a generic quiz covering topics like Literature, Mathematics, Sciences, History, and Geography, or a fandom quiz which is something that I have a greater personal interest in. With guidance from my mentor, I decided to stick with my hobbies and the things that I enjoy by building a fandom-themed quiz.
-
 For this project submission, I chose to concentrate on three fandom quizzes: *Avatar: The Last Airbender*, *Game of Thrones*, and *One Punch Man*. This is to ensure quality over quantity within the limited timeframe.
 
 Looking ahead, I plan to expand the quiz categories to include additional fandoms such as *Death Note*, *Code Geass*, *Attack on Titan*, *My Hero Academia*, and *RWBY*. I’m also interested in developing quizzes based on popular game franchises like *Pokémon*, *Jak and Daxter*, *Ratchet and Clank*, *God of War*, and *The Legend of Zelda*.
@@ -494,8 +492,17 @@ To clone the project:
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
 
-- **Tim:** My mentor who provided valuable feedback and shared helpful learning resources, including this JavaScript tutorial series that greatly improved my understanding:  
+- **Tim:** My mentor who provided valuable feedback and shared helpful learning resources, including this JavaScript tutorial series that greatly improved my understanding:
+
   [JavaScript Tutorial Playlist](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
+  
+  We had three scheduled calls: at project inception, midway through development and at project completion.
+
+  During the inception phase, I debated between creating a generic quiz covering topics like Literature, Mathematics, Sciences, History and Geography with [Open Trivia Database](https://opentdb.com/), or a fandom quiz which is something that I have a greater personal interest in. With guidance from my mentor, I decided to stick with my hobbies and the things that I enjoy by building a fandom-themed quiz.
+  
+  Tim reviewed my commit strategy, providing clear rules for writing clean, concise, meaningful and incremental commit messages, which seemed to be my biggest weakness in project 1.
+
+  He suggested using questions.js over JSON for simplicity, which saved me time and reduced complexity.
 
 - **Simen:** For reviewing my progress, providing useful tools like Coolors and Balsamiq and helping me develop my approach to coding.
 
