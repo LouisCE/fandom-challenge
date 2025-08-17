@@ -218,7 +218,8 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 
 ### Frameworks & Libraries
 
-- **Bootstrap 5:** For responsive layout, styling, and UI components like buttons.  
+- **Bootstrap 5:** For responsive layout, styling, and UI components like buttons.
+- **Google Fonts:** For clean, readable typography across the application.  
 
 ### Tools & Platforms
 
@@ -226,13 +227,20 @@ I plan on continuing this as a passion project, even after I graduate and it wil
 - **GitHub Pages:** For hosting the deployed application online.
 - **Visual Studio Code:** For editing code.
 - **Favicon:** Created using [favicon.io](https://favicon.io/).
-- **W3C HTML Validator:** For validating HTML code.
-- **W3C CSS Validator:** For validating CSS code.
-- **JSHint:** For validating JavaScript code.
 - **Coolors:** For generating colour palettes.
 - **Color Contrast Checker:** For testing accessibility of text contrast.
 - **Am I Responsive:** For testing responsive design across devices.
 - **Responsive Design Checker:** For additional responsive testing.
+- **ImageOptim:** For compressing and optimising background images to reduce load times.
+- **Chrome DevTools:** For debugging, inspecting layout, and testing responsiveness across breakpoints.
+- **W3C HTML Validator:** For validating HTML code.
+- **W3C CSS Validator:** For validating CSS code.
+- **JSHint:** For validating JavaScript code.
+- **WAVE Web Accessibility Tool:** For accessibility testing and ensuring ARIA compliance.
+
+### Project Planning & Design
+
+- **Balsamiq Wireframes:** For creating wireframes and planning layout before development.
 
 ## Testing
 
