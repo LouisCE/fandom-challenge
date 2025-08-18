@@ -33,12 +33,12 @@
         <section id="leaderboard" class="text-center">
           <h2 class="mb-4">Top Scores</h2>
 
-          <!-- Initials input and submit -->
-           <div id="score-input-container" class="mb-4">
-            <input type="text" id="player-initials" maxlength="3" placeholder="Your initials"
-                   class="form-control mb-2">
-            <button id="submit-score-btn" class="btn btn-danger w-100">Submit Score</button>
-          </div>
+          <!-- Hidden initials input (revealed on Submit Score) -->
+<div id="initials-box" style="display:none;" class="mb-3">
+  <input type="text" id="player-initials" maxlength="3" placeholder="Your initials"
+         class="form-control mb-2">
+  <button id="confirm-submit-btn" class="btn btn-danger w-100">Confirm</button>
+</div>
 
           <!-- Scores list -->
           <ol id="leaderboard-list" class="mb-4"
@@ -47,14 +47,10 @@
 
           <!-- Action buttons -->
           <div class="d-flex justify-content-center gap-2">
-            <button onclick="window.location.href='index.html'"
-                    class="btn btn-outline-light btn-sm">
-              Back to Categories
-            </button>
-            <button id="clear-leaderboard-btn" class="btn btn-danger btn-sm">
-              Clear Leaderboard
-            </button>
-          </div>
+  <button id="submit-score-btn" class="btn btn-danger btn-sm">Submit Score</button>
+  <button onclick="window.location.href='index.html'" class="btn btn-outline-light btn-sm">Back to Categories</button>
+  <button id="clear-leaderboard-btn" class="btn btn-danger btn-sm">Clear Leaderboard</button>
+</div>
         </section>
 
       </div>
