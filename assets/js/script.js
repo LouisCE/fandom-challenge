@@ -263,3 +263,8 @@ document.getElementById("back-to-categories-btn").addEventListener("click", func
 document.getElementById('submit-score-btn').addEventListener('click', () => {
     window.location.href = 'leaderboard.html';
 });
+
+document.getElementById("go-to-leaderboard-btn")
+  .addEventListener("click", () => {
+    window.location.href = "leaderboard.html";
+});
