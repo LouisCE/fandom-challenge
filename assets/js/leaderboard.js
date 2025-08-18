@@ -61,10 +61,17 @@ function displayLeaderboard(highlightRecentIndex = null) {
     });
 }
 
-// Submit score
+// When "Submit Score" is clicked, show initials input box
 submitBtn.addEventListener('click', () => {
-    const initials = playerInitialsInput.value.trim().substring(0,3).toUpperCase();
-    if (!initials) return alert("Enter your initials!");
+    document.getElementById('initials-box').style.display = 'block';
+    document.getElementById('player-initials').focus(); // auto-focus
+});
+
+// When "Confirm" is clicked, save the score
+document.getElementById('confirm-submit-btn').addEventListener('click', () => {
+    const initialsInput = document.getElementById('player-initials');
+    const initials = initialsInput.value.trim().substring(0,3).toUpperCase();
+    if (!initials) return alert("Please enter your initials!");
 
     const score = parseInt(localStorage.getItem('lastScore')) || 0;
     const time = parseInt(localStorage.getItem('lastTime')) || 0;
@@ -72,20 +79,16 @@ submitBtn.addEventListener('click', () => {
     const board = loadLeaderboard();
     board.push({ initials, score, time });
 
-    // Sort by score desc, time asc
-    board.sort((a, b) => b.score - a.score || a.time - b.time);
-
-    // Keep top 10 scores
+    board.sort((a,b) => b.score - a.score || a.time - b.time);
     const top10 = board.slice(0,10);
     saveLeaderboard(top10);
 
-    // Display leaderboard and highlight the most recent score
     const recentIndex = top10.findIndex(entry => entry.initials === initials && entry.score === score && entry.time === time);
     displayLeaderboard(recentIndex);
 
-    // Hide input box + disable button
-    document.getElementById("score-input-container").style.display = "none";
-    submitBtn.disabled = true;
+    // Hide input and clear
+    document.getElementById('initials-box').style.display = 'none';
+    initialsInput.value = '';
 });
 
 // Clear leaderboard button functionality
