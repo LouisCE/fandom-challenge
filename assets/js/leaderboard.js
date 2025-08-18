@@ -22,6 +22,8 @@ const leaderboardList = document.getElementById('leaderboard-list');
 const submitBtn = document.getElementById('submit-score-btn');
 const playerInitialsInput = document.getElementById('player-initials');
 
+let hasSubmittedThisSession = false;
+
 const currentCategory = localStorage.getItem('lastCategory') || 'avatar';
 
 // Retrieve scores from localStorage
@@ -64,11 +66,12 @@ function displayLeaderboard(highlightRecentIndex = null) {
 // When "Submit Score" is clicked, show initials input box
 submitBtn.addEventListener('click', () => {
     document.getElementById('initials-box').style.display = 'block';
-    document.getElementById('player-initials').focus(); // auto-focus
+    document.getElementById('player-initials').focus();
 });
 
 // When "Confirm" is clicked, save the score
 document.getElementById('confirm-submit-btn').addEventListener('click', () => {
+    if (hasSubmittedThisSession) return;
     const initialsInput = document.getElementById('player-initials');
     const initials = initialsInput.value.trim().substring(0,3).toUpperCase();
     if (!initials) return alert("Please enter your initials!");
@@ -89,6 +92,14 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
     // Hide input and clear
     document.getElementById('initials-box').style.display = 'none';
     initialsInput.value = '';
+    hasSubmittedThisSession = true;
+    submitBtn.style.display = 'none';
+
+    // Re-center the remaining buttons
+    const btnContainer = submitBtn.parentElement;
+    btnContainer.style.display = 'flex';
+    btnContainer.style.justifyContent = 'center';
+    btnContainer.style.gap = '10px';
 });
 
 // Clear leaderboard button functionality
