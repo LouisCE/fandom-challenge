@@ -260,9 +260,12 @@ document.getElementById("back-to-categories-btn").addEventListener("click", func
     setBackground();
 });
 
-document.getElementById('submit-score-btn').addEventListener('click', () => {
-    window.location.href = 'leaderboard.html';
-});
+const submitScoreBtn = document.getElementById('submit-score-btn');
+if (submitScoreBtn) {
+    submitScoreBtn.addEventListener('click', () => {
+        window.location.href = 'leaderboard.html';
+    });
+}
 
 document.getElementById("go-to-leaderboard-btn")
   .addEventListener("click", () => {
