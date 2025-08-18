@@ -134,3 +134,13 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
     text-align: center;
 }
+
+#leaderboard-list {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  list-style-position: inside;
+}
+
+#initials-box {
+  display: none;
+}
