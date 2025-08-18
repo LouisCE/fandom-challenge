@@ -33,17 +33,17 @@
         <section id="leaderboard" class="text-center">
           <h2 class="mb-4">Top Scores</h2>
 
+          <!-- Scores list -->
+          <ol id="leaderboard-list" class="mb-4"
+              style="font-family: 'Press Start 2P', cursive; text-align: center; list-style-position: inside;">
+          </ol>
+
           <!-- Hidden initials input (revealed on Submit Score) -->
 <div id="initials-box" style="display:none;" class="mb-3">
   <input type="text" id="player-initials" maxlength="3" placeholder="Your initials"
          class="form-control mb-2">
   <button id="confirm-submit-btn" class="btn btn-danger w-100">Confirm</button>
 </div>
-
-          <!-- Scores list -->
-          <ol id="leaderboard-list" class="mb-4"
-              style="font-family: 'Press Start 2P', cursive; text-align: center; list-style-position: inside;">
-          </ol>
 
           <!-- Action buttons -->
           <div class="d-flex justify-content-center gap-2">
