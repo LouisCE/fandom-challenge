@@ -21,9 +21,20 @@ if (lastCategory) {
 const leaderboardList = document.getElementById('leaderboard-list');
 const submitBtn = document.getElementById('submit-score-btn');
 const playerInitialsInput = document.getElementById('player-initials');
+const clearBtn = document.getElementById('clear-leaderboard-btn');
 
 let hasSubmittedThisSession = false;
 let hasClearedThisSession = false;
+let scoreSubmitted = localStorage.getItem("scoreSubmitted") === "true";
+let leaderboardCleared = localStorage.getItem("leaderboardCleared") === "true";
+
+// Hide buttons based on persisted flags
+if (scoreSubmitted) {
+    submitBtn.style.display = "none";
+}
+if (leaderboardCleared) {
+    clearBtn.style.display = "none";
+}
 
 const currentCategory = localStorage.getItem('lastCategory') || 'avatar';
 
@@ -94,6 +105,8 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
     document.getElementById('initials-box').style.display = 'none';
     initialsInput.value = '';
     hasSubmittedThisSession = true;
+    scoreSubmitted = true;
+    localStorage.setItem("scoreSubmitted", "true");
     submitBtn.style.display = 'none';
 
     // Re-center the remaining buttons
@@ -104,13 +117,14 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
 });
 
 // Clear leaderboard button functionality
-const clearBtn = document.getElementById('clear-leaderboard-btn');
 clearBtn.addEventListener('click', () => {
     if (hasClearedThisSession) return;
     if (confirm("Are you sure you want to clear this leaderboard?")) {
         localStorage.removeItem('leaderboard_' + currentCategory);
         displayLeaderboard();
         hasClearedThisSession = true;
+        leaderboardCleared = true;
+        localStorage.setItem("leaderboardCleared", "true");
         clearBtn.style.display = 'none';
 
         // Re-center remaining buttons
