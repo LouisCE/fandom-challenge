@@ -23,6 +23,7 @@ const submitBtn = document.getElementById('submit-score-btn');
 const playerInitialsInput = document.getElementById('player-initials');
 
 let hasSubmittedThisSession = false;
+let hasClearedThisSession = false;
 
 const currentCategory = localStorage.getItem('lastCategory') || 'avatar';
 
@@ -105,9 +106,19 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
 // Clear leaderboard button functionality
 const clearBtn = document.getElementById('clear-leaderboard-btn');
 clearBtn.addEventListener('click', () => {
+    if (hasClearedThisSession) return;
     if (confirm("Are you sure you want to clear this leaderboard?")) {
         localStorage.removeItem('leaderboard_' + currentCategory);
         displayLeaderboard();
+        hasClearedThisSession = true;
+        clearBtn.style.display = 'none';
+
+        // Re-center remaining buttons
+        const btnContainer = clearBtn.parentElement;
+        btnContainer.style.display = 'flex';
+        btnContainer.style.justifyContent = 'center';
+        btnContainer.style.gap = '10px';
+
         submitBtn.disabled = false;
         document.getElementById("score-input-container").style.display = "block";
     }
