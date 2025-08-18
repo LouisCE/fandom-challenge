@@ -16,11 +16,13 @@ body {
   border: 0;
 }
 
+/* Headings styling */
 h1, h2, h3, h4, h5, h6 {
     color: #e50914;
     text-align: center;
 }
 
+/* Main quiz container styling */
 .quiz-container {
   background-color: rgba(17, 17, 17, 0.95);
   border-radius: 15px;
@@ -30,30 +32,34 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+/* Quiz header and result text colors */
 .quiz-header h1, .quiz-header h2, .question, .results h2, .score {
   color: white;
 }
 
+/* Answer buttons container layout */
 .options {
   display: grid;
   gap: 10px;
 }
 
+/* Styling for answer buttons */
 .options .btn {
   border-radius: 10px;
   padding: 12px;
   font-weight: bold;
 }
 
+/* Primary danger buttons (red) */
 .btn-danger {
   background-color: #dc3545;
   border: none;
 }
-
 .btn-danger:hover {
   background-color: #b52a36;
 }
 
+/* Outline light buttons (white borders) */
 .btn-outline-light {
   border-color: #fff;
   color: #fff;
@@ -64,40 +70,42 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
+/* Timer text styling */
 .timer {
   color: white;
   font-weight: bold;
 }
 
+/* Progress bar container */
 .progress {
   height: 8px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Progress bar itself */
 .progress-bar {
     width: 0%;
 }
 
+/* Danger style for progress bar (red) */
 .progress-bar.bg-danger {
   background-color: #dc3545 !important;
 }
 
+/* Text colour for category and rules sections */
 #category-selection, #rules {
   color: white;
 }
 
+/* Rules list text color */
 #rules ul {
   color: white;
 }
 
+/* Correct answer styling */
 .correct {
   background-color: green !important;
   color: white !important;
-}
-
-.wrong {
-  background-color: yellow !important;
-  color: black !important;
 }
 
 .correct:hover {
@@ -105,15 +113,23 @@ h1, h2, h3, h4, h5, h6 {
   color: white !important;
 }
 
+/* Wrong answer styling */
+.wrong {
+  background-color: yellow !important;
+  color: black !important;
+}
+
 .wrong:hover {
   background-color: yellow !important;
   color: black !important;
 }
 
+/* Hide elements */
 .hide {
   display: none;
 }
 
+/* Background image styling */
 .bg-wallpaper {
     background-size: cover;
     background-position: center;
@@ -122,10 +138,12 @@ h1, h2, h3, h4, h5, h6 {
     image-rendering: auto;
 }
 
+/* Hide quiz section by default */
 #quiz {
     display: none;
 }
 
+/* Results section layout and alignment */
 #results {
     display: none;
     flex-direction: row;
@@ -135,12 +153,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/* Leaderboard list styling */
 #leaderboard-list {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   list-style-position: inside;
 }
 
+/* Initials input box hidden by default */
 #initials-box {
   display: none;
 }
