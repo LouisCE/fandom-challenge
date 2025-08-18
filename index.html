@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fandom Challenge</title>
 
+    <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
+  
+   <!-- Main container to center content vertically and horizontally -->
   <body>
   <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="quiz-container">
 
+      <!-- Quiz header with title and progress bar -->
       <div class="quiz-header text-center">
         <h1 class="mb-3">Fandom Challenge</h1>
         <div class="progress">
@@ -27,8 +34,11 @@
         </div>
       </div>
 
+      <!-- Category Selection Section -->
   <section id="category-selection">
         <h2 class="mb-4">Select a Category</h2>
+
+        <!-- Category buttons grid -->
         <div class="d-grid gap-2">
           <button id="avatar-btn" class="btn btn-danger category-btn" data-category="avatar" 
           aria-label="Select category Avatar The Last Airbender">Avatar: The Last Airbender</button>
@@ -42,27 +52,39 @@
         </div>
       </section>
 
+      <!-- View Rules button -->
   <section id="rules" class="hide">
         <h2 class="mb-3">Rules</h2>
+
+        <!-- List of quiz rules -->
         <ul id="rules-list" class="text-start">
           <li>Questions are randomised each time you play.</li>
           <li>Each question has four options: A, B, C and D.</li>
           <li>You have one minute to answer each question.</li>
           <li>Unanswered questions count as incorrect.</li>
         </ul>
+
+        <!-- Back button to category selection -->
         <button id="back-to-categories-btn" class="btn btn-outline-light mt-3" 
         aria-label="Return to category selection from rules">Back to Categories</button>
       </section>
 
+      <!-- Quiz Section -->
   <section id="quiz">
     <h2 class="visually-hidden">Quiz</h2>
+
+    <!-- Question text -->
         <p id="question-text" class="question" aria-live="polite"></p>
+
+        <!-- Answer buttons -->
         <div id="answers" class="options">
   <button class="answer-btn btn btn-danger mb-2">A</button>
   <button class="answer-btn btn btn-danger mb-2">B</button>
   <button class="answer-btn btn btn-danger mb-2">C</button>
   <button class="answer-btn btn btn-danger mb-2">D</button>
 </div>
+
+<!-- Timer and Restart Midway button -->
         <div class="quiz-footer">
           <div id="timer" class="timer">Time left: 15s</div>
           <button id="restart-midway-btn" class="btn btn-warning d-none" 
@@ -70,12 +92,15 @@
         </div>
       </section>
 
+      <!-- Results Section -->
   <section id="results" class="results">
         <h2 class="mb-3">Quiz Complete!</h2>
+        <!-- Display user score -->
         <p id="score-text" class="score"></p>
+        <!-- Restart quiz button -->
         <button id="restart-btn" class="btn btn-outline-light" 
         aria-label="Restart quiz and return to category selection">Back to Categories</button>
-        
+        <!-- Link to leaderboard -->
         <a href="leaderboard.html" id="go-to-leaderboard-btn" 
    class="btn btn-danger ms-2">
    Go to Leaderboard
@@ -85,6 +110,7 @@
     </div>
   </div>
 
+  <!-- JavaScript files -->
   <script src="assets/js/questions.js"></script>
   <script src="assets/js/script.js"></script>
   <script
