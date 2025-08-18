@@ -122,7 +122,15 @@ h1, h2, h3, h4, h5, h6 {
     image-rendering: auto;
 }
 
-#quiz,
+#quiz {
+    display: none;
+}
+
 #results {
     display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
