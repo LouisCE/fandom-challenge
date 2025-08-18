@@ -101,3 +101,6 @@ clearBtn.addEventListener('click', () => {
         document.getElementById("score-input-container").style.display = "block";
     }
 });
+
+// Show saved scores immediately on page load
+displayLeaderboard();
