@@ -250,37 +250,43 @@ I tested the site using a combination of **automated tools** and **manual testin
 
 Throughout development, I tested and resolved issues. The log below highlights key fixes and improvements implemented over time:
 
-- **Accessibility Fixes:**  
+**Accessibility Fixes:**  
   - Added `aria` attributes and a `visually-hidden` class to improve screen reader support.  
   - WAVE and Lighthouse accessibility results were recorded to ensure compliance.
 
-- **Quiz Functionality Bugs:**  
+**Quiz Functionality Bugs:**  
   - Fixed answer click and restart button listeners to ensure correct behaviour.  
   - Highlighted correct and wrong answers after selection.  
   - Disabled answers after the first click to prevent multiple selections.  
   - Added delayed transition to the next question for proper feedback display.  
   - Implemented `endGame` function to trigger after timer completion.
 
-  - **Leaderboard System:**  
-  - Added leaderboard that records score and time.  
-  - Fixed sorting so that ties are resolved by completion time.  
+**Leaderboard System:**  
+  - Added leaderboard that records score and time.
+  - Fixed sorting so that ties are resolved by completion time.
+  - Removed Clear Leaderboard button and functionality safely without breaking anything.
 
-- **Randomised Answer Order:**  
+**Randomised Answer Order:**  
   - Implemented shuffle function to randomise answers each round.  
   - Verified answers remain functional regardless of new order.
 
-- **Rules Section Bugs:**
+**Rules Section Bugs:**
   - Rules list added for "View Rules" button.
   - Correctly toggled rules section visibility using `.hide` class.
   - Removed unused variables and cleaned up code for HTML validation.
 
-- **Styling & Layout Issues:**
+**Styling & Layout Issues:**
   - Added `.bg-wallpaper` class for category backgrounds.
   - Fixed inline styles by moving `display: none` to CSS.
   - Added hover styling for answer buttons and differentiated correct/wrong styles.
   - Refactored quiz container, timer, progress bar and section text styling.
 
-- **Validation & Testing:**
+**Quiz Complete Progress Bar:**  
+  - Moved progress bar below the "Quiz Complete!" header for proper visual order.  
+  - Wrapped the progress bar in a `.progress` container to prevent layout issues.  
+  - Ensured buttons and score text display correctly without overlapping or breaking layout
+
+**Validation & Testing:**
   - HTML, CSS, and JS validated using W3C Validators and JSHint.
   - Screenshots of validation results were included in the README.
   - PSI and Lighthouse performance tests conducted, with results documented.
@@ -494,21 +500,23 @@ I would like to thank the following people and resources for their support and g
 
 - **Tim:** My mentor who provided valuable feedback and shared helpful learning resources, including this JavaScript tutorial series that greatly improved my understanding:
 
-  [JavaScript Tutorial Playlist](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
+[JavaScript Tutorial Playlist](https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
   
-  We had three scheduled calls: at project inception, midway through development and at project completion.
+We had three scheduled calls: at project inception, midway through development and at project completion.
 
-  During the inception phase, I debated between creating a generic quiz covering topics like Literature, Mathematics, Sciences, History and Geography with [Open Trivia Database](https://opentdb.com/), or a fandom quiz which is something that I have a greater personal interest in. With guidance from my mentor, I decided to stick with my hobbies and the things that I enjoy by building a fandom-themed quiz.
+During the inception phase, I debated between creating a generic quiz covering topics like Literature, Mathematics, Sciences, History and Geography with [Open Trivia Database](https://opentdb.com/), or a fandom quiz which is something that I have a greater personal interest in. With guidance from my mentor, I decided to stick with my hobbies and the things that I enjoy by building a fandom-themed quiz.
   
-  Tim reviewed my commit strategy, providing clear rules for writing clean, concise, meaningful and incremental commit messages, which seemed to be my biggest weakness in project 1.
+Tim reviewed my commit strategy, providing clear rules for writing clean, concise, meaningful and incremental commit messages, which seemed to be my biggest weakness in project 1.
 
-  He suggested using questions.js over JSON for simplicity, which saved me time and reduced complexity.
+He suggested using questions.js over JSON for simplicity, which saved me time and reduced complexity.
 
 - **Simen:** For reviewing my progress, providing useful tools like Coolors and Balsamiq and helping me develop my approach to coding.
 
 - **Code Institute LMS:** For teaching me HTML, CSS, JavaScript, and web design principles through detailed walkthroughs and exercises.
 
 - **Bootstrap quiz layout inspiration:** The interactive quiz layout was inspired by [Bootstrap Examples - Interactive Quiz Application](https://bootstrapexamples.com/@ross-wille/interactive-quiz-application), which helped guide the design of category buttons, timer, and feedback styling.
+
+- **ChatGPT:** Assisted in generating initial draft questions for `questions.js`. All questions and answers were reviewed, verified, and corrected manually to ensure accuracy with canonical sources.
 
 - **Markdown learning resources:**  
   - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
