@@ -3,15 +3,15 @@ const lastCategory = localStorage.getItem('lastCategory');
 if (lastCategory) {
     switch(lastCategory) {
         case 'avatar':
-            document.body.style.backgroundImage = "url('assets/images/bg-avatar-2.jpg')";
+            document.body.style.backgroundImage = "url('assets/images/bg-avatar.jpg')";
             document.body.classList.add('bg-wallpaper');
             break;
         case 'got':
-            document.body.style.backgroundImage = "url('assets/images/bg-got-5.jpg')";
+            document.body.style.backgroundImage = "url('assets/images/bg-got.jpg')";
             document.body.classList.add('bg-wallpaper');
             break;
         case 'opm':
-            document.body.style.backgroundImage = "url('assets/images/bg-opm-6.jpg')";
+            document.body.style.backgroundImage = "url('assets/images/bg-opm.jpg')";
             document.body.classList.add('bg-wallpaper');
             break;
     }
@@ -21,22 +21,16 @@ if (lastCategory) {
 const leaderboardList = document.getElementById('leaderboard-list');
 const submitBtn = document.getElementById('submit-score-btn');
 const playerInitialsInput = document.getElementById('player-initials');
-const clearBtn = document.getElementById('clear-leaderboard-btn');
 
-// Flags to prevent repeated actions in the same session
+// Flag to prevent repeated actions in the same session
 let hasSubmittedThisSession = false;
-let hasClearedThisSession = false;
 
 // Check if the score was already submitted or leaderboard cleared (persisted in localStorage)
 let scoreSubmitted = localStorage.getItem("scoreSubmitted") === "true";
-let leaderboardCleared = localStorage.getItem("leaderboardCleared") === "true";
 
 // Hide buttons based on persisted flags
 if (scoreSubmitted) {
     submitBtn.style.display = "none";
-}
-if (leaderboardCleared) {
-    clearBtn.style.display = "none";
 }
 
 // Current quiz category (default to 'avatar' if none saved)
@@ -121,28 +115,6 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
     btnContainer.style.display = 'flex';
     btnContainer.style.justifyContent = 'center';
     btnContainer.style.gap = '10px';
-});
-
-// Clear leaderboard button functionality
-clearBtn.addEventListener('click', () => {
-    if (hasClearedThisSession) return;
-    if (confirm("Are you sure you want to clear this leaderboard?")) {
-        localStorage.removeItem('leaderboard_' + currentCategory);
-        displayLeaderboard();
-        hasClearedThisSession = true;
-        leaderboardCleared = true;
-        localStorage.setItem("leaderboardCleared", "true");
-        clearBtn.style.display = 'none';
-
-        // Re-center remaining buttons
-        const btnContainer = clearBtn.parentElement;
-        btnContainer.style.display = 'flex';
-        btnContainer.style.justifyContent = 'center';
-        btnContainer.style.gap = '10px';
-
-        submitBtn.disabled = false;
-        document.getElementById("score-input-container").style.display = "block";
-    }
 });
 
 // Display saved leaderboard immediately on page load
