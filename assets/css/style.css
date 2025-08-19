@@ -184,3 +184,9 @@ h1, h2, h3, h4, h5, h6 {
 .progress-bar {
   width: 0%;
 }
+
+/* Leaderboard page main heading uses arcade font */
+body#leaderboard-page .quiz-header h1 {
+  font-family: 'Press Start 2P', cursive !important;
+  text-align: center;
+}
