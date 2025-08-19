@@ -80,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 .progress {
   height: 8px;
   background-color: rgba(255, 255, 255, 0.2);
-  display: none; /* only shows during quiz via JS */
 }
 
 /* Progress bar itself */
@@ -171,4 +170,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Initials input box hidden by default */
 #initials-box {
   display: none;
+}
+
+/* Reset progress bar width to 0 initially */
+.progress-bar {
+  width: 0%;
 }

@@ -30,14 +30,9 @@ restartMidwayBtn.addEventListener("click", function () {
 
 // Update progress bar as user moves through quiz
 function updateProgressBar() {
-    if (quizSection.style.display === "block") {
     const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
     progressBar.style.width = percent + "%";
     progressBar.setAttribute("aria-valuenow", percent);
-    progressBar.parentElement.style.display = "block"; // show container
-    } else {
-        progressBar.parentElement.style.display = "none"; // hide when not in quiz
-    }
 }
 
 // Show rules
