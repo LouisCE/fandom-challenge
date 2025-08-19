@@ -93,7 +93,6 @@ avatarBtn.addEventListener("click", function () {
     selectedCategory = "avatar";
     localStorage.setItem("lastCategory", selectedCategory);
     localStorage.setItem("scoreSubmitted", "false");
-    localStorage.setItem("leaderboardCleared", "false");
 
     // Get 10 random Avatar questions
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
@@ -120,7 +119,6 @@ gotBtn.addEventListener("click", function () {
     selectedCategory = "got";
     localStorage.setItem("lastCategory", selectedCategory);
     localStorage.setItem("scoreSubmitted", "false");
-    localStorage.setItem("leaderboardCleared", "false");
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     categorySelection.classList.add("hide");
     quizSection.style.display = "block";
@@ -140,7 +138,6 @@ opmBtn.addEventListener("click", function () {
     selectedCategory = "opm";
     localStorage.setItem("lastCategory", selectedCategory);
     localStorage.setItem("scoreSubmitted", "false");
-    localStorage.setItem("leaderboardCleared", "false");
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
     categorySelection.classList.add("hide");
     quizSection.style.display = "block";
@@ -271,7 +268,6 @@ function showQuestion(questionObj) {
 // Answer button handling
 answerButtons.forEach((button) => {
     button.addEventListener("click", function () {
-        button.blur();
         clearInterval(timerInterval);
 
         // Stops impatient users from clicking again during delay
