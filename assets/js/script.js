@@ -223,6 +223,12 @@ function endGame() {
     // Feedback message based on performance
     if (percent >= 90) {
         message = "Congratulations! You're a superfan!";
+        // Fire confetti
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
     } else if (percent >= 70) {
         message = "Good job! You know your stuff.";
     } else {
