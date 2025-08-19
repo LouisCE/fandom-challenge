@@ -30,9 +30,14 @@ restartMidwayBtn.addEventListener("click", function () {
 
 // Update progress bar as user moves through quiz
 function updateProgressBar() {
+    if (quizSection.style.display === "block") {
     const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
     progressBar.style.width = percent + "%";
     progressBar.setAttribute("aria-valuenow", percent);
+    progressBar.parentElement.style.display = "block"; // show container
+    } else {
+        progressBar.parentElement.style.display = "none"; // hide when not in quiz
+    }
 }
 
 // Show rules
@@ -87,7 +92,7 @@ function displayRules() {
 // Category button handlers
 // When Avatar button is clicked
 avatarBtn.addEventListener("click", function () {
-    setBackground("assets/images/bg-avatar-2.jpg");
+    setBackground("assets/images/bg-avatar.jpg");
 
     // Save category choice and reset localStorage states
     selectedCategory = "avatar";
@@ -115,7 +120,7 @@ avatarBtn.addEventListener("click", function () {
 
 // When Game of Thrones button is clicked
 gotBtn.addEventListener("click", function () {
-    setBackground("assets/images/bg-got-5.jpg");
+    setBackground("assets/images/bg-got.jpg");
 
     selectedCategory = "got";
     localStorage.setItem("lastCategory", selectedCategory);
@@ -135,7 +140,7 @@ gotBtn.addEventListener("click", function () {
 
 // When One Punch Man button is clicked
 opmBtn.addEventListener("click", function () {
-    setBackground("assets/images/bg-opm-6.jpg");
+    setBackground("assets/images/bg-opm.jpg");
 
     selectedCategory = "opm";
     localStorage.setItem("lastCategory", selectedCategory);
