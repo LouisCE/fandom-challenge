@@ -1,49 +1,59 @@
 console.log("JavaScript is connected!");
 
-// Get elements
-const quizSection = document.getElementById('quiz');
-const questionText = document.getElementById('question-text');
-const answerButtons = document.querySelectorAll('.answer-btn');
-const progressBar = document.querySelector('.progress-bar.bg-danger');
-const avatarBtn = document.getElementById('avatar-btn');
-const gotBtn = document.getElementById('got-btn');
-const opmBtn = document.getElementById('opm-btn');
-const restartMidwayBtn = document.getElementById('restart-midway-btn');
+// DOM element references
+const quizSection = document.getElementById("quiz");
+const questionText = document.getElementById("question-text");
+const answerButtons = document.querySelectorAll(".answer-btn");
+const progressBar = document.querySelector(".progress-bar.bg-danger");
+const avatarBtn = document.getElementById("avatar-btn");
+const gotBtn = document.getElementById("got-btn");
+const opmBtn = document.getElementById("opm-btn");
+const restartMidwayBtn = document.getElementById("restart-midway-btn");
 
 let categorySelection = document.getElementById("category-selection");
 
+// Background handler
 function setBackground(imagePath = null) {
-    document.body.classList.add('bg-wallpaper');
+    document.body.classList.add("bg-wallpaper");
     if (imagePath) {
         document.body.style.backgroundImage = `url('${imagePath}')`;
     } else {
-        document.body.style.backgroundImage = '';
-        document.body.classList.remove('bg-wallpaper');
+        document.body.style.backgroundImage = "";
+        document.body.classList.remove("bg-wallpaper");
     }
 }
 
-restartMidwayBtn.addEventListener('click', function () {
+// Restart quiz midway
+restartMidwayBtn.addEventListener("click", function () {
     location.reload();
 });
 
+// Update progress bar as user moves through quiz
 function updateProgressBar() {
     const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
-    progressBar.style.width = percent + '%';
-    progressBar.setAttribute('aria-valuenow', percent);
+    progressBar.style.width = percent + "%";
+    progressBar.setAttribute("aria-valuenow", percent);
 }
 
-document.getElementById("view-rules-btn").addEventListener("click", function () {
-    categorySelection.classList.add("hide");
-    document.getElementById("rules").classList.remove("hide");
-    displayRules();
-});
+// Show rules
+document
+    .getElementById("view-rules-btn")
+    .addEventListener("click", function () {
+        categorySelection.classList.add("hide");
+        document.getElementById("rules").classList.remove("hide");
+        displayRules();
+    });
 
-document.getElementById("back-to-categories-btn").addEventListener("click", function () {
-    document.getElementById("rules").classList.add("hide");
-    categorySelection.classList.remove("hide");
-});
+// Back to category selection from rules
+document
+    .getElementById("back-to-categories-btn")
+    .addEventListener("click", function () {
+        document.getElementById("rules").classList.add("hide");
+        categorySelection.classList.remove("hide");
+    });
 
-let selectedCategory = '';
+// Quiz data and rules
+let selectedCategory = "";
 let currentQuestionSet = [];
 
 const rules = [
@@ -53,55 +63,68 @@ const rules = [
     "You have fifteen seconds to answer each question. Think fast!",
     "Try not to skip. Unanswered questions count as wrong!",
     "Your score is shown at the end with feedback.",
-    "Try your best and have fun!"
+    "Try your best and have fun!",
 ];
 
+// Pick random 10 questions from the category
 function getRandomQuestions(questionsArray, count = 10) {
     const shuffled = [...questionsArray].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 }
 
+// Display rules dynamically in HTML
 function displayRules() {
-    const rulesList = document.getElementById('rules-list');
-    rulesList.innerHTML = '';
+    const rulesList = document.getElementById("rules-list");
+    rulesList.innerHTML = "";
 
-    rules.forEach(rule => {
-        const li = document.createElement('li');
+    rules.forEach((rule) => {
+        const li = document.createElement("li");
         li.textContent = rule;
         rulesList.appendChild(li);
     });
 }
 
-avatarBtn.addEventListener('click', function () {
-    setBackground('assets/images/bg-avatar-2.jpg');
+// Category button handlers
+// When Avatar button is clicked
+avatarBtn.addEventListener("click", function () {
+    setBackground("assets/images/bg-avatar-2.jpg");
 
-    selectedCategory = 'avatar';
-    localStorage.setItem('lastCategory', selectedCategory);
-    localStorage.setItem('scoreSubmitted', 'false');
-    localStorage.setItem('leaderboardCleared', 'false');
+    // Save category choice and reset localStorage states
+    selectedCategory = "avatar";
+    localStorage.setItem("lastCategory", selectedCategory);
+    localStorage.setItem("scoreSubmitted", "false");
+    localStorage.setItem("leaderboardCleared", "false");
+
+    // Get 10 random Avatar questions
     currentQuestionSet = getRandomQuestions(avatarQuestions, 10);
+
+    // Hide category selection, show quiz section, enable restart
     categorySelection.classList.add("hide");
-    quizSection.style.display = 'block';
-    restartMidwayBtn.classList.remove('d-none');
+    quizSection.style.display = "block";
+    restartMidwayBtn.classList.remove("d-none");
+
+    // Reset counters
     currentQuestionIndex = 0;
     score = 0;
 
+    // Start timers and display the first question
     startTotalTimer();
     showQuestion(currentQuestionSet[currentQuestionIndex]);
     startTimer();
 });
 
-gotBtn.addEventListener('click', function () {
-    setBackground('assets/images/bg-got-5.jpg');
+// When Game of Thrones button is clicked
+gotBtn.addEventListener("click", function () {
+    setBackground("assets/images/bg-got-5.jpg");
 
-    selectedCategory = 'got';
-    localStorage.setItem('lastCategory', selectedCategory);
-    localStorage.setItem('scoreSubmitted', 'false');
-    localStorage.setItem('leaderboardCleared', 'false');
+    selectedCategory = "got";
+    localStorage.setItem("lastCategory", selectedCategory);
+    localStorage.setItem("scoreSubmitted", "false");
+    localStorage.setItem("leaderboardCleared", "false");
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     categorySelection.classList.add("hide");
-    quizSection.style.display = 'block';
-    restartMidwayBtn.classList.remove('d-none');
+    quizSection.style.display = "block";
+    restartMidwayBtn.classList.remove("d-none");
     currentQuestionIndex = 0;
     score = 0;
 
@@ -110,17 +133,18 @@ gotBtn.addEventListener('click', function () {
     startTimer();
 });
 
-opmBtn.addEventListener('click', function () {
-    setBackground('assets/images/bg-opm-6.jpg');
+// When One Punch Man button is clicked
+opmBtn.addEventListener("click", function () {
+    setBackground("assets/images/bg-opm-6.jpg");
 
-    selectedCategory = 'opm';
-    localStorage.setItem('lastCategory', selectedCategory);
-    localStorage.setItem('scoreSubmitted', 'false');
-    localStorage.setItem('leaderboardCleared', 'false');
+    selectedCategory = "opm";
+    localStorage.setItem("lastCategory", selectedCategory);
+    localStorage.setItem("scoreSubmitted", "false");
+    localStorage.setItem("leaderboardCleared", "false");
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
     categorySelection.classList.add("hide");
-    quizSection.style.display = 'block';
-    restartMidwayBtn.classList.remove('d-none');
+    quizSection.style.display = "block";
+    restartMidwayBtn.classList.remove("d-none");
     currentQuestionIndex = 0;
     score = 0;
 
@@ -139,6 +163,8 @@ let timerInterval;
 let totalTime = 0;
 let totalTimerInterval;
 
+// Timer functions
+// Start total quiz timer
 function startTotalTimer() {
     totalTime = 0;
     totalTimerInterval = setInterval(() => {
@@ -146,19 +172,22 @@ function startTotalTimer() {
     }, 1000);
 }
 
+// Stop total quiz timer
 function stopTotalTimer() {
     clearInterval(totalTimerInterval);
 }
 
+// Start per-question timer
 function startTimer() {
     clearInterval(timerInterval);
     timeLeft = 15;
-    document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+    document.getElementById("timer").textContent = `Time left: ${timeLeft}s`;
 
     timerInterval = setInterval(() => {
         timeLeft--;
-        document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+        document.getElementById("timer").textContent = `Time left: ${timeLeft}s`;
 
+        // If time runs out, count as wrong and go to next
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             console.log("Time's up!");
@@ -175,17 +204,23 @@ function startTimer() {
     }, 1000);
 }
 
+// Endgame handling
 function endGame() {
     stopTotalTimer();
-    localStorage.setItem('lastScore', score);
-    localStorage.setItem('lastTime', totalTime);
 
-    quizSection.style.display = 'none';
-    document.getElementById('results').style.display = 'block';
+    // Save results to localStorage
+    localStorage.setItem("lastScore", score);
+    localStorage.setItem("lastTime", totalTime);
 
+    // Hide quiz, show results
+    quizSection.style.display = "none";
+    document.getElementById("results").style.display = "block";
+
+    // Calculate percentage score
     const percent = (score / currentQuestionSet.length) * 100;
-    let message = '';
+    let message = "";
 
+    // Feedback message based on performance
     if (percent >= 90) {
         message = "Congratulations! You're a superfan!";
     } else if (percent >= 70) {
@@ -194,47 +229,63 @@ function endGame() {
         message = "You can do better. Try again.";
     }
 
-    document.getElementById('score-text').textContent =
-        `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
+    // Show score and message
+    document.getElementById(
+        "score-text"
+    ).textContent = `You scored ${score} out of ${currentQuestionSet.length}! ${message}`;
 }
 
+// Display questions
 function showQuestion(questionObj) {
+    // Show question text
     questionText.textContent = questionObj.question;
 
-    const shuffledAnswers = [...questionObj.answers].sort(() => 0.5 - Math.random());
-
+    // Shuffle answers so order is random
+    const shuffledAnswers = [...questionObj.answers].sort(
+        () => 0.5 - Math.random()
+    );
     const correctAnswerText = questionObj.correct;
 
+    // Fill buttons with answers
     answerButtons.forEach((button, index) => {
         button.textContent = shuffledAnswers[index];
         button.disabled = false;
-        button.classList.remove('correct', 'wrong');
+        button.classList.remove("correct", "wrong");
 
-    button.dataset.correct = (shuffledAnswers[index] === correctAnswerText).toString();
+        // Store whether this button is correct
+        button.dataset.correct = (
+            shuffledAnswers[index] === correctAnswerText
+        ).toString();
     });
 
     updateProgressBar();
     startTimer();
-
 }
 
+// Answer button handling
 answerButtons.forEach((button) => {
-    button.addEventListener('click', function () {
+    button.addEventListener("click", function () {
         clearInterval(timerInterval);
 
         // Stops impatient users from clicking again during delay
-        answerButtons.forEach(btn => btn.disabled = true);
+        answerButtons.forEach((btn) => (btn.disabled = true));
 
         if (button.dataset.correct === "true") {
+            // Correct answer
             score++;
-            button.classList.add('correct');
+            button.classList.add("correct");
         } else {
-            button.classList.add('wrong');
+            // Wrong answer
+            button.classList.add("wrong");
 
-            const correctBtn = Array.from(answerButtons).find(btn => btn.dataset.correct === "true");
-            if (correctBtn) correctBtn.classList.add('correct');
+            // Highlight correct answer
+            const correctBtn = Array.from(answerButtons).find(
+                (btn) => btn.dataset.correct === "true"
+            );
+            if (correctBtn) correctBtn.classList.add("correct");
         }
 
+        // After short delay, load next question or end game
         setTimeout(() => {
             currentQuestionIndex++;
             updateProgressBar();
@@ -248,26 +299,34 @@ answerButtons.forEach((button) => {
     });
 });
 
-document.getElementById('restart-btn').addEventListener('click', function () {
-    document.getElementById('results').style.display = 'none';
+// Navigation & buttons
+// Restart quiz button (from results screen)
+document.getElementById("restart-btn").addEventListener("click", function () {
+    document.getElementById("results").style.display = "none";
     categorySelection.classList.remove("hide");
-    setBackground();
+    setBackground(); // Reset background
 });
 
-document.getElementById("back-to-categories-btn").addEventListener("click", function () {
-    document.getElementById("rules").classList.add("hide");
-    categorySelection.classList.remove("hide");
-    setBackground();
-});
+// Back to categories (from rules screen)
+document
+    .getElementById("back-to-categories-btn")
+    .addEventListener("click", function () {
+        document.getElementById("rules").classList.add("hide");
+        categorySelection.classList.remove("hide");
+        setBackground();
+    });
 
-const submitScoreBtn = document.getElementById('submit-score-btn');
+    // Submit score & leaderboard
+const submitScoreBtn = document.getElementById("submit-score-btn");
 if (submitScoreBtn) {
-    submitScoreBtn.addEventListener('click', () => {
-        window.location.href = 'leaderboard.html';
+    submitScoreBtn.addEventListener("click", () => {
+        window.location.href = "leaderboard.html";
     });
 }
 
-document.getElementById("go-to-leaderboard-btn")
-  .addEventListener("click", () => {
-    window.location.href = "leaderboard.html";
-});
+// Go to leaderboard button
+document
+    .getElementById("go-to-leaderboard-btn")
+    .addEventListener("click", () => {
+        window.location.href = "leaderboard.html";
+    });
