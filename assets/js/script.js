@@ -271,6 +271,7 @@ function showQuestion(questionObj) {
 // Answer button handling
 answerButtons.forEach((button) => {
     button.addEventListener("click", function () {
+        button.blur();
         clearInterval(timerInterval);
 
         // Stops impatient users from clicking again during delay
