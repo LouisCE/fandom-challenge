@@ -160,6 +160,13 @@ h1, h2, h3, h4, h5, h6 {
   list-style-position: inside;
 }
 
+/* Apply arcade font to leaderboard headings */
+.quiz-header h1,
+#leaderboard h2 {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
 /* Initials input box hidden by default */
 #initials-box {
   display: none;
