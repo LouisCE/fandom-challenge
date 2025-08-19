@@ -21,9 +21,9 @@ const avatarQuestions = [
         correct: "Earth"
     },
     {
-        question: "Who teaches Aang firebending after Zuko joins Team Avatar?",
+        question: "Who teaches Aang firebending in Book 1?",
         answers: ["Iroh", "Jeong Jeong", "Zuko", "Azula"],
-        correct: "Zuko"
+        correct: "Jeong Jeong"
     },
     {
         question: "Which spirit helps Aang in the Spirit World as a guide?",
@@ -141,9 +141,9 @@ const avatarQuestions = [
         correct: "Bloodbending"
     },
     {
-        question: "Which character runs the cabbage cart?",
-        answers: ["June", "The Boulder", "Cabbage Merchant", "Foaming Mouth Guy"],
-        correct: "Cabbage Merchant"
+        question: "What fruit does Katara hate?",
+        answers: ["Apples", "Bananas", "Oranges", "Papayas"],
+        correct: "Papayas"
     },
     {
         question: "What is the nickname of Iroh’s tea shop?",
@@ -305,9 +305,9 @@ const gotQuestions = [
         correct: "Bran Stark"
     },
     {
-        question: "What is the name of Jon Snow’s sword before Longclaw?",
-        answers: ["Ice", "Needle", "Oathkeeper", "Widow's Wail"],
-        correct: "Ice"
+        question: "What is the name of Jon Snow’s sword?",
+        answers: ["Ice", "Longclaw", "Oathkeeper", "Widow's Wail"],
+        correct: "Longclaw"
     },
     {
         question: "Who was the youngest Stark child?",
@@ -401,8 +401,8 @@ const gotQuestions = [
     },
     {
         question: "Who becomes King of the Seven Kingdoms after Bran?",
-        answers: ["Tyrion Lannister", "Sansa Stark", "No one, the kingdoms separate", "Jon Snow"],
-        correct: "No one, the kingdoms separate"
+        answers: ["Tyrion Lannister", "Bran Stark", "No one, the kingdoms separate", "Jon Snow"],
+        correct: "Bran Stark"
     },
     {
         question: "What is the Iron Bank located in?",
@@ -496,8 +496,8 @@ const gotQuestions = [
     },
     {
         question: "What are Daenerys’s titles besides Queen?",
-        answers: ["Breaker of Chains", "Mother of Dragons", "Khaleesi", "All of the above"],
-        correct: "All of the above"
+        answers: ["Breaker of Chains", "Mother of Dragons", "Khaleesi", "All three"],
+        correct: "All three"
     },
     {
         question: "Who is known as 'The Great Other'?",
@@ -515,12 +515,12 @@ const onePunchManQuestions = [
     },
     {
         question: "What is Genos's role in the series?",
-        answers: ["S-Class Hero", "Saitama’s disciple", "Monster", "Villain"],
+        answers: ["A-Class Hero", "Saitama’s disciple", "Monster", "Villain"],
         correct: "Saitama’s disciple"
     },
     {
-        question: "Which hero is known as 'The Tank Top Master'?",
-        answers: ["Bang", "Tornado of Terror", "Tank Top Blackhole", "King"],
+        question: "Which of the following is not an S-Class hero?",
+        answers: ["Amai Mask", "Puri-Puri Prisoner", "Tank Top Master", "Demon Cyborg"],
         correct: "Tank Top Blackhole"
     },
     {
@@ -534,13 +534,13 @@ const onePunchManQuestions = [
         correct: "Genos"
     },
     {
-        question: "Who is the strongest martial artist and Bang’s brother?",
-        answers: ["Bomb", "Garou", "Watchdog Man", "Zombieman"],
-        correct: "Garou"
+        question: "Who is Bang’s brother?",
+        answers: ["Bomb", "Garou", "Blast", "Zombieman"],
+        correct: "Bomb"
     },
     {
         question: "What is Saitama’s favorite food?",
-        answers: ["Bald pancakes", "Rice balls", "Curry", "Tonkatsu"],
+        answers: ["Pancakes", "Rice balls", "Curry", "Tonkatsu"],
         correct: "Curry"
     },
     {
@@ -559,9 +559,9 @@ const onePunchManQuestions = [
         correct: "Psychic abilities"
     },
     {
-        question: "Which hero wears a helmet shaped like a dog’s head?",
-        answers: ["Watchdog Man", "King", "Metal Bat", "Drive Knight"],
-        correct: "Watchdog Man"
+        question: "Which monster can split into numerous duplicates?",
+        answers: ["Black Sperm", "Evil Natural Water", "Phoenix Man", "Homeless Emperor"],
+        correct: "Black Sperm"
     },
     {
         question: "Who is the alien leader that invades Earth?",
@@ -585,13 +585,13 @@ const onePunchManQuestions = [
     },
     {
         question: "Which hero is known as the 'Metal Bat'?",
-        answers: ["Genos", "Metal Bat", "Mumen Rider", "Tank Top Master"],
-        correct: "Metal Bat"
+        answers: ["Genos", "Bad", "Mumen Rider", "Iaian"],
+        correct: "Bad"
     },
     {
         question: "Who taught Saitama his workout routine?",
         answers: ["Genos", "Nobody", "Bang", "King"],
-        correct: "Bang"
+        correct: "Nobody"
     },
     {
         question: "Who is known for wearing a bicycle helmet while fighting crime?",
@@ -599,14 +599,14 @@ const onePunchManQuestions = [
         correct: "Mumen Rider"
     },
     {
-        question: "Which monster is also called 'Deep Sea King'?",
+        question: "Which monster is Disaster Level: Dragon?",
         answers: ["Mosquito Girl", "Crablante", "Deep Sea King", "Carnage Kabuto"],
-        correct: "Deep Sea King"
+        correct: "Carnage Kabuto"
     },
     {
-        question: "Which hero has psychic powers?",
-        answers: ["Tank Top Tiger", "Fubuki", "Bang", "Tatsumaki"],
-        correct: "Tatsumaki"
+        question: "Which is the most powerful of the Centipede monsters?",
+        answers: ["Junior Centipede", "Senior Centipede", "Elder Centipede", "Ancient Centipede"],
+        correct: "Ancient Centipede"
     },
     {
         question: "What is Saitama’s hero name given by the Hero Association?",
@@ -614,9 +614,9 @@ const onePunchManQuestions = [
         correct: "Caped Baldy"
     },
     {
-        question: "Who is the king of the underworld in One Punch Man?",
+        question: "Who is the king of the Monster Association in One Punch Man?",
         answers: ["Orochi", "Gouketsu", "Lord Boros", "Garou"],
-        correct: "Garou"
+        correct: "Orochi"
     },
     {
         question: "What rank does Saitama start at in the Hero Association?",
@@ -644,9 +644,9 @@ const onePunchManQuestions = [
         correct: "Silver Fang"
     },
     {
-        question: "Which villain attacks City A with a meteor?",
-        answers: ["Boros", "Carnage Kabuto", "Speed-o'-Sound Sonic", "Meteor-level threat"],
-        correct: "Meteor-level threat"
+        question: "What is the highest disaster level?",
+        answers: ["Demon", "Dragon", "God", "Apocalypse"],
+        correct: "God"
     },
     {
         question: "What is Speed-o'-Sound Sonic’s weapon of choice?",
@@ -659,9 +659,9 @@ const onePunchManQuestions = [
         correct: "Drive Knight"
     },
     {
-        question: "Which monster leads the Monster Association?",
+        question: "Which monster gets stronger in the rain?",
         answers: ["Orochi", "Deep Sea King", "Lord Boros", "Gouketsu"],
-        correct: "Orochi"
+        correct: "Deep Sea King"
     },
     {
         question: "What is Garou’s fighting style called?",
@@ -684,9 +684,9 @@ const onePunchManQuestions = [
         correct: "King"
     },
     {
-        question: "Who is Fubuki’s sister?",
-        answers: ["Blizzard", "Tatsumaki", "Puri-Puri Prisoner", "Mosquito Girl"],
-        correct: "Tatsumaki"
+        question: "Which monster is capable of resurrection?",
+        answers: ["Phoenix Man", "Evil Natural Water", "Orochi", "Vaccine Man"],
+        correct: "Phoenix Man"
     },
     {
         question: "What is the color of Saitama’s hero costume?",
@@ -699,29 +699,29 @@ const onePunchManQuestions = [
         correct: "Sweet Mask"
     },
     {
-        question: "Which hero is a prisoner who fights for justice?",
-        answers: ["Puri-Puri Prisoner", "Mumen Rider", "Tank Top Master", "Zombieman"],
-        correct: "Puri-Puri Prisoner"
+        question: "Which hero has a robot army?",
+        answers: ["Metal Knight", "Metal Bat", "Child Emperor", "King"],
+        correct: "Metal Knight"
     },
     {
-        question: "Which hero wears glasses and acts as an assistant to S-Class heroes?",
-        answers: ["Snek", "Eyelashes", "Glasses", "Narinki"],
-        correct: "Glasses"
+        question: "Which hero can regenerate from just a head?",
+        answers: ["Zombieman", "Pig God", "King", "Magic Trick Man"],
+        correct: "Zombieman"
     },
     {
-        question: "Who is the Hero Association’s highest-ranking member seen rarely?",
+        question: "Who is the Hero Association’s highest-ranking member?",
         answers: ["Blast", "King", "Bang", "Zombieman"],
         correct: "Blast"
     },
     {
         question: "Which hero uses gadgets and traps in battle?",
         answers: ["Drive Knight", "Child Emperor", "Metal Knight", "Watchdog Man"],
-        correct: "Metal Knight"
+        correct: "Child Emperor"
     },
     {
-        question: "Which monster was defeated by Saitama in the House of Evolution arc?",
-        answers: ["Carnage Kabuto", "Mosquito Girl", "Beefcake", "Armored Gorilla"],
-        correct: "Armored Gorilla"
+        question: "Which monster can go for a week-long rampage?",
+        answers: ["Carnage Kabuto", "Overgrown Rover", "Beefcake", "Armored Gorilla"],
+        correct: "Carnage Kabuto"
     },
     {
         question: "Which alien spacecraft invades during the Boros arc?",
@@ -729,13 +729,13 @@ const onePunchManQuestions = [
         correct: "Dark Matter Thieves"
     },
     {
-        question: "Who is the bald cyborg hero?",
+        question: "Who is the cyborg hero?",
         answers: ["Genos", "Metal Bat", "Zombieman", "Drive Knight"],
-        correct: "Metal Bat"
+        correct: "Genos"
     },
     {
         question: "Which hero has regenerative powers?",
-        answers: ["Zombieman", "Tatsumaki", "Fubuki", "Puri-Puri Prisoner"],
+        answers: ["Zombieman", "Pig God", "Fubuki", "Puri-Puri Prisoner"],
         correct: "Zombieman"
     },
     {
@@ -759,9 +759,9 @@ const onePunchManQuestions = [
         correct: "Watchdog Man"
     },
     {
-        question: "Which hero has the rank of S-Class Rank 2?",
-        answers: ["Tatsumaki", "Bang", "Blast", "King"],
-        correct: "Bang"
+        question: "Which hero did Saitama once refer to as 'Forelocks in the Face?",
+        answers: ["Flashy Flash", "Superalloy Darkshine", "Tatsumaki", "Amai Mask"],
+        correct: "Flashy Flash"
     },
     {
         question: "Who was the leader of the Dark Matter Thieves?",
@@ -774,9 +774,9 @@ const onePunchManQuestions = [
         correct: "Mosquito Girl"
     },
     {
-        question: "Which hero uses psychic powers to control objects?",
-        answers: ["Fubuki", "Bang", "Tatsumaki", "Child Emperor"],
-        correct: "Tatsumaki"
+        question: "Which monster can fit into openings as small as 3mm?",
+        answers: ["Evil Natural Water", "Nyan", "Kenzan Rat", "Overgrown Rover"],
+        correct: "Nyan"
     },
     {
         question: "Which villain wears ninja attire?",
