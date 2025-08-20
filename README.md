@@ -61,9 +61,9 @@ The final live site follows the overall structure of the wireframes. Minor adjus
 
 **Wireframe links:**
 
-![Mobile Wireframes](assets/images/wireframes-mobile.png)  
-![Tablet Wireframes](assets/images/wireframes-tablet.png)  
-![Desktop Wireframes](assets/images/wireframes-computer.png)
+![Mobile Wireframes](assets/images/docs/wireframes-mobile.png)  
+![Tablet Wireframes](assets/images/docs/wireframes-tablet.png)  
+![Desktop Wireframes](assets/images/docs/wireframes-desktop.png)
 
 ## Design Choices
 
@@ -77,8 +77,8 @@ Button text uses a slightly larger, bold style to improve clickability and usabi
 
 ### Colour Scheme
 
-![Coolors Palette](assets/images/coolors.png)  
-![Contrast Grid](assets/images/contrast-grid.png)
+![Coolors Palette](assets/images/docs/coolors.png)  
+![Contrast Grid](assets/images/docs/contrast-grid.png)
 
 The **Fandom Challenge** quiz uses a passionate, bold colour palette based on Netflix’s iconic red (#E50914) and deep blacks to create an energetic and immersive atmosphere:
 
@@ -190,6 +190,7 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Displays the **top 10 high scores**, using **time as a tiebreaker**.
 - Highlights the **most recent entry in gold** for 3 seconds to show placement.
 - Adds **replayability**: even a perfect scorer can try to improve their time.
+- The most recent score to get added is highlighted in gold for three seconds, allowing the user to clearly see where exactly their performance placed among the top ten.
 - As you can see, I currently hold all the top scores.
 - The screenshots below demonstrates how the leaderboard treats results with equal scores but different completion times. Score takes priority over time and time acts as a tiebreaker in the event of an equal score.
 
@@ -461,7 +462,7 @@ I used the [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to v
 
 ### JavaScript Validation (JSHint)
 
-My JavaScript, including `script.js` and `questions.js` was validated using [JSHint](https://jshint.com/).
+My JavaScript, including `script.js`, `leaderboard.js` and `questions.js` was validated using [JSHint](https://jshint.com/).
 
 Initially, there was an unused variable (`rulesSection`), which was removed. The final check passed with no unused variables or syntax errors, shown below.
 
@@ -475,6 +476,8 @@ esversion: 6 tells JSHint to allow ES6 syntax (such as const, let, arrow functio
 global confetti tells JSHint that confetti is defined externally via the CDN, preventing "undefined variable" warnings.
 
 This ensures that JSHint checks my code correctly while ignoring legitimate ES6 features and externally loaded libraries.
+
+Below are screenshots of the beginning of my validation for `questions.js`, `script.js` and `leaderboard.js`
 
 ![JavaScript Validation Results](assets/images/validation/questions.js.png)
 ![JavaScript Validation Results](assets/images/validation/script.js.png)
