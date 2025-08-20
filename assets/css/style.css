@@ -176,11 +176,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* Initials input box hidden by default */
-#initials-box {
-  display: none;
-}
-
 /* Reset progress bar width to 0 initially */
 .progress-bar {
   width: 0%;
@@ -194,14 +189,23 @@ body#leaderboard-page .quiz-header h1 {
 
 .bg-avatar {
     background-image: url('../images/bg-avatar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bg-got {
     background-image: url('../images/bg-got.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bg-opm {
     background-image: url('../images/bg-opm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bg-wallpaper {
@@ -281,8 +285,30 @@ body#leaderboard-page .quiz-header h1 {
     flex-wrap: wrap;
 }
 
-/* Ensure buttons have consistent width like quiz buttons */
+/* Buttons have consistent width like quiz buttons */
 #results .btn, #results a.btn {
     min-width: 120px;
     margin: 0 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Default leaderboard entries */
+.leaderboard-entry {
+  font-weight: normal;
+  color: white;
+}
+
+/* Highlighted (most recent score) */
+.leaderboard-entry.highlight {
+  font-weight: bold;
+  color: gold;
+}
+
+.hidden {
+  display: none !important;
 }

@@ -1,20 +1,17 @@
 // Restore the background image from the last selected category
 const lastCategory = localStorage.getItem('lastCategory');
 if (lastCategory) {
-    switch(lastCategory) {
-        case 'avatar':
-            document.body.style.backgroundImage = "url('assets/images/bg-avatar.jpg')";
-            document.body.classList.add('bg-wallpaper');
-            break;
-        case 'got':
-            document.body.style.backgroundImage = "url('assets/images/bg-got.jpg')";
-            document.body.classList.add('bg-wallpaper');
-            break;
-        case 'opm':
-            document.body.style.backgroundImage = "url('assets/images/bg-opm.jpg')";
-            document.body.classList.add('bg-wallpaper');
-            break;
-    }
+  switch (lastCategory) {
+    case "avatar":
+      document.body.classList.add("bg-avatar", "bg-wallpaper");
+      break;
+    case "got":
+      document.body.classList.add("bg-got", "bg-wallpaper");
+      break;
+    case "opm":
+      document.body.classList.add("bg-opm", "bg-wallpaper");
+      break;
+  }
 }
 
 // Get DOM elements
@@ -30,7 +27,7 @@ let scoreSubmitted = localStorage.getItem("scoreSubmitted") === "true";
 
 // Hide buttons based on persisted flags
 if (scoreSubmitted) {
-    submitBtn.style.display = "none";
+    submitBtn.classList.add("hidden");
 }
 
 // Current quiz category (default to 'avatar' if none saved)
@@ -53,29 +50,26 @@ function displayLeaderboard(highlightRecentIndex = null) {
 
     board.forEach((entry, index) => {
         const li = document.createElement('li');
-        li.textContent = `${entry.initials.toUpperCase()} - ${entry.score}/10 (${entry.time}s)`;
-        li.style.fontWeight = 'normal';
-        li.style.color = 'white';
+    li.textContent = `${entry.initials.toUpperCase()} - ${entry.score}/10 (${entry.time}s)`;
+    li.classList.add("leaderboard-entry");
 
-        // Highlight only the most recent score
-        if (highlightRecentIndex !== null && index === highlightRecentIndex) {
-            li.style.fontWeight = 'bold';
-            li.style.color = 'gold';
+    // Highlight only the most recent score
+    if (highlightRecentIndex !== null && index === highlightRecentIndex) {
+        li.classList.add("highlight");
 
-            // Highlight fades back to normal after 3s
-            setTimeout(() => {
-                li.style.fontWeight = 'normal';
-                li.style.color = 'white';
-            }, 3000);
-        }
+        // Remove highlight after 3s
+        setTimeout(() => {
+            li.classList.remove("highlight");
+        }, 3000);
+    }
 
-        leaderboardList.appendChild(li);
-    });
+    leaderboardList.appendChild(li);
+});
 }
 
 // When "Submit Score" is clicked, show initials input box
 submitBtn.addEventListener('click', () => {
-    document.getElementById('initials-box').style.display = 'block';
+    document.getElementById('initials-box').classList.remove("hidden");
     document.getElementById('player-initials').focus();
 });
 
@@ -103,18 +97,16 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
     displayLeaderboard(recentIndex);
 
     // Hide input box and reset input field
-    document.getElementById('initials-box').style.display = 'none';
+    document.getElementById('initials-box').classList.add("hidden");
     initialsInput.value = '';
     hasSubmittedThisSession = true;
     scoreSubmitted = true;
     localStorage.setItem("scoreSubmitted", "true");
-    submitBtn.style.display = 'none';
+    submitBtn.classList.add("hidden");
 
     // Re-center the remaining buttons
     const btnContainer = submitBtn.parentElement;
-    btnContainer.style.display = 'flex';
-    btnContainer.style.justifyContent = 'center';
-    btnContainer.style.gap = '10px';
+    btnContainer.classList.add("btn-container");
 });
 
 // Display saved leaderboard immediately on page load
