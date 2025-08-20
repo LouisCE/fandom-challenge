@@ -122,6 +122,7 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Leaderboard system that ranks players by score, with completion time as a tiebreaker.
 - Ability to restart the quiz and select categories again without refreshing the page.
 - Responsive design ensuring usability on various screen sizes.
+- Timed quiz with a fifteen-second countdown; timer turns red when less than or equal to five seconds.
 
 ### Existing Features
 
@@ -159,6 +160,12 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Balanced question/answer distribution ensures fairness.
 
 ![One Punch Man Quiz](assets/images/docs/screenshot-opm-quiz.png)
+
+#### Quiz Timer Warning
+- When there are 5 seconds or less remaining on the timer, the countdown text turns red to alert the user.
+- This visual cue helps users prioritize answering quickly and add some intensity to the game.
+
+![Quiz Timer Warning](assets/images/docs/screenshot-timer-warning.png)
 
 #### Quiz Complete Page
 - At the end of each quiz, users see their **final score out of 10**.
