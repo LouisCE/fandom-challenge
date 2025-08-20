@@ -323,10 +323,6 @@ The **Fandom Challenge** quiz was manually tested across a variety of real devic
 | Nest Hub                   | Good       | Good            | Good            | Good          |
 | Nest Hub Max               | Good       | Good            | Good            | Good          |
 
-All responsive breakpoints worked as expected. The quiz container scales and stacks appropriately on smaller devices. Background images are set with `cover` and `center` properties; while there is minor cropping on some tablet devices, this is minor and does not affect the readability or functionality of the quiz content.
-
-No explicit media queries are currently being used for this project. The layout relies on **Bootstrap’s responsive grid and utility classes**, along with percentage-based widths, to adapt naturally across screen sizes. The quiz container remains centred and fully visible on all tested devices, with background images scaling appropriately while maintaining focus on the interactive quiz content.
-
 Below are three examples:
 
 - **iPhone SE** (mobile)
@@ -336,6 +332,10 @@ Below are three examples:
 ![iPhone SE Screenshot](assets/images/testing/screenshot-iphone-se.png)
 ![iPad Mini Screenshot](assets/images/testing/screenshot-ipad-mini.png)
 ![Nest Hub Max Screenshot](assets/images/testing/screenshot-nest-hub-max.png)
+
+All responsive breakpoints worked as expected. The quiz container scales and stacks appropriately on smaller devices. Background images are set with `cover` and `center` properties; while there is minor cropping on some tablet devices, this is minor and does not affect the readability or functionality of the quiz content.
+
+No explicit media queries are currently being used for this project. The layout relies on **Bootstrap’s responsive grid and utility classes**, along with percentage-based widths, to adapt naturally across screen sizes. The quiz container remains centred and fully visible on all tested devices, with background images scaling appropriately while maintaining focus on the interactive quiz content.
 
 ### Automated Testing Results
 
