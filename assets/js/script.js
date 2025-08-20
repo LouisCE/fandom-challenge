@@ -137,7 +137,6 @@ gotBtn.addEventListener("click", function () {
 // When One Punch Man button is clicked
 opmBtn.addEventListener("click", function () {
     setBackground("bg-opm");
-
     selectedCategory = "opm";
     localStorage.setItem("lastCategory", selectedCategory);
     localStorage.setItem("scoreSubmitted", "false");
@@ -181,7 +180,7 @@ function stopTotalTimer() {
 function startTimer() {
     clearInterval(timerInterval);
     timeLeft = 15;
-    
+
     const timerElement = document.getElementById("timer");
 
     // Reset text and remove danger class immediately
@@ -204,7 +203,7 @@ function startTimer() {
             } else {
                 endGame();
             }
-            return; 
+            return;
         }
 
         // Show time left
@@ -243,11 +242,13 @@ function endGame() {
     if (percent >= 90) {
         message = "Congratulations! You're a superfan!";
         // Fire confetti
-    confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-    });
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: {
+                y: 0.6
+            }
+        });
     } else if (percent >= 70) {
         message = "Good job! You know your stuff.";
     } else {
@@ -341,7 +342,7 @@ document
         setBackground();
     });
 
-    // Submit score & leaderboard
+// Submit score & leaderboard
 const submitScoreBtn = document.getElementById("submit-score-btn");
 if (submitScoreBtn) {
     submitScoreBtn.addEventListener("click", () => {

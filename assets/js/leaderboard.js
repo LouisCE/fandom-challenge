@@ -1,17 +1,17 @@
 // Restore the background image from the last selected category
 const lastCategory = localStorage.getItem('lastCategory');
 if (lastCategory) {
-  switch (lastCategory) {
-    case "avatar":
-      document.body.classList.add("bg-avatar", "bg-wallpaper");
-      break;
-    case "got":
-      document.body.classList.add("bg-got", "bg-wallpaper");
-      break;
-    case "opm":
-      document.body.classList.add("bg-opm", "bg-wallpaper");
-      break;
-  }
+    switch (lastCategory) {
+        case "avatar":
+            document.body.classList.add("bg-avatar", "bg-wallpaper");
+            break;
+        case "got":
+            document.body.classList.add("bg-got", "bg-wallpaper");
+            break;
+        case "opm":
+            document.body.classList.add("bg-opm", "bg-wallpaper");
+            break;
+    }
 }
 
 // Get DOM elements
@@ -25,7 +25,7 @@ submitBtn.addEventListener('click', () => {
 
     // Show the initials input box
     document.getElementById('initials-box').classList.remove("hidden");
-    
+
     // Focus on the input field
     playerInitialsInput.focus();
 });
@@ -61,21 +61,21 @@ function displayLeaderboard(highlightRecentIndex = null) {
 
     board.forEach((entry, index) => {
         const li = document.createElement('li');
-    li.textContent = `${entry.initials.toUpperCase()} - ${entry.score}/10 (${entry.time}s)`;
-    li.classList.add("leaderboard-entry");
+        li.textContent = `${entry.initials.toUpperCase()} - ${entry.score}/10 (${entry.time}s)`;
+        li.classList.add("leaderboard-entry");
 
-    // Highlight only the most recent score
-    if (highlightRecentIndex !== null && index === highlightRecentIndex) {
-        li.classList.add("highlight");
+        // Highlight only the most recent score
+        if (highlightRecentIndex !== null && index === highlightRecentIndex) {
+            li.classList.add("highlight");
 
-        // Remove highlight after 3s
-        setTimeout(() => {
-            li.classList.remove("highlight");
-        }, 3000);
-    }
+            // Remove highlight after 3s
+            setTimeout(() => {
+                li.classList.remove("highlight");
+            }, 3000);
+        }
 
-    leaderboardList.appendChild(li);
-});
+        leaderboardList.appendChild(li);
+    });
 }
 
 // When "Submit Score" is clicked, show initials input box
@@ -88,7 +88,7 @@ submitBtn.addEventListener('click', () => {
 document.getElementById('confirm-submit-btn').addEventListener('click', () => {
     if (hasSubmittedThisSession) return;
     const initialsInput = document.getElementById('player-initials');
-    const initials = initialsInput.value.trim().substring(0,3).toUpperCase();
+    const initials = initialsInput.value.trim().substring(0, 3).toUpperCase();
     if (!initials) return alert("Please enter your initials!");
 
     // Get score and time from localStorage (saved by quiz)
@@ -96,11 +96,15 @@ document.getElementById('confirm-submit-btn').addEventListener('click', () => {
     const time = parseInt(localStorage.getItem('lastTime')) || 0;
 
     const board = loadLeaderboard();
-    board.push({ initials, score, time });
+    board.push({
+        initials,
+        score,
+        time
+    });
 
     // Sort by score descending, then time ascending as tiebreaker
-    board.sort((a,b) => b.score - a.score || a.time - b.time);
-    const top10 = board.slice(0,10); // Keep only top 10
+    board.sort((a, b) => b.score - a.score || a.time - b.time);
+    const top10 = board.slice(0, 10); // Keep only top 10
     saveLeaderboard(top10);
 
     // Find index of most recent entry for highlighting

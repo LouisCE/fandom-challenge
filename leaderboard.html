@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    />
 
     <!-- Custom font for leaderboard -->
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body id="leaderboard-page">
     <!-- Main container to center content vertically and horizontally -->
@@ -35,7 +37,11 @@
         </div>
 
         <!-- Leaderboard section -->
-        <section id="leaderboard" class="text-center" aria-labelledby="leaderboard-heading">
+        <section
+          id="leaderboard"
+          class="text-center"
+          aria-labelledby="leaderboard-heading"
+        >
           <h2 id="leaderboard-heading" class="mb-4">High Scores</h2>
 
           <!-- Scores list -->
@@ -43,26 +49,39 @@
 
           <!-- Hidden initials input shown after submitting score -->
           <div id="initials-box" class="mb-3 hidden" aria-hidden="true">
-  <input
-    type="text"
-    id="player-initials"
-    maxlength="3"
-    placeholder="Your initials"
-    class="form-control mb-2" 
-    aria-label="Enter your initials">
-  <button id="confirm-submit-btn" class="btn btn-danger w-100" aria-label="Confirm submitting your initials">
-    Confirm
-  </button>
-</div>
+            <input
+              type="text"
+              id="player-initials"
+              maxlength="3"
+              placeholder="Your initials"
+              class="form-control mb-2"
+              aria-label="Enter your initials"
+            />
+            <button
+              id="confirm-submit-btn"
+              class="btn btn-danger w-100"
+              aria-label="Confirm submitting your initials"
+            >
+              Confirm
+            </button>
+          </div>
 
           <!-- Action buttons for submitting score and going back -->
           <div class="d-flex justify-content-center gap-2 mt-3 w-100">
-  <button id="submit-score-btn" class="btn btn-danger" aria-label="Submit your score">
-    Submit Score
-  </button>
-  <a href="index.html" class="btn btn-outline-light" 
-     aria-label="Return to quiz category selection">Back to Categories</a>
-</div>
+            <button
+              id="submit-score-btn"
+              class="btn btn-danger"
+              aria-label="Submit your score"
+            >
+              Submit Score
+            </button>
+            <a
+              href="index.html"
+              class="btn btn-outline-light"
+              aria-label="Return to quiz category selection"
+              >Back to Categories</a
+            >
+          </div>
         </section>
       </div>
     </div>

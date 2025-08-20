@@ -1,210 +1,248 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: #e50914;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e50914;
+  text-align: center;
 }
 
 /* Quiz Container */
 .quiz-container {
-    background-color: rgba(17, 17, 17, 0.95);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
-    padding: 30px;
-    max-width: 600px;
-    width: 100%;
+  background-color: rgba(17, 17, 17, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
 }
 
 /* Quiz header and result text */
-.quiz-header h1, .quiz-header h2, .question, .results h2, .score {
-    color: white;
+.quiz-header h1,
+.quiz-header h2,
+.question,
+.results h2,
+.score {
+  color: white;
 }
 
 /* Buttons */
 .options {
-    display: grid;
-    gap: 10px;
+  display: grid;
+  gap: 10px;
 }
 
 .options .btn {
-    border-radius: 10px;
-    padding: 12px;
-    font-weight: bold;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: bold;
 }
 
 .btn-danger {
-    background-color: #dc3545;
-    border: none;
+  background-color: #dc3545;
+  border: none;
 }
 
 .btn-danger:hover {
-    background-color: #b52a36;
+  background-color: #b52a36;
 }
 
 .btn-outline-light {
-    border-color: #fff;
-    color: #fff;
+  border-color: #fff;
+  color: #fff;
 }
 
 .btn-outline-light:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
-.btn-container, #results .d-flex.justify-content-center {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
+.btn-container,
+#results .d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
 }
 
-#results .btn, #results a.btn {
-    min-width: 120px;
-    margin: 0 5px;
+#results .btn,
+#results a.btn {
+  min-width: 120px;
+  margin: 0 5px;
 }
 
 /* Progress Bars */
 .progress {
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 20px 0;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
 }
 
 .progress-bar {
-    width: 0%;
+  width: 0%;
 }
 
 .progress-bar.bg-danger {
-    background-color: #dc3545 !important;
+  background-color: #dc3545 !important;
 }
 
 .results-bar {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 /* Specific widths for quiz progress steps */
-.progress-bar.q0 { width: 0%; }
-.progress-bar.q1 { width: 10%; }
-.progress-bar.q2 { width: 20%; }
-.progress-bar.q3 { width: 30%; }
-.progress-bar.q4 { width: 40%; }
-.progress-bar.q5 { width: 50%; }
-.progress-bar.q6 { width: 60%; }
-.progress-bar.q7 { width: 70%; }
-.progress-bar.q8 { width: 80%; }
-.progress-bar.q9 { width: 90%; }
-.progress-bar.q10 { width: 100%; }
+.progress-bar.q0 {
+  width: 0%;
+}
+.progress-bar.q1 {
+  width: 10%;
+}
+.progress-bar.q2 {
+  width: 20%;
+}
+.progress-bar.q3 {
+  width: 30%;
+}
+.progress-bar.q4 {
+  width: 40%;
+}
+.progress-bar.q5 {
+  width: 50%;
+}
+.progress-bar.q6 {
+  width: 60%;
+}
+.progress-bar.q7 {
+  width: 70%;
+}
+.progress-bar.q8 {
+  width: 80%;
+}
+.progress-bar.q9 {
+  width: 90%;
+}
+.progress-bar.q10 {
+  width: 100%;
+}
 
 /* Timer */
 .timer {
-    color: white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 .timer.danger {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 /* Quiz Results */
 #results {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    padding: 0;
-    gap: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 0;
+  gap: 0;
 }
 
-#results h2, #results .score {
-    color: white;
+#results h2,
+#results .score {
+  color: white;
 }
 
 #results .progress {
-    width: 100%;
-    height: 8px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 8px;
+  margin-bottom: 20px;
 }
 
 #results .quiz-header h1 {
-    color: white;
-    text-align: center;
-    margin-bottom: 10px !important;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px !important;
 }
 
 #results .score {
-    text-align: center !important;
-    margin-bottom: 15px;
+  text-align: center !important;
+  margin-bottom: 15px;
 }
 
 /* Hide / Visibility */
-.hide, .hidden {
-    display: none !important;
+.hide,
+.hidden {
+  display: none !important;
 }
 
 /* Section-specific text */
-#category-selection, #rules, #rules ul {
-    color: white;
+#category-selection,
+#rules,
+#rules ul {
+  color: white;
 }
 
-/* Answer State Colors */
+/* Answer state Colors */
 .correct {
-    background-color: green !important;
-    color: white !important;
+  background-color: green !important;
+  color: white !important;
 }
 
 .correct:hover {
-    background-color: green !important;
-    color: white !important;
+  background-color: green !important;
+  color: white !important;
 }
 
 .wrong {
-    background-color: yellow !important;
-    color: black !important;
+  background-color: yellow !important;
+  color: black !important;
 }
 
 .wrong:hover {
-    background-color: yellow !important;
-    color: black !important;
+  background-color: yellow !important;
+  color: black !important;
 }
 
 /* Leaderboard */
 #leaderboard-list {
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    list-style-position: inside;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  list-style-position: inside;
 }
 
-#leaderboard h2, body#leaderboard-page .quiz-header h1 {
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
+#leaderboard h2,
+body#leaderboard-page .quiz-header h1 {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
 }
 
 .leaderboard-entry {
-    font-weight: normal;
-    color: white;
+  font-weight: normal;
+  color: white;
 }
 
 .leaderboard-entry.highlight {
-    font-weight: bold;
-    color: gold;
+  font-weight: bold;
+  color: gold;
 }
 
 /* Backgrounds */
@@ -212,33 +250,33 @@ h1, h2, h3, h4, h5, h6 {
 .bg-avatar,
 .bg-got,
 .bg-opm {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-wallpaper {
-    background-attachment: fixed;
-    image-rendering: auto;
+  background-attachment: fixed;
+  image-rendering: auto;
 }
 
 .bg-avatar {
-    background-image: url('../images/bg-avatar.jpg');
+  background-image: url("../images/bg-avatar.jpg");
 }
 
 .bg-got {
-    background-image: url('../images/bg-got.jpg');
+  background-image: url("../images/bg-got.jpg");
 }
 
 .bg-opm {
-    background-image: url('../images/bg-opm.jpg');
+  background-image: url("../images/bg-opm.jpg");
 }
 
 /* Page-specific font overrides */
 #home-intro h1,
 #rules .quiz-header h1,
 #quiz .quiz-header h1 {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
 }

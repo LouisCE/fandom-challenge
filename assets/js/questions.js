@@ -1,6 +1,5 @@
 // Avatar: The Last Airbender questions
-const avatarQuestions = [
-    {
+const avatarQuestions = [{
         question: "What is the name of Aang’s flying bison?",
         answers: ["Appa", "Momo", "Naga", "Pabu"],
         correct: "Appa"
@@ -253,8 +252,7 @@ const avatarQuestions = [
 ];
 
 // Game of Thrones questions
-const gotQuestions = [
-    {
+const gotQuestions = [{
         question: "What is the motto of House Stark?",
         answers: ["Fire and Blood", "Ours is the Fury", "Winter is Coming", "Hear Me Roar"],
         correct: "Winter is Coming"
@@ -507,8 +505,7 @@ const gotQuestions = [
 ];
 
 // One Punch Man questions
-const onePunchManQuestions = [
-    {
+const onePunchManQuestions = [{
         question: "Who is the main hero known for defeating enemies with a single punch?",
         answers: ["Saitama", "Genos", "Mumen Rider", "Garou"],
         correct: "Saitama"
