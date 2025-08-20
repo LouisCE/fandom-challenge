@@ -37,33 +37,34 @@
         </div>
 
         <!-- Leaderboard section -->
-        <section id="leaderboard" class="text-center">
-          <h2 class="mb-4">High Scores</h2>
+        <section id="leaderboard" class="text-center" aria-labelledby="leaderboard-heading">
+          <h2 id="leaderboard-heading" class="mb-4">High Scores</h2>
 
           <!-- Scores list -->
-          <ol id="leaderboard-list" class="mb-4"></ol>
+          <ol id="leaderboard-list" class="mb-4" aria-live="polite"></ol>
 
           <!-- Hidden initials input shown after submitting score -->
-          <div id="initials-box" class="mb-3 hidden">
+          <div id="initials-box" class="mb-3 hidden" aria-hidden="true">
   <input
     type="text"
     id="player-initials"
     maxlength="3"
     placeholder="Your initials"
-    class="form-control mb-2"
+    class="form-control mb-2" 
+    aria-label="Enter your initials"
   />
-  <button id="confirm-submit-btn" class="btn btn-danger w-100">
+  <button id="confirm-submit-btn" class="btn btn-danger w-100" aria-label="Confirm submitting your initials">
     Confirm
   </button>
 </div>
 
           <!-- Action buttons for submitting score and going back -->
           <div class="d-flex justify-content-center gap-2">
-            <button id="submit-score-btn" class="btn btn-danger btn-sm">
+            <button id="submit-score-btn" class="btn btn-danger btn-sm" aria-label="Submit your score">
               Submit Score
             </button>
-            <a href="index.html" class="btn btn-outline-light btn-sm"
-              >Back to Categories</a>
+            <a href="index.html" class="btn btn-outline-light btn-sm" 
+            aria-label="Return to quiz category selection">Back to Categories</a>
           </div>
         </section>
       </div>
