@@ -350,11 +350,11 @@ The **Fandom Challenge** quiz was manually tested across a variety of real devic
 | Nest Hub                   | Good       | Good            | Good            | Good          |
 | Nest Hub Max               | Good       | Good            | Good            | Good          |
 
-Below are three examples:
+Below are three examples on the three major breakpoints for responsive web design:
 
 - **iPhone SE** (mobile)
 - **iPad Mini** (tablet)
-- **Nest Hub Max** (smart display)
+- **Nest Hub Max** (smart display/desktop)
 
 ![iPhone SE Screenshot](assets/images/testing/screenshot-iphone-se.png)
 ![iPad Mini Screenshot](assets/images/testing/screenshot-ipad-mini.png)
@@ -446,7 +446,7 @@ Desktop results confirm excellent optimisation, with lightning-fast load times a
 
 #### WAVE Accessibility Tool
 
-The WAVE evaluation reports no accessibility or contrast errors. One alert was raised for missing page regions/ARIA landmarks (e.g., <main>, <nav>, <header>, <footer>). While the site remains usable, adding these elements would improve navigation for screen reader users and better align with WCAG Level A guidelines.
+The WAVE evaluation reports no accessibility or contrast errors, nor does it raise any alerts. At one point, it raised an alert was raised for missing page regions/ARIA landmarks (e.g., <main>, <nav>, <header>, <footer>) but I have rectified that by adding an accessible label to the navbar toggle button. This increases accessibility and makes sure that so screen readers will know what it does.
 
 | Metric            | Result |
 |-------------------|--------|
