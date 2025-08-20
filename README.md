@@ -444,9 +444,11 @@ Desktop results confirm excellent optimisation, with lightning-fast load times a
 ![Google PageSpeed Insights desktop performance report](assets/images/testing/pagespeed-desktop.png)
 ![Google PageSpeed Insights desktop speed index graph](assets/images/testing/pagespeed-desktop-2.png)
 
+Lighthouse and Google PageSpeed Insights were used to test the project around the midway point of development. Results remain excellent.
+
 #### WAVE Accessibility Tool
 
-The WAVE evaluation reports no accessibility or contrast errors, nor does it raise any alerts. At one point, it raised an alert was raised for missing page regions/ARIA landmarks (e.g., <main>, <nav>, <header>, <footer>) but I have rectified that by adding an accessible label to the navbar toggle button. This increases accessibility and makes sure that so screen readers will know what it does.
+The WAVE evaluation reports no accessibility or contrast errors, nor does it raise any alerts. At one point, it raised an alert was raised for missing page regions/ARIA landmarks such as main, nav, header and footer but I have rectified that by adding an accessible label to the navbar toggle button. This increases accessibility and makes sure that so screen readers will know what it does.
 
 | Metric            | Result |
 |-------------------|--------|
@@ -494,7 +496,7 @@ global confetti tells JSHint that confetti is defined externally via the CDN, pr
 
 This ensures that JSHint checks my code correctly while ignoring legitimate ES6 features and externally loaded libraries.
 
-Below are screenshots of the beginning of my validation for `questions.js`, `script.js` and `leaderboard.js`
+Below are three screenshots of the beginning of my validation for `questions.js`, `script.js` and `leaderboard.js`. All files were inserted together for validation.
 
 ![JavaScript Validation Results](assets/images/validation/questions.js.png)
 ![JavaScript Validation Results](assets/images/validation/script.js.png)
