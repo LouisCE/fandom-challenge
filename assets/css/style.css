@@ -312,3 +312,8 @@ body#leaderboard-page .quiz-header h1 {
 .hidden {
   display: none !important;
 }
+
+.timer.danger {
+  color: red;
+  font-weight: bold;
+}

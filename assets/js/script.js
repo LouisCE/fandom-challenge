@@ -181,17 +181,21 @@ function stopTotalTimer() {
 function startTimer() {
     clearInterval(timerInterval);
     timeLeft = 15;
-    document.getElementById("timer").textContent = `Time left: ${timeLeft}s`;
+    
+    const timerElement = document.getElementById("timer");
+
+    // Reset text and remove danger class immediately
+    timerElement.textContent = `Time left: ${timeLeft}s`;
+    timerElement.classList.remove("danger");
 
     timerInterval = setInterval(() => {
-        timeLeft--;
-        document.getElementById("timer").textContent = `Time left: ${timeLeft}s`;
 
-        // If time runs out, count as wrong and go to next
+        timeLeft--;
+
+        // Stop at 0 immediately
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            console.log("Time's up!");
-            console.log("Unanswered question counted as wrong.");
+            timerElement.textContent = `Time left: 0s`;
             currentQuestionIndex++;
             updateProgressBar();
             if (currentQuestionIndex < currentQuestionSet.length) {
@@ -200,7 +204,19 @@ function startTimer() {
             } else {
                 endGame();
             }
+            return; 
         }
+
+        // Show time left
+        timerElement.textContent = `Time left: ${timeLeft}s`;
+
+        // Danger class below 5 seconds
+        if (timeLeft <= 5) {
+            timerElement.classList.add("danger");
+        } else {
+            timerElement.classList.remove("danger");
+        }
+
     }, 1000);
 }
 
