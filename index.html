@@ -116,7 +116,7 @@
         </section>
 
         <!-- Quiz Section -->
-        <section id="quiz" class="hide">
+        <section id="quiz" class="hide" aria-labelledby="quiz-heading">
           <div class="quiz-header text-center">
             <h1 class="mb-3">Fandom Challenge</h1>
           </div>
@@ -124,6 +124,7 @@
             <div
               class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
               role="progressbar"
+              aria-label="Quiz progress"
               aria-valuenow="0"
               aria-valuemin="0"
               aria-valuemax="100"
@@ -144,7 +145,9 @@
 
           <!-- Timer and Restart button -->
           <div class="quiz-footer">
-            <div id="timer" class="timer">Time left: 15s</div>
+            <div id="timer" class="timer" role="timer" aria-live="polite">
+              Time left: 15s
+            </div>
             <button
               id="restart-midway-btn"
               class="btn btn-warning d-none"
@@ -156,33 +159,41 @@
         </section>
 
         <section id="results" class="hide">
-  <div class="quiz-header">
-    <h1 class="mb-3">Quiz Complete!</h1>
-  </div>
+          <div class="quiz-header">
+            <h1 class="mb-3">Quiz Complete!</h1>
+          </div>
 
-  <div class="progress">
-    <div
-      class="progress-bar bg-danger progress-bar-striped progress-bar-animated results-bar"
-      role="progressbar"
-      aria-valuenow="100"
-      aria-valuemin="0"
-      aria-valuemax="100"
-    ></div>
-  </div>
+          <div class="progress">
+            <div
+              class="progress-bar bg-danger progress-bar-striped progress-bar-animated results-bar"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
 
-  <!-- Display user score -->
-  <p id="score-text" class="score text-start"></p>
+          <!-- Display user score -->
+          <p id="score-text" class="score text-start" aria-live="polite"></p>
 
-  <!-- Buttons centered only -->
-  <div class="d-flex justify-content-center gap-2 mt-3 w-100">
-    <button id="restart-btn" class="btn btn-outline-light">
-      Back to Categories
-    </button>
-    <a href="leaderboard.html" id="go-to-leaderboard-btn" class="btn btn-danger">
-      Go to Leaderboard
-    </a>
-  </div>
-</section>
+          <!-- Buttons centered only -->
+          <div class="d-flex justify-content-center gap-2 mt-3 w-100">
+            <button
+              id="restart-btn"
+              class="btn btn-outline-light"
+              aria-label="Restart quiz and return to category selection"
+            >
+              Back to Categories
+            </button>
+            <a
+              href="leaderboard.html"
+              id="go-to-leaderboard-btn"
+              class="btn btn-danger"
+            >
+              Go to Leaderboard
+            </a>
+          </div>
+        </section>
       </div>
     </div>
 
