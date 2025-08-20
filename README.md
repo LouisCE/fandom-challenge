@@ -57,7 +57,7 @@ Wireframes were created using Balsamiq, following a mobile-first approach in lin
 - Background images were updated for visual impact and theme immersion.
 - Minor spacing adjustments were made for a more balanced layout on larger screens.
 
-The final live site follows the overall structure of the wireframes. Minor adjustments were made during development to fine-tune the visual flow and improve usability.
+The final live site follows the overall structure of the wireframes. Minor adjustments were made during development to fine-tune the visual flow and improve usability. For example, the leaderboard system was a decision I decided to implement halfway through the project, after the wireframes had already been made.
 
 **Wireframe links:**
 
@@ -92,6 +92,8 @@ These colours were chosen with accessibility in mind, ensuring sufficient contra
 
 The contrast grid (above) helped in selecting harmonious shades and verifying accessibility standards for colour contrast ratios, ensuring that all users have a comfortable and visually engaging experience.
 
+Note that this colour scheme was used as a rough guide for how my project should look. I didn't adhere to it strictly and my ideas and preferences changed as my project evolved.
+
 ### Images
 
 For this project, I chose a distinct background image for each quiz category to create visual interest and help immerse players in the respective fandom:
@@ -114,15 +116,18 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 
 - Category selection with buttons to choose between different fandom quizzes.
 - Viewable rules section that explains how the quiz works.
-- Timed quiz with a 15-second countdown for each question.
+- Timed quiz with a fifteen-second countdown for each question.
 - Multiple-choice questions with four answer options per question.
 - Randomised answer order on every question to prevent memorisation of answer positions.
 - Results are revealed at the end of the quiz, showing the total score.
 - Score tracking displayed at the end of the quiz with custom messages based on performance.
 - Leaderboard system that ranks players by score, with completion time as a tiebreaker.
+- When the user registers their score, it is highlighted in gold allowing them to easily see where they placed.
+- Buttons are hidden at the appropriate times to avoid clutter and prevent user confusion.
 - Ability to restart the quiz and select categories again without refreshing the page.
 - Responsive design ensuring usability on various screen sizes.
 - Timed quiz with a fifteen-second countdown; timer turns red when less than or equal to five seconds.
+
 
 ### Existing Features
 
@@ -190,12 +195,16 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Displays the **top 10 high scores**, using **time as a tiebreaker**.
 - Highlights the **most recent entry in gold** for 3 seconds to show placement.
 - Adds **replayability**: even a perfect scorer can try to improve their time.
+- When the user clicks the Submit Score button, the button disappears and , preventing confusion so that they can focus on typing in their initals and hit Confirm to register their score.
 - The most recent score to get added is highlighted in gold for three seconds, allowing the user to clearly see where exactly their performance placed among the top ten.
 - As you can see, I currently hold all the top scores.
-- The screenshots below demonstrates how the leaderboard treats results with equal scores but different completion times. Score takes priority over time and time acts as a tiebreaker in the event of an equal score.
+- The screenshots below demonstrate how the leaderboard treats results with equal scores but different completion times. Score takes priority over time and time acts as a tiebreaker in the event of an equal score.
 
 ![Leaderboard Page](assets/images/docs/screenshot-leaderboard.png)
 ![Leaderboard Page](assets/images/docs/screenshot-leaderboard-2.png)
+![Leaderboard Page](assets/images/docs/screenshot-leaderboard-3.png)
+![Leaderboard Page](assets/images/docs/screenshot-leaderboard-4.png)
+![Leaderboard Page](assets/images/docs/screenshot-leaderboard-5.png)
 
 ### 404 Page
 
@@ -218,6 +227,7 @@ Planned enhancements to improve gameplay and replay value include:
 - **Structured Data with JSON:** I could transition to JSON for storing questions, answers and correct responses in a computer-readable format. I considered using JSON for my project and made an attempt at it but my mentor advised me to keep `questions.js` and use that instead of JSON file formatting as `questions.js` is easier to work with. Although `questions.js` is currently used for simplicity, JSON would make the data more scalable for future updates.
 - **Improved User Feedback with Modals:** Currently, if a user tries to submit an empty initials box, a browser alert appears saying, "Please enter your initials!" In future versions, I plan to replace alerts with custom modals, which would provide a smoother and more visually integrated user experience.
 - **Easter Eggs:** I could also add more hidden references. One for each quiz category that would reference some kind of meme related to the fandom or an in-universe joke or running gag. Again, this would increase replay value by giving users a fun experience and the additional challenge of searching for the secret of the quiz categories they like.
+- **On-Brand Background Images:** At present, the Home and Rules pages use a plain black background. In future versions, I plan to introduce themed background images that align with the project’s colour scheme and branding. This would provide a more engaging and visually appealing user experience, while still keeping the three existing fandom-specific quiz backgrounds as the main focus. For the time being, I decided that the three background images chosen are sufficient for a positive user experience.
 
 I plan on continuing this as a passion project, even after I graduate and it will continue to improve over time as I expand categories, features, and interactivity.
 
