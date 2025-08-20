@@ -184,6 +184,7 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Highlights the **most recent entry in gold** for 3 seconds to show placement.
 - Adds **replayability**: even a perfect scorer can try to improve their time.
 - As you can see, I currently hold all the top scores.
+- The screenshots below demonstrates how the leaderboard treats results with equal scores but different completion times. Score takes priority over time and time acts as a tiebreaker in the event of an equal score.
 
 ![Leaderboard Page](assets/images/docs/screenshot-leaderboard.png)
 ![Leaderboard Page](assets/images/docs/screenshot-leaderboard-2.png)
@@ -207,6 +208,7 @@ Looking ahead, I plan to expand the quiz categories to include additional fandom
 Planned enhancements to improve gameplay and replay value include:
 
 - **Structured Data with JSON:** I could transition to JSON for storing questions, answers and correct responses in a computer-readable format. I considered using JSON for my project and made an attempt at it but my mentor advised me to keep `questions.js` and use that instead of JSON file formatting as `questions.js` is easier to work with. Although `questions.js` is currently used for simplicity, JSON would make the data more scalable for future updates.
+- **Improved User Feedback with Modals:** Currently, if a user tries to submit an empty initials box, a browser alert appears saying, "Please enter your initials!" In future versions, I plan to replace alerts with custom modals, which would provide a smoother and more visually integrated user experience.
 - **Easter Eggs:** I could also add more hidden references. One for each quiz category that would reference some kind of meme related to the fandom or an in-universe joke or running gag. Again, this would increase replay value by giving users a fun experience and the additional challenge of searching for the secret of the quiz categories they like.
 
 I plan on continuing this as a passion project, even after I graduate and it will continue to improve over time as I expand categories, features, and interactivity.
