@@ -13,12 +13,12 @@ const restartMidwayBtn = document.getElementById("restart-midway-btn");
 let categorySelection = document.getElementById("category-selection");
 
 // Background handler
-function setBackground(imagePath = null) {
-    document.body.classList.add("bg-wallpaper");
-    if (imagePath) {
-        document.body.style.backgroundImage = `url('${imagePath}')`;
+function setBackground(categoryClass = "") {
+    document.body.classList.remove("bg-avatar", "bg-got", "bg-opm");
+
+    if (categoryClass) {
+        document.body.classList.add("bg-wallpaper", categoryClass);
     } else {
-        document.body.style.backgroundImage = "";
         document.body.classList.remove("bg-wallpaper");
     }
 }
@@ -30,8 +30,11 @@ restartMidwayBtn.addEventListener("click", function () {
 
 // Update progress bar as user moves through quiz
 function updateProgressBar() {
+    progressBar.classList.forEach((cls) => {
+        if (cls.startsWith("q")) progressBar.classList.remove(cls);
+    });
+    progressBar.classList.add(`q${currentQuestionIndex}`);
     const percent = (currentQuestionIndex / currentQuestionSet.length) * 100;
-    progressBar.style.width = percent + "%";
     progressBar.setAttribute("aria-valuenow", percent);
 }
 
@@ -87,7 +90,7 @@ function displayRules() {
 // Category button handlers
 // When Avatar button is clicked
 avatarBtn.addEventListener("click", function () {
-    setBackground("assets/images/bg-avatar.jpg");
+    setBackground("bg-avatar");
 
     // Save category choice and reset localStorage states
     selectedCategory = "avatar";
@@ -99,7 +102,7 @@ avatarBtn.addEventListener("click", function () {
 
     // Hide category selection, show quiz section, enable restart
     categorySelection.classList.add("hide");
-    quizSection.style.display = "block";
+    quizSection.classList.remove("hide");
     restartMidwayBtn.classList.remove("d-none");
 
     // Reset counters
@@ -114,14 +117,14 @@ avatarBtn.addEventListener("click", function () {
 
 // When Game of Thrones button is clicked
 gotBtn.addEventListener("click", function () {
-    setBackground("assets/images/bg-got.jpg");
+    setBackground("bg-got");
 
     selectedCategory = "got";
     localStorage.setItem("lastCategory", selectedCategory);
     localStorage.setItem("scoreSubmitted", "false");
     currentQuestionSet = getRandomQuestions(gotQuestions, 10);
     categorySelection.classList.add("hide");
-    quizSection.style.display = "block";
+    quizSection.classList.remove("hide");
     restartMidwayBtn.classList.remove("d-none");
     currentQuestionIndex = 0;
     score = 0;
@@ -133,14 +136,14 @@ gotBtn.addEventListener("click", function () {
 
 // When One Punch Man button is clicked
 opmBtn.addEventListener("click", function () {
-    setBackground("assets/images/bg-opm.jpg");
+    setBackground("bg-opm");
 
     selectedCategory = "opm";
     localStorage.setItem("lastCategory", selectedCategory);
     localStorage.setItem("scoreSubmitted", "false");
     currentQuestionSet = getRandomQuestions(onePunchManQuestions, 10);
     categorySelection.classList.add("hide");
-    quizSection.style.display = "block";
+    quizSection.classList.remove("hide");
     restartMidwayBtn.classList.remove("d-none");
     currentQuestionIndex = 0;
     score = 0;
@@ -205,13 +208,16 @@ function startTimer() {
 function endGame() {
     stopTotalTimer();
 
+    // Save latest score for leaderboard
+    localStorage.setItem("latestScore", score);
+
     // Save results to localStorage
     localStorage.setItem("lastScore", score);
     localStorage.setItem("lastTime", totalTime);
 
     // Hide quiz, show results
-    quizSection.style.display = "none";
-    document.getElementById("results").style.display = "block";
+    quizSection.classList.add("hide");
+    document.getElementById("results").classList.remove("hide");
 
     // Calculate percentage score
     const percent = (score / currentQuestionSet.length) * 100;
@@ -305,7 +311,7 @@ answerButtons.forEach((button) => {
 // Navigation & buttons
 // Restart quiz button (from results screen)
 document.getElementById("restart-btn").addEventListener("click", function () {
-    document.getElementById("results").style.display = "none";
+    document.getElementById("results").classList.add("hide");
     categorySelection.classList.remove("hide");
     setBackground(); // Reset background
 });
