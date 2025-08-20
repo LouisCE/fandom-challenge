@@ -130,35 +130,35 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - They can choose a quiz category (Avatar, Game of Thrones, or One Punch Man).
 - A **View Rules** button is also available for clarity before starting.
 
-![Home Page](assets/images/home-page.png)
+![Home Page](assets/images/docs/screenshot-home.png)
 
 #### Rules Page
 - Displays the quiz rules clearly before the game begins.
 - Helps users understand the timer, scoring, and objectives.
 - Includes a **Back** button to return to the category selection.
 
-![Rules Page](assets/images/rules-page.png)
+![Rules Page](assets/images/docs/screenshot-rules.png)
 
 #### Avatar: The Last Airbender Quiz
 - Background features an Avatar-themed image.
 - Users answer 10 random questions from the Avatar fandom.
 - Each question has 4 multiple-choice options.
 
-![Avatar Quiz](assets/images/avatar-quiz.png)
+![Avatar Quiz](assets/images/docs/screenshot-avatar-quiz.png)
 
 #### Game of Thrones Quiz
 - Background features a Game of Thrones-themed image.
 - Users answer 10 multiple-choice Game of Thrones questions.
 - Offers immersive visuals and lore-based challenges.
 
-![Game of Thrones Quiz](assets/images/got-quiz.png)
+![Game of Thrones Quiz](assets/images/docs/screenshot-got-quiz.png)
 
 #### One Punch Man Quiz
 - Background features a One Punch Man-themed image.
 - Users answer 10 multiple-choice One Punch Man questions.
 - Balanced question/answer distribution ensures fairness.
 
-![One Punch Man Quiz](assets/images/opm-quiz.png)
+![One Punch Man Quiz](assets/images/docs/screenshot-opm-quiz.png)
 
 #### Quiz Complete Page
 - At the end of each quiz, users see their **final score out of 10**.
@@ -167,10 +167,13 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
   - **7 or 8**: "Good job! You know your stuff."
   - **9 or above**: "Congratulations! You're a superfan!"
 - Includes:
-  - **Back to Categories** A button that returns users to home.  
-  - **Submit Score** A button that sends the user's score to leaderboard.  
+  - **Back to Categories:** A button that returns users to home.  
+  - **Submit Score:** A button that sends the user's score to leaderboard.
+  - **Confetti:** To reward high-performing players, I implemented a fun visual effect using the Canvas Confetti library. If a player scores 9/10 or above, colorful confetti pops on the screen along with the superfan message. This adds extra excitement and a sense of achievement for users who perform particularly well.
 
-![Quiz Complete Page](assets/images/quiz-complete.png)
+![Quiz Complete Page](assets/images/docs/screenshot-quiz-complete-1.png)
+![Quiz Complete Page](assets/images/docs/screenshot-quiz-complete-2.png)
+![Quiz Complete Page](assets/images/docs/screenshot-quiz-complete-3.png)
 
 #### Leaderboard Page
 - After submitting their score, users can:
@@ -180,8 +183,10 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 - Displays the **top 10 high scores**, using **time as a tiebreaker**.
 - Highlights the **most recent entry in gold** for 3 seconds to show placement.
 - Adds **replayability**: even a perfect scorer can try to improve their time.
+- As you can see, I currently hold all the top scores.
 
-![Leaderboard Page](assets/images/leaderboard.png)
+![Leaderboard Page](assets/images/docs/screenshot-leaderboard.png)
+![Leaderboard Page](assets/images/docs/screenshot-leaderboard-2.png)
 
 ### 404 Page
 
@@ -328,9 +333,9 @@ Below are three examples:
 - **iPad Mini** (tablet)
 - **Nest Hub Max** (smart display)
 
-![iPhone SE Screenshot](assets/images/screenshot-iphone-se.png)
-![iPad Mini Screenshot](assets/images/screenshot-ipad-mini.png)
-![Nest Hub Max Screenshot](assets/images/screenshot-nest-hub-max.png)
+![iPhone SE Screenshot](assets/images/testing/screenshot-iphone-se.png)
+![iPad Mini Screenshot](assets/images/testing/screenshot-ipad-mini.png)
+![Nest Hub Max Screenshot](assets/images/testing/screenshot-nest-hub-max.png)
 
 ### Automated Testing Results
 
@@ -352,8 +357,8 @@ The mobile Lighthouse audit shows excellent results across all metrics, with par
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 1.8 s         |
 
-![Google Lighthouse mobile audit summary report](assets/images/lighthouse-mobile.png)
-![Google Lighthouse mobile performance metrics](assets/images/lighthouse-mobile-2.png)
+![Google Lighthouse mobile audit summary report](assets/images/testing/lighthouse-mobile.png)
+![Google Lighthouse mobile performance metrics](assets/images/testing/lighthouse-mobile-2.png)
 
 #### Lighthouse (Desktop)
 
@@ -371,8 +376,8 @@ The desktop results are exceptional as well, with perfect scores for performance
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 0.5 s         |
 
-![Google Lighthouse desktop audit summary report](assets/images/lighthouse-desktop.png)
-![Google Lighthouse desktop performance metrics](assets/images/lighthouse-desktop-2.png)
+![Google Lighthouse desktop audit summary report](assets/images/testing/lighthouse-desktop.png)
+![Google Lighthouse desktop performance metrics](assets/images/testing/lighthouse-desktop-2.png)
 
 #### PageSpeed Insights (Mobile)
 
@@ -390,8 +395,8 @@ Mobile performance remains extremely high, with zero blocking time and stable la
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 2.5 s         |
 
-![Google PageSpeed Insights mobile performance report](assets/images/pagespeed-mobile.png)
-![Google PageSpeed Insights mobile speed index graph](assets/images/pagespeed-mobile-2.png)
+![Google PageSpeed Insights mobile performance report](assets/images/testing/pagespeed-mobile.png)
+![Google PageSpeed Insights mobile speed index graph](assets/images/testing/pagespeed-mobile-2.png)
 
 #### PageSpeed Insights (Desktop)
 
@@ -409,8 +414,8 @@ Desktop results confirm excellent optimisation, with lightning-fast load times a
 | Cumulative Layout Shift     | 0             |
 | Speed Index                 | 0.5 s         |
 
-![Google PageSpeed Insights desktop performance report](assets/images/pagespeed-desktop.png)
-![Google PageSpeed Insights desktop speed index graph](assets/images/pagespeed-desktop-2.png)
+![Google PageSpeed Insights desktop performance report](assets/images/testing/pagespeed-desktop.png)
+![Google PageSpeed Insights desktop speed index graph](assets/images/testing/pagespeed-desktop-2.png)
 
 #### WAVE Accessibility Tool
 
@@ -425,7 +430,7 @@ The WAVE evaluation reports no accessibility or contrast errors. One alert was r
 | Structural Elements | 5    |
 | ARIA              | 9      |
 
-![WAVE accessibility evaluation results summary](assets/images/wave.png)
+![WAVE accessibility evaluation results summary](assets/images/testing/wave.png)
 
 ## Code Validation
 
@@ -435,14 +440,14 @@ To ensure code quality, maintainability, and adherence to best practices, I vali
 
 Both `index.html` and `404.html` were tested separately using the [W3C Markup Validator](https://validator.w3.org/). Both passed with no errors, which can be seen below.
 
-![index.html Validation Results](assets/images/validation-index.html.png)
-![404.html Validation Results](assets/images/validation-404.html.png)
+![index.html Validation Results](assets/images/validation/validation-index.html.png)
+![404.html Validation Results](assets/images/validation/validation-404.html.png)
 
 ### CSS Validation (W3C Jigsaw CSS Validator)
 
 I used the [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate my `style.css`, which also passed validation with no errors or warnings. Once more, it can be seen below.
 
-![CSS Validation Results](assets/images/validation-style.css.png)
+![CSS Validation Results](assets/images/validation/validation-style.css.png)
 
 ### JavaScript Validation (JSHint)
 
@@ -450,7 +455,7 @@ My JavaScript, including `script.js` and `questions.js` was validated using [JSH
 
 Initially, there was an unused variable (`rulesSection`), which was removed. The final check passed with no unused variables or syntax errors, shown below.
 
-![JavaScript Validation Results](assets/images/validation-jshint.png)
+![JavaScript Validation Results](assets/images/validation/validation-jshint.png)
 
 ### User Story Testing
 
@@ -516,7 +521,7 @@ He suggested using questions.js over JSON for simplicity, which saved me time an
 
 - **Bootstrap quiz layout inspiration:** The interactive quiz layout was inspired by [Bootstrap Examples - Interactive Quiz Application](https://bootstrapexamples.com/@ross-wille/interactive-quiz-application), which helped guide the design of category buttons, timer, and feedback styling.
 
-- **ChatGPT:** Assisted in generating initial draft questions for `questions.js`. All questions and answers were reviewed, verified, and corrected manually to ensure accuracy with canonical sources.
+- **ChatGPT:** Assisted in brainstorming initial draft questions for `questions.js`. All questions and answers were reviewed, verified, and corrected manually to ensure accuracy with canonical sources.
 
 - **Markdown learning resources:**  
   - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
