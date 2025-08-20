@@ -88,6 +88,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 0%;
 }
 
+/* Progress bar when quiz is complete */
+.results-bar {
+    width: 100% !important;
+}
+
 /* Danger style for progress bar (red) */
 .progress-bar.bg-danger {
   background-color: #dc3545 !important;
