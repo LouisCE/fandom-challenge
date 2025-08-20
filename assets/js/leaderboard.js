@@ -19,6 +19,17 @@ const leaderboardList = document.getElementById('leaderboard-list');
 const submitBtn = document.getElementById('submit-score-btn');
 const playerInitialsInput = document.getElementById('player-initials');
 
+submitBtn.addEventListener('click', () => {
+    // Hide the Submit Score button immediately
+    submitBtn.classList.add("hidden");
+
+    // Show the initials input box
+    document.getElementById('initials-box').classList.remove("hidden");
+    
+    // Focus on the input field
+    playerInitialsInput.focus();
+});
+
 // Flag to prevent repeated actions in the same session
 let hasSubmittedThisSession = false;
 
