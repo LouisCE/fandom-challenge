@@ -206,6 +206,13 @@ All background images were sourced from [Wallpaper Cave](https://wallpapercave.c
 ![Leaderboard Page](assets/images/docs/screenshot-leaderboard-4.png)
 ![Leaderboard Page](assets/images/docs/screenshot-leaderboard-5.png)
 
+### Favicon
+- To complement the project’s sleek design, I used [favicon.io](https://favicon.io/) to create a custom favicon with a **Netflix-inspired aesthetic**.
+- It features the bold red letters **FC** (for *Fandom Challenge*) on a black background, reinforcing the theme of enjoying multiple different TV shows with a modern, minimal, and instantly recognizable look.
+- This small detail helps give the site a polished and professional feel while tying into the overall branding.
+
+![Favicon](assets/images/docs/favicon.png)
+
 ### 404 Page
 
 I added a fun and onbrand custom 404 error page to handle broken or mistyped URLs so that the user has a positive experience, even when visiting a nonexistent page.
@@ -214,7 +221,7 @@ I added a fun and onbrand custom 404 error page to handle broken or mistyped URL
 - Provides a prominent “Back to Quiz” button for easy navigation.
 - Styled consistently with the main site for a seamless feel.
 
-![404 Page](assets/images/404.png)
+![404 Page](assets/images/docs/404.png)
 
 ### Future Enhancements
 
