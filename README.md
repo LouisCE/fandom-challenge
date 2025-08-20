@@ -4,7 +4,7 @@
 
 Fandom Challenge is an interactive quiz game designed to test players’ knowledge across various fandoms, including anime, movies, TV shows, and games (for now, just Avatar: The Last Airbender and Game of Thrones). The project is built with HTML, CSS, and JavaScript, focusing on creating a fun, responsive, and accessible user experience. Players can select a category, answer randomised questions under time pressure, and receive instant feedback on their performance. The project demonstrates key front-end development skills, including DOM manipulation, event handling, responsive design, and dynamic content rendering. This project also demonstrates the use of localStorage for persistent leaderboard data, ensuring scores remain available even after the page is refreshed or the browser is closed. The quiz logic is fully randomised including question order and answer option positions to guarantee variety and replayability.
 
-![Responsive design preview of Fandom Challenge website](assets/images/am-i-responsive.png)
+![Responsive design preview of Fandom Challenge website](assets/images/docs/screenshot-am-i-responsive.png)
 
 ## User Goals
 
@@ -434,12 +434,12 @@ The WAVE evaluation reports no accessibility or contrast errors. One alert was r
 |-------------------|--------|
 | Errors            | 0      |
 | Contrast Errors   | 0      |
-| Alerts            | 1      |
+| Alerts            | 0      |
 | Features          | 1      |
-| Structural Elements | 5    |
-| ARIA              | 9      |
+| Structural Elements | 7    |
+| ARIA              | 15      |
 
-![WAVE accessibility evaluation results summary](assets/images/testing/wave.png)
+![WAVE accessibility evaluation results summary](assets/images/validation/wave.png)
 
 ## Code Validation
 
@@ -447,9 +447,10 @@ To ensure code quality, maintainability, and adherence to best practices, I vali
 
 ### HTML Validation (W3C Markup Validator)
 
-Both `index.html` and `404.html` were tested separately using the [W3C Markup Validator](https://validator.w3.org/). Both passed with no errors, which can be seen below.
+Both `index.html`, `leaderboard.html` and `404.html` were tested separately using the [W3C Markup Validator](https://validator.w3.org/). Both passed with no errors, which can be seen below.
 
 ![index.html Validation Results](assets/images/validation/validation-index.html.png)
+![leaderboard.html Validation Results](assets/images/validation/validation-leaderboard.png)
 ![404.html Validation Results](assets/images/validation/validation-404.html.png)
 
 ### CSS Validation (W3C Jigsaw CSS Validator)
@@ -464,7 +465,20 @@ My JavaScript, including `script.js` and `questions.js` was validated using [JSH
 
 Initially, there was an unused variable (`rulesSection`), which was removed. The final check passed with no unused variables or syntax errors, shown below.
 
-![JavaScript Validation Results](assets/images/validation/validation-jshint.png)
+To ensure proper validation of my ES6 code and external libraries, I included the following at the top of each JavaScript file:
+
+/* jshint esversion: 6 */
+/* global confetti */
+
+esversion: 6 tells JSHint to allow ES6 syntax (such as const, let, arrow functions, default parameters, and template literals).
+
+global confetti tells JSHint that confetti is defined externally via the CDN, preventing "undefined variable" warnings.
+
+This ensures that JSHint checks my code correctly while ignoring legitimate ES6 features and externally loaded libraries.
+
+![JavaScript Validation Results](assets/images/validation/questions.js.png)
+![JavaScript Validation Results](assets/images/validation/script.js.png)
+![JavaScript Validation Results](assets/images/validation/leaderboard.js.png)
 
 ### User Story Testing
 
